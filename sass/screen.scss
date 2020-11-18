@@ -1299,7 +1299,7 @@ footer {
 			}
 			.tabs__caption .active {
 				background: #9dc0f6;
-				color: #030117;
+				color: #fff;
 				border: 1px solid #9dc0f6;
 			}
 			.tabs__content {
@@ -1345,6 +1345,7 @@ footer {
 			box-shadow: 0px 4px 16px rgba(92, 140, 215, 0.09);
 			border-radius: 6px;
 			margin: 5px;
+			background: #ffffff;
 			&:hover {
 				.box_logo {
 					img,
@@ -2151,7 +2152,7 @@ footer {
 	}
 	.section_portfolio .box_content .box {
 		// @include flex-basis(50%);
-		width: calc(50% - 10px);
+		// width: calc(50% - 10px);
 	}
 	.section_reviews .box_content .slider-2 .slick-list {
 		padding-right: 0;
