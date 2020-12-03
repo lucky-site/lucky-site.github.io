@@ -2420,22 +2420,6 @@ footer .menu-opened .burger span {
   border-radius: 20px;
 }
 
-/* line 2032, ../sass/screen.scss */
-.fancybox-content {
-  width: auto !important;
-  height: auto !important;
-  transform: translate(-50%, -50%) !important;
-  top: 50% !important;
-  left: 50% !important;
-}
-
-/* line 2039, ../sass/screen.scss */
-.fancybox-content img {
-  position: static;
-  width: 1000px;
-  height: auto;
-}
-
 /* line 2044, ../sass/screen.scss */
 .section_stock .box_content .slider-1 .slider-mini-1 .slick-list.draggable {
   padding: 0;
