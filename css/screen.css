@@ -2993,11 +2993,6 @@ footer .menu-opened .burger span {
   .footer .box_bottom {
     padding: 10px 0 15px;
   }
-
-  /* line 2552, ../sass/screen.scss */
-  .fancybox-content img {
-    width: 90vw;
-  }
 }
 @media (max-width: 768px) {
   /* line 2557, ../sass/screen.scss */
