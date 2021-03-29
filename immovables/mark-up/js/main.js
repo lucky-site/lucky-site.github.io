@@ -73,6 +73,7 @@ jQuery.fn.clickClass = function(opt) {
 };
 
 $(document).ready(function () {
+  AOS.init({disable: 'mobile'});
     $(".slider-1").slick({
       slidesToShow: 3,
       slidesToScroll: 1,
