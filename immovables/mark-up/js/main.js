@@ -3,7 +3,7 @@
 // Плавный переход по навигации
 
 $(function() {
-
+  
 	$(window).scroll(function() {
 
 	if($(this).scrollTop() != 0) {
@@ -72,8 +72,6 @@ jQuery.fn.clickClass = function(opt) {
 	});
 };
 
-$(document).ready(function () {
-  AOS.init({disable: 'mobile'});
     $(".slider-1").slick({
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -92,9 +90,7 @@ $(document).ready(function () {
         },
       ],
     });
-  });
 
-  $(document).ready(function () {
     $(".slider-2").slick({
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -113,7 +109,6 @@ $(document).ready(function () {
         },
       ],
     });
-  });
 
 
 
