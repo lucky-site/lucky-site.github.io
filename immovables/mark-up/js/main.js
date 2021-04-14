@@ -110,6 +110,76 @@ jQuery.fn.clickClass = function(opt) {
       ],
     });
 
+    $(".slider-3").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+
+    $(".slider-4").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+
+    $(document).ready(function () {
+      var i = 0;
+  
+      $('input[type="date"]').each(function () {
+          var str = '<div class="datePlaceholder" id="divph' + i + '"><p>Когда с вами связаться?</p></div>';
+          $(this).after(str);
+          var el = $('#divph' + i);
+  
+          // var dateFieldPos = $(this).offset();
+          // el.css({
+          //     top: dateFieldPos.top + 1,
+          //     left: dateFieldPos.left + 1,
+          //     width: $(this).width() + 1,
+          //     height: $(this).height() + 1
+          // });
+          var self = this;
+          el.click(function () {
+              $(this).hide();
+              self.focus();
+          });
+          $(this).blur(function () {
+              if (!$(this).val()) {
+                  el.show();
+              } else {
+                  alert($(this).val());
+              }
+          });
+          i++;
+  
+      });
+  });
+
 
 
 
