@@ -1658,7 +1658,7 @@ body {
 		.section-1 {
 			background-image: url(../images/sct-3_bg-top_mobile.png);
 			background-repeat: no-repeat;
-			background-size: contain;
+			background-size: 480px 20px;
 			background-position: 50% bottom;
 			.box_content  {
 				.box_left .box_bottom {
@@ -1706,6 +1706,10 @@ body {
 				.box_content {
 					.box_top {
 						margin-top: 0px;
+						.box_left .box_text {
+							padding-top: 0;
+							margin-top: 0;
+						}
 					}
 					.box_text ul li p {
 						font-size: 12px;
