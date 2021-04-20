@@ -697,7 +697,7 @@ body {
 							  url(../images/sct-3_bg-top.png);
 			background-repeat: no-repeat;
 			background-size: cover, 1920px 38px;
-			background-position: center, 50% 0;
+			background-position: center 38px, 50% 0;
 			padding: 37px 0;
 			margin-top: 23px;
 			.box_content {
@@ -1193,18 +1193,22 @@ body {
 			padding: 25px 20px 15px;
 		}
 		.section-1 {
-			padding: 4px 0 20px;
 			overflow: visible;
 			position: relative;
-			&::before {
-				content: '';
-				position: absolute;
-				top: -170px;
-				right: 5px;
-				bottom: 0;
-				left: 5px;
-				border: 1px solid var(--main-color);
-			}
+			background-image: url(../images/sct-3_bg-top.png);
+			background-repeat: no-repeat;
+			background-size: 1920px 38px;
+			background-position: 50% bottom;
+			padding: 37px 0 80px;
+			// &::before {
+			// 	content: '';
+			// 	position: absolute;
+			// 	top: -170px;
+			// 	right: 5px;
+			// 	bottom: 0;
+			// 	left: 5px;
+			// 	border: 1px solid var(--main-color);
+			// }
 			.box_content {
 				@include left-right-100;
 				.box_left {
@@ -1691,6 +1695,10 @@ body {
 			}
 			.box_bg {
 				padding: 37px 0 10px;
+				background-image: url(../images/sct-3_bg.png), url(../images/sct-3_bg-top.png);
+				background-repeat: no-repeat;
+				background-size: cover, 1440px 28.5px;
+				background-position: center 28.5px, 50% 0;
 				.box_content {
 					.box_top {
 						margin-top: 0px;
@@ -1788,17 +1796,24 @@ body {
 			padding: 50px 0px;
 			.box_content {
 				.box_top .box_right {
-					padding: 0 10px;
+					padding: 0 20px;
+					.box_text p:last-of-type {
+						text-align: justify;
+					}
 				}
 				.box_bottom {
 					margin-top: 0px;
 					.box_left {
 						.box_text {
 							margin-top: 0px;
+							padding: 0 20px;
 						}
 						.box_img {
 							margin: 0px auto 10px;
 						}
+					}
+					.box_right .box_text {
+						padding: 0 20px;
 					}
 				}
 			}
