@@ -1656,6 +1656,10 @@ body {
 			}
 		}
 		.section-1 {
+			background-image: url(../images/sct-3_bg-top_mobile.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: 50% bottom;
 			.box_content  {
 				.box_left .box_bottom {
 					margin-top: 15px;
@@ -1768,6 +1772,17 @@ body {
 						}
 						.box_messendgers {
 							margin-top: 15px;
+							.link-insta {
+								width: 18px;
+								height: 18px;
+								background-image: url(../images/icon-instagram.png);
+							}
+							.link-vk {
+								margin-left: 26px;
+								width: 27px;
+								height: 15px;
+								background-image: url(../images/icon-vk.png);
+							}
 						}
 						.box_adress {
 							margin-top: 15px;
@@ -1797,8 +1812,13 @@ body {
 			.box_content {
 				.box_top .box_right {
 					padding: 0 20px;
-					.box_text p:last-of-type {
-						text-align: justify;
+					.box_text {
+						p:first-of-type {
+							margin-left: 0px;
+						}
+						p:nth-of-type(2) {
+							margin-left: 0;
+						}
 					}
 				}
 				.box_bottom {
