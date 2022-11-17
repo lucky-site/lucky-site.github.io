@@ -333,18 +333,18 @@ body {
   vertical-align: middle;
   text-align: left;
   width: 95%;
-  max-width: 415px;
+  max-width: 500px;
 }
 /* line 455, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content {
   border-radius: 0;
   border: 1px solid #fff;
-  border-radius: 15px;
+  border-radius: 10px;
   position: relative;
-  padding: 1px 10px;
+  padding: 30px;
   animation-name: animatetop;
   animation-duration: 0.5s;
-  background: rgba(0, 0, 0, 0.8);
+  background: #fff;
   position: relative;
 }
 /* line 465, ../sass/screen.scss */
@@ -355,17 +355,18 @@ body {
 }
 /* line 469, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-header h4 {
-  font-size: 24px;
-  color: #fff;
-  margin: 30px 0 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #363f50;
+  margin: 0px 0 0;
   font-weight: 600;
   text-align: center;
 }
-/* line 476, ../sass/screen.scss */
+/* line 477, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-header button {
   position: absolute;
-  top: 10px;
-  right: 7px;
+  top: -20px;
+  right: -20px;
   margin: 0;
   background: transparent;
   width: 24px;
@@ -376,44 +377,42 @@ body {
   opacity: 1;
   cursor: pointer;
 }
-/* line 489, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-header button:focus {
   outline: none;
 }
-/* line 492, ../sass/screen.scss */
+/* line 493, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-header button:hover {
   background-position: 0 -40px;
 }
-/* line 495, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-header button::before {
   content: '';
   position: absolute;
   top: 0;
   width: 2px;
   height: 25px;
-  background: #fff;
+  background: #000;
   transform: rotate(45deg);
 }
-/* line 504, ../sass/screen.scss */
+/* line 505, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-header button::after {
   content: '';
   position: absolute;
   top: 0;
   width: 2px;
   height: 25px;
-  background: #fff;
+  background: #000;
   transform: rotate(-45deg);
 }
-/* line 515, ../sass/screen.scss */
+/* line 516, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-body {
   padding-top: 20px;
-  padding-bottom: 25px;
-  max-width: 350px;
   margin: auto;
   text-align: center;
   position: relative;
 }
-/* line 522, ../sass/screen.scss */
+/* line 521, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-body label {
   font-size: 20px;
   color: #333;
@@ -421,90 +420,86 @@ body {
   text-indent: 10px;
   margin: 0;
 }
-/* line 529, ../sass/screen.scss */
+/* line 528, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-body .form-group {
   display: block;
   margin: 0 auto 15px;
 }
-/* line 532, ../sass/screen.scss */
+/* line 531, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-body .form-group input {
   width: 100%;
   font-size: 20px;
   margin-top: 0px;
-  border: none;
-  border: 1px solid #fff;
+  border: 2px solid #f7e4e2;
+  border-radius: 10px;
   background: transparent;
   padding: 10px;
-  opacity: .8;
-  border-radius: 10px;
-  color: #fff;
+  font-size: 15px;
+  color: #363f50;
+  margin-bottom: 0;
 }
-/* line 543, ../sass/screen.scss */
+/* line 542, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-body .form-group input::placeholder {
-  color: var(--yellow);
-  color: #fff;
+  color: #363f50;
 }
-/* line 549, ../sass/screen.scss */
+/* line 545, ../sass/screen.scss */
+.wholesale_page #myModal .modal-dialog .modal-content .modal-body .form-group input:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 81, 46, 0.88);
+  box-shadow: 0 1px 0 rgba(255, 81, 46, 0.88);
+}
+/* line 552, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-body .my_btn {
   display: inline-block;
   margin: 0px auto 0;
-  font-size: 20px;
-  background: var(--dark);
+  font-size: 15px;
+  background: #fa7752;
   border: none;
   vertical-align: middle;
-  padding: 8px 10px;
-  color: #fff;
+  padding: 16px 10px;
   color: #fff;
   width: 100%;
-  border: 1px solid #fff;
+  border: none;
   border-radius: 10px;
   transition: all .3s linear;
+  max-width: 100%;
   cursor: pointer;
 }
-/* line 564, ../sass/screen.scss */
+/* line 567, ../sass/screen.scss */
 .wholesale_page #myModal .modal-dialog .modal-content .modal-body .my_btn:focus {
   outline: none;
 }
-/* line 567, ../sass/screen.scss */
-.wholesale_page #myModal .modal-dialog .modal-content .modal-body .my_btn::before {
-  content: none;
-}
-/* line 570, ../sass/screen.scss */
-.wholesale_page #myModal .modal-dialog .modal-content .modal-body .my_btn:hover {
-  background: var(--yellow);
-  color: var(--dark);
-}
 @media (max-width: 1300px) {
-  /* line 582, ../sass/screen.scss */
+  /* line 578, ../sass/screen.scss */
   .wholesale_page .section-2 .box_content .box .box_img.box_img {
     max-width: 110px;
   }
-  /* line 585, ../sass/screen.scss */
+  /* line 581, ../sass/screen.scss */
   .wholesale_page .section-2 .box_content .box .box_text p {
     font-size: 24px;
   }
 }
 @media (max-width: 1200px) {
-  /* line 591, ../sass/screen.scss */
+  /* line 587, ../sass/screen.scss */
   .wholesale_page h2 {
     font-size: 34px;
   }
-  /* line 595, ../sass/screen.scss */
+  /* line 591, ../sass/screen.scss */
   .wholesale_page .section-1 .box_content .box_left {
     width: 390px;
   }
-  /* line 598, ../sass/screen.scss */
+  /* line 594, ../sass/screen.scss */
   .wholesale_page .section-1 .box_content .box_right {
     width: calc(100% - 390px);
     padding: 27px 0 0 70px;
   }
-  /* line 603, ../sass/screen.scss */
+  /* line 599, ../sass/screen.scss */
   .wholesale_page .section-2 .box_content .box .box_text p {
     font-size: 20px;
   }
 }
 @media (max-width: 992px) {
-  /* line 608, ../sass/screen.scss */
+  /* line 604, ../sass/screen.scss */
   .wholesale_page .section-1 .box_content {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -515,19 +510,19 @@ body {
   .wholesale_page .section-1 .box_content .box_right {
     width: 100%;
   }
-  /* line 611, ../sass/screen.scss */
+  /* line 607, ../sass/screen.scss */
   .wholesale_page .section-1 .box_content .box_left .box_img {
     margin: auto;
   }
-  /* line 615, ../sass/screen.scss */
+  /* line 611, ../sass/screen.scss */
   .wholesale_page .section-1 .box_content .box_right {
     padding: 80px 0 0 0px;
   }
-  /* line 618, ../sass/screen.scss */
+  /* line 614, ../sass/screen.scss */
   .wholesale_page .section-1 .box_content .box_right .box_btn .my_btn {
     margin: 88px auto 0;
   }
-  /* line 627, ../sass/screen.scss */
+  /* line 623, ../sass/screen.scss */
   .wholesale_page .section-2 .box_content .box.box {
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
@@ -535,23 +530,23 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  /* line 629, ../sass/screen.scss */
+  /* line 625, ../sass/screen.scss */
   .wholesale_page .section-2 .box_content .box.box .box_img {
     max-width: 130px;
   }
-  /* line 633, ../sass/screen.scss */
+  /* line 629, ../sass/screen.scss */
   .wholesale_page .section-2 .box_content .box.box .box_text p {
     font-size: 24px;
   }
 }
 @media (max-width: 768px) {
-  /* line 642, ../sass/screen.scss */
+  /* line 638, ../sass/screen.scss */
   .wholesale_page .section-1 .box_content .box_left .box_img .img-video {
     top: 15px;
     right: 15px;
     max-width: 95px;
   }
-  /* line 647, ../sass/screen.scss */
+  /* line 643, ../sass/screen.scss */
   .wholesale_page .section-2 .box_content {
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
@@ -559,57 +554,65 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  /* line 649, ../sass/screen.scss */
+  /* line 645, ../sass/screen.scss */
   .wholesale_page .section-2 .box_content .box:not(:first-of-type) {
     margin-top: 50px;
   }
 }
 @media (max-width: 600px) {
-  /* line 655, ../sass/screen.scss */
+  /* line 651, ../sass/screen.scss */
   .wholesale_page #myModal-1 .modal-dialog .modal-content .modal-header h4 {
     font-size: 24px;
   }
-  /* line 658, ../sass/screen.scss */
+  /* line 654, ../sass/screen.scss */
   .wholesale_page #myModal-1 .modal-dialog .modal-content .modal-body {
     text-align: center;
   }
-  /* line 661, ../sass/screen.scss */
+  /* line 657, ../sass/screen.scss */
   .wholesale_page #myModal-1 .modal-dialog .modal-content .modal-body .form-group {
     max-width: 340px;
   }
 }
 @media (max-width: 480px) {
-  /* line 666, ../sass/screen.scss */
+  /* line 662, ../sass/screen.scss */
   .wholesale_page .section-1 .box_content .box_left .box_img .img-video {
     top: 10px;
     right: 10px;
     max-width: 80px;
   }
-  /* line 671, ../sass/screen.scss */
+  /* line 667, ../sass/screen.scss */
   .wholesale_page .main_page #myModal-1 .modal-dialog .modal-content .modal-header h4 {
     font-size: 28px;
     margin: 55px 0 0;
   }
-  /* line 675, ../sass/screen.scss */
+  /* line 671, ../sass/screen.scss */
   .wholesale_page .main_page #myModal-1 .modal-dialog .modal-content .modal-body .form-group {
     max-width: 100%;
     margin-bottom: 20px;
   }
-  /* line 679, ../sass/screen.scss */
+  /* line 675, ../sass/screen.scss */
   .wholesale_page .main_page #myModal-1 .modal-dialog .modal-content .modal-body .modal-body .my_btn {
     font-size: 18px;
   }
 }
 @media (max-width: 400px) {
-  /* line 684, ../sass/screen.scss */
+  /* line 680, ../sass/screen.scss */
   .wholesale_page .section-1 .box_content .box_left .box_img .img-video {
     top: 10px;
     right: 10px;
     max-width: 65px;
   }
+  /* line 685, ../sass/screen.scss */
+  .wholesale_page #myModal .modal-dialog .modal-content {
+    padding: 30px 10px;
+  }
+  /* line 687, ../sass/screen.scss */
+  .wholesale_page #myModal .modal-dialog .modal-content .modal-header button {
+    right: 0px;
+  }
 }
 
-/* line 693, ../sass/screen.scss */
+/* line 695, ../sass/screen.scss */
 .grtyoutube-popup {
   position: fixed;
   top: 0;
@@ -619,7 +622,7 @@ body {
   z-index: 99999;
 }
 
-/* line 702, ../sass/screen.scss */
+/* line 704, ../sass/screen.scss */
 .grtyoutube-popup-content {
   margin-top: 150px;
   width: 95%;
@@ -629,7 +632,7 @@ body {
   position: relative;
 }
 
-/* line 711, ../sass/screen.scss */
+/* line 713, ../sass/screen.scss */
 .grtyoutube-popup-close {
   position: absolute;
   top: -30px;
@@ -641,49 +644,49 @@ body {
   cursor: pointer;
 }
 
-/* line 722, ../sass/screen.scss */
+/* line 724, ../sass/screen.scss */
 .grtyoutube-iframe {
   width: 100%;
   height: 480px;
 }
 
 @media (max-width: 767px) {
-  /* line 727, ../sass/screen.scss */
+  /* line 729, ../sass/screen.scss */
   .grtyoutube-iframe {
     width: 100%;
     height: 350px;
   }
 }
-/* line 733, ../sass/screen.scss */
+/* line 735, ../sass/screen.scss */
 .grtyoutube-dark-theme {
   background: rgba(0, 0, 0, 0.85);
 }
 
-/* line 737, ../sass/screen.scss */
+/* line 739, ../sass/screen.scss */
 .grtyoutube-dark-theme .grtyoutube-popup-content {
   -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4);
   -moz-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4);
   box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4);
 }
 
-/* line 743, ../sass/screen.scss */
+/* line 745, ../sass/screen.scss */
 .grtyoutube-dark-theme .grtyoutube-popup-close {
   background: url("icon-close-white.png") no-repeat;
 }
 
-/* line 747, ../sass/screen.scss */
+/* line 749, ../sass/screen.scss */
 .grtyoutube-light-theme {
   background: rgba(255, 255, 255, 0.85);
 }
 
-/* line 751, ../sass/screen.scss */
+/* line 753, ../sass/screen.scss */
 .grtyoutube-light-theme .grtyoutube-popup-content {
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
 }
 
-/* line 757, ../sass/screen.scss */
+/* line 759, ../sass/screen.scss */
 .grtyoutube-light-theme .grtyoutube-popup-close {
   background: url("icon-close-black.png") no-repeat;
 }

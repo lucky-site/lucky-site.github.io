@@ -21,7 +21,6 @@
         <div class="box_content container">
           <div class="box_left">
             <div class="box_img">
-              <!-- <span class="youtube-link" youtubeid="yPu6qV5byu4">Open Video</span> -->
               <img src="images/section-1_img.jpg" class="youtube-link" youtubeid="yPu6qV5byu4" alt="">
               <img class="img-video" src="images/section-1_img-2.gif" alt="">
             </div>
@@ -46,7 +45,6 @@
       </section>
       <section class="section-2">
         <div class="box_content container">
-          <!-- <div class="box-cell"> -->
             <div class="box box-1">
               <div class="box_img">
                 <img src="images/icon_1.webp" alt="">
@@ -55,8 +53,6 @@
                 <p>Вигідні умови навіть для<br> маленкого гурту</p>
               </div>
             </div>
-          <!-- </div> -->
-          <!-- <div class="box-cell"> -->
             <div class="box box-2">
               <div class="box_img">
                 <img src="images/icon_2.webp" alt="">
@@ -65,8 +61,6 @@
                 <p>5 років<br> роботи</p>
               </div>
             </div>
-          <!-- </div> -->
-          <!-- <div class="box-cell"> -->
             <div class="box box-3">
               <div class="box_img">
                 <img src="images/icon_3.webp" alt="">
@@ -75,7 +69,6 @@
                 <p>Українське<br> виробництво</p>
               </div>
             </div>
-          <!-- </div> -->
         </div>
       </section>
       <div id="myModal" class="modal fade" role="dialog">
@@ -83,11 +76,22 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" id="close" data-dismiss="modal"></button>
-              <h4 class="modal-title">Замовити дзвінок</h4>
+              <h4 class="modal-title">Уточнить бесплатно информацию по белью от Kari Lingerie</h4>
               <div id="text_modal"></div>
             </div>
             <div class="modal-body">
-              <?php echo do_shortcode('[contact-form-7 id="8" title="Контактная форма 1"]'); ?>
+              <form id="form_modal" name="form_modal">
+                <div class="form-group">
+                  <input type="text" class="form-control name" placeholder="Ім'я" name="name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control tel" name="phone" id="pwd" placeholder="Пошта" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control tel" name="phone" placeholder="Телефон" required>
+                </div>
+                <input type="submit" class="my_btn btn-default" value="Відправити">
+              </form>
             </div>
           </div>
         </div>

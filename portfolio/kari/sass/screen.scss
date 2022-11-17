@@ -451,32 +451,33 @@ body {
 			vertical-align: middle;
 			text-align: left;
 			width: 95%;
-			max-width: 415px;
+			max-width: 500px;
 			.modal-content {
 				border-radius: 0;
 				border: 1px solid #fff;
-				border-radius: 15px;
+				border-radius: 10px;
 				position: relative;
-				padding: 1px 10px;
+				padding: 30px;
 				animation-name: animatetop;
 				animation-duration: 0.5s;
-				background: rgba(0, 0, 0, 0.8);
+				background: #fff;
 				position: relative;
 				.modal-header {
 					border-bottom: 0;
 					position: relative;
 					padding-top: 15px;
 					h4 {
-						font-size: 24px;
-						color: #fff;
-						margin: 30px 0 0;
+						font-size: 12px;
+						line-height: 18px;
+						color: #363f50;
+						margin: 0px 0 0;
 						font-weight: 600;
 						text-align: center;
 					}
 					button {
 						position: absolute;
-						top: 10px;
-						right: 7px;
+						top: -20px;
+						right: -20px;
 						margin: 0;
 						background: transparent;
 						width: 24px;
@@ -498,7 +499,7 @@ body {
 							top: 0;
 							width: 2px;
 							height: 25px;
-							background: #fff;
+							background: #000;
 							transform: rotate(45deg);
 						}
 						&::after {
@@ -507,15 +508,13 @@ body {
 							top: 0;
 							width: 2px;
 							height: 25px;
-							background: #fff;
+							background: #000;
 							transform: rotate(-45deg);
 						}
 					}
 				}
 				.modal-body {
 					padding-top: 20px;
-					padding-bottom: 25px;
-					max-width: 350px;
 					margin: auto;
 					text-align: center;
 					position: relative;
@@ -533,43 +532,40 @@ body {
 							width: 100%;
 							font-size: 20px;
 							margin-top: 0px;
-							border: none;
-							border: 1px solid #fff;
+							border: 2px solid #f7e4e2;
+    						border-radius: 10px;
 							background: transparent;
 							padding: 10px;
-							opacity: .8;
-							border-radius: 10px;
-							color: #fff;
+							font-size: 15px;
+							color: #363f50;
+							margin-bottom: 0;
 							&::placeholder {
-								color: var(--yellow);
-								color: #fff;
+								color: #363f50;
+							}
+							&:focus {
+								outline: 0;
+								-webkit-box-shadow: 0 1px 0 rgba(255, 81, 46, .88);
+								box-shadow: 0 1px 0 rgba(255, 81, 46, .88);
 							}
 						}
 					}
 					.my_btn {
 						display: inline-block;
 						margin: 0px auto 0;
-						font-size: 20px;
-						background: var(--dark);
+						font-size: 15px;
+						background: #fa7752;
 						border: none;
 						vertical-align: middle;
-						padding: 8px 10px;
-						color: #fff;
+						padding: 16px 10px;
 						color: #fff;
 						width: 100%;
-						border: 1px solid #fff;
+						border: none;
 						border-radius: 10px;
 						transition: all .3s linear;
+						max-width: 100%;
 						cursor: pointer;
 						&:focus {
 							outline: none;
-						}
-						&::before {
-							content: none;
-						}
-						&:hover {
-							background: var(--yellow);
-							color: var(--dark);
 						}
 					}
 				}
@@ -685,6 +681,12 @@ body {
 			top: 10px;
 			right: 10px;
 			max-width: 65px;
+		}
+		#myModal .modal-dialog .modal-content {
+			padding: 30px 10px;
+			.modal-header button {
+				right: 0px;
+			}
 		}
 	}
 	
