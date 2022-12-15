@@ -1,0 +1,3695 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/**
+ * Theme Name: Soy Boys
+ */
+@font-face {
+  font-family: 'lavvo_personal_useregular';
+  src: url("../fonts/lavvopersonaluseregular-webfont.woff2") format("woff2"), url("../fonts/lavvopersonaluseregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Courier New';
+  src: url("../fonts/CourierNewPSMT.eot");
+  src: local("Courier New"), local("CourierNewPSMT"), url("../fonts/CourierNewPSMT.eot?#iefix") format("embedded-opentype"), url("../fonts/CourierNewPSMT.woff2") format("woff2"), url("../fonts/CourierNewPSMT.woff") format("woff"), url("../fonts/CourierNewPSMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Courier New';
+  src: url("../fonts/CourierNewPS-BoldItalicMT.eot");
+  src: local("Courier New Bold Italic"), local("CourierNewPS-BoldItalicMT"), url("../fonts/CourierNewPS-BoldItalicMT.eot?#iefix") format("embedded-opentype"), url("../fonts/CourierNewPS-BoldItalicMT.woff2") format("woff2"), url("../fonts/CourierNewPS-BoldItalicMT.woff") format("woff"), url("../fonts/CourierNewPS-BoldItalicMT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Courier New';
+  src: url("../fonts/CourierNewPS-BoldMT.eot");
+  src: local("Courier New Bold"), local("CourierNewPS-BoldMT"), url("../fonts/CourierNewPS-BoldMT.eot?#iefix") format("embedded-opentype"), url("../fonts/CourierNewPS-BoldMT.woff2") format("woff2"), url("../fonts/CourierNewPS-BoldMT.woff") format("woff"), url("../fonts/CourierNewPS-BoldMT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Courier New';
+  src: url("../fonts/CourierNewPS-ItalicMT.eot");
+  src: local("Courier New Italic"), local("CourierNewPS-ItalicMT"), url("../fonts/CourierNewPS-ItalicMT.eot?#iefix") format("embedded-opentype"), url("../fonts/CourierNewPS-ItalicMT.woff2") format("woff2"), url("../fonts/CourierNewPS-ItalicMT.woff") format("woff"), url("../fonts/CourierNewPS-ItalicMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 234, ../sass/screen.scss */
+html {
+  margin-top: 0px !important;
+}
+
+/* line 237, ../sass/screen.scss */
+body {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* line 241, ../sass/screen.scss */
+.main_page {
+  color: #020202;
+  font-size: 22px;
+  max-width: 1920px;
+  margin: auto;
+  height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  min-height: 355px;
+  background: #333b4b;
+}
+/* line 252, ../sass/screen.scss */
+.main_page * {
+  box-sizing: border-box;
+  --color-text: #020202;
+  --color-red: #e64e4e;
+  --color-pink: #e53972;
+  --color-bg: #06192f;
+}
+/* line 258, ../sass/screen.scss */
+.main_page *::before, .main_page *::after {
+  box-sizing: content-box;
+}
+/* line 264, ../sass/screen.scss */
+.main_page .img_responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+/* line 270, ../sass/screen.scss */
+.main_page .my_btn {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 170px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s linear;
+  color: #fff;
+  overflow: hidden;
+  z-index: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  position: relative;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 15px 20px;
+  background: var(--color-red);
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  border: 1px solid var(--color-red);
+  border-radius: 0;
+}
+/* line 213, ../sass/screen.scss */
+.main_page .my_btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: initial;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  transition: all .3s linear;
+  z-index: -1;
+}
+/* line 225, ../sass/screen.scss */
+.main_page .my_btn:hover {
+  color: #7BA5E3;
+}
+/* line 227, ../sass/screen.scss */
+.main_page .my_btn:hover::before {
+  right: initial;
+  left: 0;
+  width: 100%;
+}
+/* line 293, ../sass/screen.scss */
+.main_page .my_btn:focus {
+  outline: none;
+}
+/* line 296, ../sass/screen.scss */
+.main_page .my_btn:hover {
+  color: var(--color-red);
+}
+/* line 300, ../sass/screen.scss */
+.main_page h1 {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 500;
+  text-align: center;
+  margin: 13px 0 0;
+  line-height: 1.2;
+}
+/* line 308, ../sass/screen.scss */
+.main_page h2 {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+/* line 314, ../sass/screen.scss */
+.main_page h3 {
+  font-size: 28px;
+  margin: 20px 0 0;
+  text-transform: uppercase;
+  display: inline-block;
+}
+/* line 320, ../sass/screen.scss */
+.main_page h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 0;
+  text-align: left;
+}
+/* line 327, ../sass/screen.scss */
+.main_page h5 {
+  font-size: 40px;
+  margin: 0;
+}
+/* line 331, ../sass/screen.scss */
+.main_page p {
+  margin: 0;
+}
+/* line 334, ../sass/screen.scss */
+.main_page a {
+  color: var(--color-text);
+  transition: all .25s linear;
+  text-decoration: none;
+}
+/* line 339, ../sass/screen.scss */
+.main_page ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 344, ../sass/screen.scss */
+.main_page button {
+  cursor: pointer;
+}
+/* line 347, ../sass/screen.scss */
+.main_page header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 40px;
+  z-index: 2;
+  padding: 5px 20px;
+  display: none;
+}
+/* line 356, ../sass/screen.scss */
+.main_page header .container {
+  margin: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/* line 362, ../sass/screen.scss */
+.main_page header .container nav {
+  display: block;
+  width: 100%;
+  max-width: 745px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+/* line 369, ../sass/screen.scss */
+.main_page header .container nav .box_socials {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+/* line 372, ../sass/screen.scss */
+.main_page header .container nav .box_socials .link {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+/* line 380, ../sass/screen.scss */
+.main_page header .container nav .box_socials .link.link-1 {
+  background-image: url(../images/icon1.svg);
+}
+/* line 383, ../sass/screen.scss */
+.main_page header .container nav .box_socials .link.link-2 {
+  background-image: url(../images/icon2.svg);
+}
+/* line 386, ../sass/screen.scss */
+.main_page header .container nav .box_socials .link.link-3 {
+  background-image: url(../images/icon3.svg);
+}
+/* line 389, ../sass/screen.scss */
+.main_page header .container nav .box_socials .link.link-4 {
+  background-image: url(../images/icon4.svg);
+}
+/* line 395, ../sass/screen.scss */
+.main_page header .container .burger {
+  background: #2D9CDB;
+  border-radius: 8px;
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+  width: 42px;
+  height: 35px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1000;
+}
+/* line 413, ../sass/screen.scss */
+.main_page header .container .burger span {
+  position: absolute;
+  left: 9px;
+  top: 17px;
+  text-indent: 9900px;
+  width: 26px;
+  height: 1px;
+  background: #fff;
+  box-shadow: 0 0 0 1px #fff;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+/* line 425, ../sass/screen.scss */
+.main_page header .container .burger:before,
+.main_page header .container .burger:after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 10px;
+  width: 26px;
+  height: 1px;
+  background: #fff;
+  box-shadow: 0 0 0 1px #fff;
+  -webkit-transition: -webkit-transform .2s ease-out, top .2s .2s ease-out;
+  transition: transform .2s ease-out, top .2s .2s ease-out;
+}
+/* line 438, ../sass/screen.scss */
+.main_page header .container .burger:after {
+  top: 24px;
+}
+/* line 443, ../sass/screen.scss */
+.main_page header .menu-opened .burger:before,
+.main_page header .menu-opened .burger:after {
+  top: 19px;
+  -webkit-transition: top .2s ease-out, -webkit-transform .2s .2s ease-out;
+  transition: top .2s ease-out, transform .2s .2s ease-out;
+}
+/* line 449, ../sass/screen.scss */
+.main_page header .menu-opened .burger:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 454, ../sass/screen.scss */
+.main_page header .menu-opened .burger:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 459, ../sass/screen.scss */
+.main_page header .menu-opened .burger span {
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  transform: scale(0.3);
+}
+/* line 469, ../sass/screen.scss */
+.main_page .section-1 .box_content > .box_img {
+  position: relative;
+}
+/* line 471, ../sass/screen.scss */
+.main_page .section-1 .box_content > .box_img img {
+  width: 200%;
+  max-width: 100vw;
+}
+/* line 475, ../sass/screen.scss */
+.main_page .section-1 .box_content > .box_img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/woof-agents-desktop-animations.gif);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+/* line 488, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field {
+  position: absolute;
+}
+/* line 490, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-1 {
+  transform: rotate(-14.74deg);
+  top: 25vw;
+  left: 10vw;
+  width: 6.4vw;
+  height: 3.3vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 497, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-1 .box_text {
+  margin: auto;
+}
+/* line 499, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-1 .box_text p {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: .78vw;
+  line-height: .882;
+  text-align: center;
+  color: #8FFFFF;
+}
+/* line 510, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-2 {
+  transform: rotate(-6.9deg);
+  top: 7.4vw;
+  left: 20.4vw;
+  width: 8vw;
+  height: 1.5vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 517, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-2 .box_text {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  margin: auto;
+}
+/* line 521, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-2 .box_text p {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: .8333vw;
+  line-height: .889vw;
+  text-align: center;
+  color: #0f0;
+}
+/* line 532, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-3 {
+  transform: rotate(-9.2deg);
+  top: 14vw;
+  left: 20.9vw;
+  width: 11.5vw;
+  height: 12vw;
+}
+/* line 538, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-3 p {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: .833vw;
+  line-height: 1.125;
+  display: flex;
+  align-items: center;
+  color: #00FF7F;
+}
+/* line 548, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-3 .box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 550, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-3 .box:not(.box-1) {
+  margin-top: .26vw;
+}
+/* line 554, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-3 .box .box_title p {
+  padding-bottom: 2px;
+  position: relative;
+}
+/* line 557, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-3 .box .box_title p::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #00FF7F;
+}
+/* line 568, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-3 .box .box_status {
+  margin-left: .26vw;
+}
+/* line 571, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-3 .box .box_status.color-red p {
+  color: #ff5c58;
+}
+/* line 576, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-3 .box.box-6 {
+  margin-top: .417vw;
+}
+/* line 580, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-3 .box.box-8 p {
+  color: #bdbdbd;
+  font-family: 'Courier New';
+  font-style: italic;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+/* line 591, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-3 .box_line p {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: .833vw;
+  line-height: 1.125;
+  display: flex;
+  align-items: center;
+  color: #00FF7F;
+}
+/* line 604, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-4 {
+  transform: rotate(0.3deg);
+  top: 6.2vw;
+  left: 39.1vw;
+  width: 19vw;
+  height: 3.5vw;
+}
+/* line 610, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-4 .box_socials {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+/* line 613, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-4 .box_socials .link {
+  display: inline-block;
+  width: 2.865vw;
+  height: 2.865vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-indent: -9999px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: .2s all linear;
+}
+/* line 623, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-4 .box_socials .link.link-1 {
+  background-image: url(../images/icon1.svg);
+  margin-top: .208vw;
+}
+/* line 627, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-4 .box_socials .link.link-2 {
+  background-image: url(../images/icon2.svg);
+}
+/* line 630, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-4 .box_socials .link.link-3 {
+  background-image: url(../images/icon3.svg);
+}
+/* line 633, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-4 .box_socials .link.link-4 {
+  background-image: url(../images/icon4.svg);
+  margin-top: .156vw;
+}
+/* line 637, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-4 .box_socials .link:hover {
+  box-shadow: 0 0 10px 0px #00FF7F;
+}
+/* line 643, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-5 {
+  transform: rotate(6.73deg);
+  top: 7.25vw;
+  right: 23.1vw;
+  width: 11vw;
+  height: 1.7vw;
+  text-align: center;
+}
+/* line 651, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-5 .box_link a {
+  display: block;
+  font-family: 'Lavvo Personal Use';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.615vw;
+  line-height: 1.097;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all .25s linear;
+}
+/* line 661, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-5 .box_link a:hover {
+  color: #eb5757;
+}
+/* line 667, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-6 {
+  position: absolute;
+  left: 50%;
+  top: 43.5vw;
+  transform: translateX(-50%);
+}
+/* line 673, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-6 .box_link .link_options {
+  display: block;
+  padding: .625vw 2.083vw;
+  background: #FFFF00;
+  border-radius: .26vw;
+  text-transform: uppercase;
+  color: #383946;
+  font-family: 'Lavvo Personal Use';
+  font-weight: 400;
+  font-size: 1.927vw;
+  line-height: .902;
+  transition: all .25s linear;
+}
+/* line 685, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-6 .box_link .link_options:hover {
+  background: #828282;
+  color: #fff;
+}
+/* line 692, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-7 {
+  position: absolute;
+  right: 4vw;
+  top: 44vw;
+}
+/* line 697, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-7 .box_link .link_missions {
+  display: block;
+  padding: .417vw 1.0417vw;
+  background: #2D9CDB;
+  border-radius: .26vw;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Lavvo Personal Use';
+  font-weight: 400;
+  font-size: 1.667vw;
+  line-height: .914;
+  transition: all .25s linear;
+}
+/* line 711, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-7 .box_link .link_missions:hover {
+  background: #828282;
+}
+/* line 717, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-8 {
+  transform: rotate(9.26deg);
+  top: 8.1vw;
+  right: 12.2vw;
+  width: 4.8vw;
+  height: 4.1vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 724, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-8 .box_point {
+  margin: auto;
+  text-align: center;
+}
+/* line 728, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-8 p {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.99vw;
+  text-align: center;
+  color: #eb5757;
+  line-height: 1;
+}
+/* line 738, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-8 .box_title {
+  margin: auto;
+}
+/* line 742, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-8 .points {
+  font-size: 3.49vw;
+}
+/* line 745, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_fields .box_field.box_field-8 .points p {
+  font-size: 1.77vw;
+}
+/* line 754, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+}
+/* line 759, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn:hover .box .btn {
+  opacity: .5;
+}
+/* line 763, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn .box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+/* line 769, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn .box .btn {
+  opacity: 0;
+  display: block;
+  width: 1.042vw;
+  height: 1.042vw;
+  border-radius: 50%;
+  background: #fff;
+  border: .365vw solid #933f22;
+  cursor: pointer;
+  box-sizing: content-box;
+  transition: all .25s linear;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+/* line 782, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn .box .btn:hover {
+  opacity: 1;
+}
+/* line 785, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn .box .btn:hover + .box_hide {
+  opacity: 1;
+}
+/* line 789, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn .box .box_hide {
+  opacity: 0;
+  background: rgba(26, 27, 35, 0.5);
+  border-radius: .26vw;
+  padding: .365vw .52vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  min-width: 9.375vw;
+  bottom: 100%;
+  left: 100%;
+  transition: all .25s linear;
+}
+/* line 801, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn .box .box_hide p {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: .885vw;
+  line-height: .895;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: .26vw;
+}
+/* line 812, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn .box .box_hide svg {
+  width: 0.625vw;
+  height: 0.677vw;
+}
+/* line 818, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-1 {
+  left: 12.3vw;
+  top: 30.1vw;
+}
+/* line 821, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-1 .box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+/* line 827, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-1 .box .btn-1 {
+  overflow: hidden;
+  text-indent: -9999px;
+}
+/* line 833, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-2 {
+  left: 38.1vw;
+  top: 22.22vw;
+  z-index: 3;
+  height: 9.4vw;
+}
+/* line 838, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-2 .box {
+  left: 56%;
+  top: 79%;
+}
+/* line 841, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-2 .box .box_hide {
+  right: 100%;
+  left: auto;
+}
+/* line 844, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-2 .box .box_hide p {
+  margin: 0 .26vw 0 0;
+}
+/* line 850, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-3 {
+  left: 38.6vw;
+  top: 31.4vw;
+  width: 19.2vw;
+  height: 7.4vw;
+  z-index: 2;
+}
+/* line 856, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-3 .box {
+  left: 72%;
+  top: 20%;
+}
+/* line 859, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-3 .box .box_hide {
+  right: 100%;
+  left: auto;
+  bottom: auto;
+  top: 100%;
+}
+/* line 864, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-3 .box .box_hide p {
+  margin: 0 .26vw 0 0;
+}
+/* line 870, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-4 {
+  left: 55.1vw;
+  top: 25.22vw;
+  width: 11vw;
+}
+/* line 874, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-4 .box {
+  left: 56%;
+  top: 56%;
+}
+/* line 877, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-4 .box .box_hide {
+  right: 100%;
+  left: auto;
+}
+/* line 880, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-4 .box .box_hide p {
+  margin: 0 .26vw 0 0;
+}
+/* line 886, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-5 {
+  left: 70.6vw;
+  top: 28.4vw;
+  z-index: 3;
+}
+/* line 891, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-5 .box .box_hide {
+  right: 100%;
+  left: auto;
+  bottom: auto;
+  top: 100%;
+}
+/* line 896, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-5 .box .box_hide p {
+  margin: 0 .26vw 0 0;
+}
+/* line 902, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 {
+  right: 14.9vw;
+  top: 19.7vw;
+  z-index: 2;
+}
+/* line 907, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .btn-6 {
+  z-index: 5;
+  position: relative;
+}
+/* line 911, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_hide {
+  right: 100%;
+  left: auto;
+  bottom: auto;
+  top: 100%;
+}
+/* line 916, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_hide p {
+  margin: 0 .26vw 0 0;
+}
+/* line 920, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_img {
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+/* line 924, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_img img {
+  display: block;
+  width: 100%;
+}
+/* line 928, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_img .box_img_on {
+  opacity: 1;
+}
+/* line 930, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_img .box_img_on img {
+  width: 1.77vw;
+  height: auto;
+}
+/* line 935, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_img .box_img_off {
+  opacity: 0;
+  position: relative;
+  top: -1.529vw;
+}
+/* line 939, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_img .box_img_off img {
+  width: 1.77vw;
+  height: auto;
+}
+/* line 946, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .sound_off + .box_hide + .box_img .box_img_on {
+  opacity: 0;
+}
+/* line 949, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .sound_off + .box_hide + .box_img .box_img_off {
+  opacity: 1;
+}
+/* line 955, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-7 {
+  right: 9.9vw;
+  top: 27.7vw;
+  z-index: 2;
+}
+/* line 959, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-7 .box {
+  left: 44%;
+  top: 38%;
+}
+/* line 962, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-7 .box .box_hide {
+  right: 100%;
+  left: auto;
+  bottom: auto;
+  top: 100%;
+}
+/* line 967, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_btn.box_btn-7 .box .box_hide p {
+  margin: 0 .26vw 0 0;
+}
+/* line 974, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_lamp {
+  position: absolute;
+  top: 21.94vw;
+  right: 6.6vw;
+  opacity: 0;
+}
+/* line 980, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_lamp.lamp_active {
+  opacity: 0;
+  animation: myAnim 2s ease 0s infinite normal forwards;
+}
+/* line 985, ../sass/screen.scss */
+.main_page .section-1 .box_content .box_buttons .box_lamp .box_img img {
+  display: block;
+  width: 4.0625vw;
+  height: auto;
+}
+@media (max-width: 600px) {
+  /* line 241, ../sass/screen.scss */
+  .main_page {
+    min-height: 100vh;
+    height: 100%;
+    max-height: 100vh;
+    background: #353d4e;
+  }
+  /* line 1002, ../sass/screen.scss */
+  .main_page header {
+    display: block;
+    padding: 15px 20px;
+  }
+  /* line 1005, ../sass/screen.scss */
+  .main_page header .container {
+    padding: 0px 45px 0px 0px;
+  }
+  /* line 1007, ../sass/screen.scss */
+  .main_page header .container .burger {
+    display: block;
+  }
+  /* line 1010, ../sass/screen.scss */
+  .main_page header .container nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #353d4e;
+    height: auto;
+    width: 290px;
+    max-width: 100%;
+    padding: 85px 10px 25px;
+    z-index: 999;
+    overflow-x: hidden;
+    overflow-y: auto;
+    visibility: hidden;
+    -ms-transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    border: 1px solid #e6e6e6;
+    margin-top: 0;
+    text-align: left;
+  }
+  /* line 1031, ../sass/screen.scss */
+  .main_page header .container nav ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 200px;
+    margin: 70px auto 0;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 1037, ../sass/screen.scss */
+  .main_page header .container nav ul li {
+    display: block;
+  }
+  /* line 1039, ../sass/screen.scss */
+  .main_page header .container nav ul li a {
+    display: inline-block;
+    font-size: 22px;
+  }
+  /* line 1047, ../sass/screen.scss */
+  .main_page header .menu-opened nav {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  /* line 1054, ../sass/screen.scss */
+  .main_page .section-1 .box_content {
+    position: static;
+    left: 0;
+    max-width: 100%;
+  }
+  /* line 1059, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_img::after {
+    content: '';
+    background-image: url(../images/woof-agents-mob-animathions.gif);
+  }
+  /* line 1066, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-1 {
+    transform: rotate(-6.74deg);
+    top: 64vw;
+    left: 28.4vw;
+    width: 15.4vw;
+    height: 6.8vw;
+  }
+  /* line 1072, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-1 .box_text p {
+    font-size: 2.1vw;
+    line-height: 1.1;
+  }
+  /* line 1077, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-2 {
+    transform: rotate(-1.9deg);
+    top: 38.7vw;
+    left: 23.7vw;
+    width: 16vw;
+    height: 3.5vw;
+  }
+  /* line 1083, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-2 .box_text p {
+    font-size: 2.5vw;
+    line-height: 1.1;
+  }
+  /* line 1088, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-3 {
+    transform: rotate(2.8deg);
+    top: 43.4vw;
+    left: 54.3vw;
+    width: 25.5vw;
+    height: 27vw;
+  }
+  /* line 1094, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-3 p {
+    font-size: 2.3vw;
+  }
+  /* line 1097, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-3 .box_line p {
+    font-size: 2.2vw;
+  }
+  /* line 1101, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-4 {
+    transform: rotate(0.3deg);
+    top: 22.9vw;
+    left: 34.7vw;
+    width: 34.3vw;
+    height: 5.5vw;
+  }
+  /* line 1107, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-4 .box_socials .link {
+    width: 5.3vw;
+    height: 5.3vw;
+  }
+  /* line 1112, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-5, .main_page .section-1 .box_content .box_fields .box_field.box_field-8 {
+    display: none;
+  }
+  /* line 1116, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-6 {
+    top: auto;
+    bottom: 85px;
+  }
+  /* line 1119, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-6 .box_link .link_options {
+    padding: 8px 24px;
+    border-radius: 5px;
+    font-size: 27px;
+    line-height: 1.1;
+  }
+  /* line 1126, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-7 {
+    right: 50%;
+    bottom: 30px;
+    top: auto;
+    transform: translateX(50%);
+  }
+  /* line 1132, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-7 .box_link .link_missions {
+    padding: 4px 18px;
+    font-size: 22px;
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 1.1;
+  }
+  /* line 1143, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn {
+    position: absolute;
+    width: 3.042vw;
+    height: 3.042vw;
+  }
+  /* line 1147, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn .box {
+    left: 50%;
+    top: 50%;
+  }
+  /* line 1150, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn .box .btn {
+    opacity: 0.5;
+    width: 3.042vw;
+    height: 3.042vw;
+  }
+  /* line 1155, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn .box .box_hide {
+    opacity: 1;
+    border-radius: 0.26vw;
+    padding: 0.365vw 0.52vw;
+    min-width: 14.375vw;
+  }
+  /* line 1160, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn .box .box_hide p {
+    font-size: 1.3vw;
+    margin-left: 0.26vw;
+  }
+  /* line 1164, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn .box .box_hide svg {
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+  /* line 1170, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn:not(.box_btn-1) .box .box_hide {
+    display: none;
+  }
+  /* line 1173, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-1 {
+    left: 32.3vw;
+    top: 89.1vw;
+  }
+  /* line 1177, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-2 {
+    left: 62.1vw;
+    top: 89.1vw;
+  }
+  /* line 1181, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-3 {
+    left: 63.6vw;
+    top: 105.4vw;
+  }
+  /* line 1185, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-4 {
+    left: 63.1vw;
+    top: 96.22vw;
+  }
+  /* line 1189, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-5 {
+    left: auto;
+    right: 11.9vw;
+    top: 91.2vw;
+  }
+  /* line 1194, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-6 {
+    right: auto;
+    left: 16.5vw;
+    top: 49.9vw;
+  }
+  /* line 1199, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img .box_img_on img {
+    width: 3.1vw;
+  }
+  /* line 1202, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img .box_img_off {
+    top: -2.8vw;
+  }
+  /* line 1204, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img .box_img_off img {
+    width: 3.1vw;
+  }
+  /* line 1210, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-7 {
+    right: auto;
+    left: 17vw;
+    top: 70.7vw;
+  }
+}
+@media (max-width: 480px) {
+  /* line 1221, ../sass/screen.scss */
+  .main_page .section-1 > .box_content {
+    margin-left: -17vw;
+    margin-right: -17vw;
+    max-width: none;
+  }
+  /* line 1225, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_img img {
+    max-width: 100%;
+  }
+  /* line 1229, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_fields .box_field.box_field-1 {
+    transform: rotate(-5.74deg);
+    top: 86.5vw;
+    left: 21.2vw;
+    width: 21.4vw;
+    height: 7.8vw;
+  }
+  /* line 1235, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_fields .box_field.box_field-1 .box_text p {
+    font-size: 3.1vw;
+  }
+  /* line 1239, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_fields .box_field.box_field-2 {
+    transform: rotate(-1.9deg);
+    top: 52.2vw;
+    left: 13.7vw;
+    width: 23vw;
+    height: 3.8vw;
+  }
+  /* line 1245, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_fields .box_field.box_field-2 .box_text p {
+    font-size: 3.5vw;
+  }
+  /* line 1249, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_fields .box_field.box_field-3 {
+    transform: rotate(2.8deg);
+    top: 57.1vw;
+    left: 54.9vw;
+    width: 38.5vw;
+    height: 41vw;
+  }
+  /* line 1255, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_fields .box_field.box_field-3 .box:not(.box-1) {
+    margin-top: 0.66vw;
+  }
+  /* line 1258, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_fields .box_field.box_field-3 p {
+    font-size: 3.1vw;
+  }
+  /* line 1261, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_fields .box_field.box_field-3 .box_line p {
+    font-size: 2.8vw;
+  }
+  /* line 1265, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_fields .box_field.box_field-4 {
+    transform: rotate(0deg);
+    top: 30.6vw;
+    left: 32.7vw;
+    width: 39.3vw;
+    height: 8.5vw;
+  }
+  /* line 1271, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_fields .box_field.box_field-4 .box_socials .link {
+    width: 7.3vw;
+    height: 7.3vw;
+  }
+  /* line 1277, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn {
+    width: 4.042vw;
+    height: 4.042vw;
+  }
+  /* line 1281, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn .box .btn {
+    width: 4.042vw;
+    height: 4.042vw;
+  }
+  /* line 1285, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn .box .box_hide {
+    border-radius: 0.26vw;
+    padding: 0.8vw 0.8vw;
+    min-width: 20.375vw;
+    left: -3vw;
+    bottom: auto;
+    top: 110%;
+  }
+  /* line 1292, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn .box .box_hide svg {
+    width: 1.7vw;
+    height: 1.7vw;
+  }
+  /* line 1296, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn .box .box_hide p {
+    font-size: 1.8vw;
+    margin-left: 1.26vw;
+  }
+  /* line 1302, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-1 {
+    left: 27.3vw;
+    top: 119.7vw;
+  }
+  /* line 1306, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-2 {
+    left: 66.1vw;
+    top: 119.8vw;
+  }
+  /* line 1310, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-3 {
+    left: 68.6vw;
+    top: 141.4vw;
+  }
+  /* line 1314, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-4 {
+    left: 68.1vw;
+    top: 128.22vw;
+  }
+  /* line 1318, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-5 {
+    left: auto;
+    right: 1.9vw;
+    top: 123.2vw;
+  }
+  /* line 1323, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-6 {
+    right: auto;
+    left: 5.3vw;
+    top: 66.9vw;
+  }
+  /* line 1327, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img {
+    top: 0;
+  }
+  /* line 1329, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img .box_img_on img {
+    width: 4.5vw;
+  }
+  /* line 1332, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img .box_img_off {
+    top: -3.8vw;
+  }
+  /* line 1334, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img .box_img_off img {
+    width: 4.5vw;
+  }
+  /* line 1340, ../sass/screen.scss */
+  .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-7 {
+    right: auto;
+    left: 6vw;
+    top: 94.7vw;
+  }
+}
+@media (max-width: 400px) {
+  /* line 1350, ../sass/screen.scss */
+  .main_page header {
+    padding: 15px 10px;
+  }
+  /* line 1352, ../sass/screen.scss */
+  .main_page header .container {
+    padding: 0px 30px 0px 0px;
+  }
+  /* line 1354, ../sass/screen.scss */
+  .main_page header .container .box_wallet {
+    max-width: 125px;
+  }
+  /* line 1356, ../sass/screen.scss */
+  .main_page header .container .box_wallet .link_wallet {
+    padding: 7px 5px;
+  }
+  /* line 1362, ../sass/screen.scss */
+  .main_page .section-1 .box_content .box_fields .box_field.box_field-6 .box_link .link_options {
+    font-size: 25px;
+  }
+}
+/* line 1369, ../sass/screen.scss */
+.main_page .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* line 1381, ../sass/screen.scss */
+.main_page #myModal,
+.main_page #myModal2,
+.main_page #myModal3,
+.main_page #myModal4,
+.main_page #myModal5 {
+  padding: 0 !important;
+  text-align: center;
+}
+/* line 1389, ../sass/screen.scss */
+.main_page #myModal:before,
+.main_page #myModal2:before,
+.main_page #myModal3:before,
+.main_page #myModal4:before,
+.main_page #myModal5:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+/* line 1396, ../sass/screen.scss */
+.main_page #myModal .modal-dialog,
+.main_page #myModal2 .modal-dialog,
+.main_page #myModal3 .modal-dialog,
+.main_page #myModal4 .modal-dialog,
+.main_page #myModal5 .modal-dialog {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  width: 95%;
+  max-width: 864px;
+  position: relative;
+}
+/* line 1403, ../sass/screen.scss */
+.main_page #myModal .modal-dialog::before,
+.main_page #myModal2 .modal-dialog::before,
+.main_page #myModal3 .modal-dialog::before,
+.main_page #myModal4 .modal-dialog::before,
+.main_page #myModal5 .modal-dialog::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(48, 50, 66, 0.9);
+}
+/* line 1412, ../sass/screen.scss */
+.main_page #myModal .modal-dialog::after,
+.main_page #myModal2 .modal-dialog::after,
+.main_page #myModal3 .modal-dialog::after,
+.main_page #myModal4 .modal-dialog::after,
+.main_page #myModal5 .modal-dialog::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/modal_bg.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* line 1423, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content,
+.main_page #myModal2 .modal-dialog .modal-content,
+.main_page #myModal3 .modal-dialog .modal-content,
+.main_page #myModal4 .modal-dialog .modal-content,
+.main_page #myModal5 .modal-dialog .modal-content {
+  border-radius: 0;
+  position: relative;
+  padding: 25px 25px 25px;
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+  position: relative;
+}
+/* line 1430, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-header,
+.main_page #myModal2 .modal-dialog .modal-content .modal-header,
+.main_page #myModal3 .modal-dialog .modal-content .modal-header,
+.main_page #myModal4 .modal-dialog .modal-content .modal-header,
+.main_page #myModal5 .modal-dialog .modal-content .modal-header {
+  border-bottom: 0;
+  position: relative;
+  padding-top: 20px;
+}
+/* line 1434, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-header h3,
+.main_page #myModal2 .modal-dialog .modal-content .modal-header h3,
+.main_page #myModal3 .modal-dialog .modal-content .modal-header h3,
+.main_page #myModal4 .modal-dialog .modal-content .modal-header h3,
+.main_page #myModal5 .modal-dialog .modal-content .modal-header h3 {
+  display: block;
+  font-family: 'Lavvo Personal Use';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+/* line 1445, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-header p,
+.main_page #myModal2 .modal-dialog .modal-content .modal-header p,
+.main_page #myModal3 .modal-dialog .modal-content .modal-header p,
+.main_page #myModal4 .modal-dialog .modal-content .modal-header p,
+.main_page #myModal5 .modal-dialog .modal-content .modal-header p {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.1;
+  text-align: center;
+  color: #FFFFFF;
+}
+/* line 1454, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-header button,
+.main_page #myModal2 .modal-dialog .modal-content .modal-header button,
+.main_page #myModal3 .modal-dialog .modal-content .modal-header button,
+.main_page #myModal4 .modal-dialog .modal-content .modal-header button,
+.main_page #myModal5 .modal-dialog .modal-content .modal-header button {
+  position: absolute;
+  top: -3px;
+  right: 1px;
+  margin: 0;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  border: none;
+  font-size: 26px;
+  text-align: center;
+  opacity: 1;
+  background: transparent;
+  transition: all .25s linear;
+  z-index: 5;
+  cursor: pointer;
+}
+/* line 1470, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-header button::before, .main_page #myModal .modal-dialog .modal-content .modal-header button::after,
+.main_page #myModal2 .modal-dialog .modal-content .modal-header button::before,
+.main_page #myModal2 .modal-dialog .modal-content .modal-header button::after,
+.main_page #myModal3 .modal-dialog .modal-content .modal-header button::before,
+.main_page #myModal3 .modal-dialog .modal-content .modal-header button::after,
+.main_page #myModal4 .modal-dialog .modal-content .modal-header button::before,
+.main_page #myModal4 .modal-dialog .modal-content .modal-header button::after,
+.main_page #myModal5 .modal-dialog .modal-content .modal-header button::before,
+.main_page #myModal5 .modal-dialog .modal-content .modal-header button::after {
+  position: absolute;
+  top: 9px;
+  left: -2px;
+  width: 25px;
+  height: 5px;
+  background: var(--color-red);
+}
+/* line 1480, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-header button::before,
+.main_page #myModal2 .modal-dialog .modal-content .modal-header button::before,
+.main_page #myModal3 .modal-dialog .modal-content .modal-header button::before,
+.main_page #myModal4 .modal-dialog .modal-content .modal-header button::before,
+.main_page #myModal5 .modal-dialog .modal-content .modal-header button::before {
+  transform: rotate(45deg);
+}
+/* line 1483, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-header button::after,
+.main_page #myModal2 .modal-dialog .modal-content .modal-header button::after,
+.main_page #myModal3 .modal-dialog .modal-content .modal-header button::after,
+.main_page #myModal4 .modal-dialog .modal-content .modal-header button::after,
+.main_page #myModal5 .modal-dialog .modal-content .modal-header button::after {
+  transform: rotate(-45deg);
+}
+/* line 1486, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-header button:focus,
+.main_page #myModal2 .modal-dialog .modal-content .modal-header button:focus,
+.main_page #myModal3 .modal-dialog .modal-content .modal-header button:focus,
+.main_page #myModal4 .modal-dialog .modal-content .modal-header button:focus,
+.main_page #myModal5 .modal-dialog .modal-content .modal-header button:focus {
+  outline: none;
+}
+/* line 1494, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body {
+  position: relative;
+  z-index: 1;
+}
+/* line 1497, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points {
+  max-width: 624px;
+  margin: 25px auto 0;
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+/* line 1503, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions {
+  height: 175px;
+  border-bottom: 1px solid #F2F2F2;
+  overflow-y: auto;
+  padding-bottom: 15px;
+  scrollbar-width: thin;
+  /* "auto" или "thin" */
+  scrollbar-color: #BDBDBD #383946;
+  /* цвет бегунка и зоны отслеживания */
+}
+/* line 1510, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar {
+  width: 6px;
+  /* ширина всей полосы прокрутки */
+}
+/* line 1513, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-track,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-track,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-track,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-track,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-track {
+  background: #383946;
+  /* цвет зоны отслеживания */
+}
+/* line 1516, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-thumb,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-thumb,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-thumb,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-thumb,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-thumb {
+  background-color: #BDBDBD;
+  /* цвет бегунка */
+  border-radius: 20px;
+  /* округлось бегунка */
+}
+/* line 1520, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions .box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+/* line 1524, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span {
+  display: inline-block;
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.1;
+  color: #FFFFFF;
+}
+/* line 1532, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_progress,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_progress,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_progress,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_progress,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_progress {
+  color: #BDBDBD;
+}
+/* line 1535, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_done,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_done,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_done,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_done,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_done {
+  color: #00DA74;
+}
+/* line 1539, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name {
+  width: 60%;
+}
+/* line 1545, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point {
+  width: 20%;
+  padding: 0 20px;
+  text-align: right;
+}
+/* line 1550, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status {
+  width: 20%;
+  text-align: right;
+}
+/* line 1557, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_total,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_total,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_total,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_total,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_total {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 1559, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_total span,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_total span,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_total span,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_total span,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_total span {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.1;
+  color: #00DA74;
+}
+/* line 1567, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_total .box_point,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_total .box_point,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_total .box_point,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_total .box_point,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_total .box_point {
+  padding-left: 15px;
+}
+/* line 1572, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_link,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_link,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_link,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_link,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_link {
+  text-align: center;
+  margin: 40px auto 60px;
+}
+/* line 1575, ../sass/screen.scss */
+.main_page #myModal .modal-dialog .modal-content .modal-body .box_link a,
+.main_page #myModal2 .modal-dialog .modal-content .modal-body .box_link a,
+.main_page #myModal3 .modal-dialog .modal-content .modal-body .box_link a,
+.main_page #myModal4 .modal-dialog .modal-content .modal-body .box_link a,
+.main_page #myModal5 .modal-dialog .modal-content .modal-body .box_link a {
+  display: inline-block;
+  font-family: 'Lavvo Personal Use';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #2D9CDB;
+  border-radius: 5px;
+  padding: 10px 32px;
+}
+/* line 1595, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content,
+.main_page #myModal2.modal_options .modal-dialog .modal-content,
+.main_page #myModal3.modal_options .modal-dialog .modal-content,
+.main_page #myModal4.modal_options .modal-dialog .modal-content,
+.main_page #myModal5.modal_options .modal-dialog .modal-content {
+  padding: 25px 25px 60px 25px;
+}
+/* line 1597, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body {
+  padding-top: 30px;
+}
+/* line 1599, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: auto;
+}
+/* line 1604, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link {
+  text-align: center;
+  margin: 0px;
+}
+/* line 1607, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a {
+  display: inline-block;
+  width: 100%;
+  max-width: 240px;
+  font-family: 'Lavvo Personal Use';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #828282;
+  border-radius: 5px;
+  padding: 10px 20px;
+  pointer-events: none;
+  transition: all .2s linear;
+}
+/* line 1624, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active {
+  background: #EF933F;
+  pointer-events: auto;
+}
+/* line 1627, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active:hover,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active:hover,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active:hover,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active:hover,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active:hover {
+  background: #828282;
+}
+/* line 1633, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description {
+  margin-top: 5px;
+}
+/* line 1635, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.1;
+  text-align: center;
+  color: #FFFFFF;
+}
+/* line 1644, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #EF933F;
+  margin-top: 5px;
+}
+/* line 1655, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status {
+  margin-top: 10px;
+}
+/* line 1658, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #FFFFFF;
+  padding-left: 13px;
+  position: relative;
+}
+/* line 1668, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 8px;
+  height: 4px;
+  border-bottom: 1px solid #00DA74;
+  border-left: 1px solid #00DA74;
+  transform: rotate(-45deg);
+}
+/* line 1681, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #EF933F;
+  -webkit-clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 62%, 90% 100%, 100% 90%, 61% 51%, 100% 10%, 90% 0, 51% 40%);
+  clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 62%, 90% 100%, 100% 90%, 61% 51%, 100% 10%, 90% 0, 51% 40%);
+}
+/* line 1693, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li:last-of-type.status-ok,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li:last-of-type.status-ok,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li:last-of-type.status-ok,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li:last-of-type.status-ok,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li:last-of-type.status-ok {
+  color: #F2C94C;
+}
+/* line 1700, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total {
+  margin-top: 10px;
+}
+/* line 1702, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #00DA74;
+  padding-left: 13px;
+  position: relative;
+}
+/* line 1711, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: -1px;
+  width: 21px;
+  height: 11px;
+  border-bottom: 4px solid #00DA74;
+  border-left: 4px solid #00DA74;
+  transform: rotate(-50deg);
+  opacity: 0.2;
+}
+/* line 1725, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left {
+  width: 240px;
+  padding-top: 37px;
+}
+/* line 1729, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right {
+  width: 240px;
+}
+/* line 1731, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 37px;
+}
+/* line 1735, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  color: #00da74;
+  font-size: 10px;
+  opacity: 0.1;
+  transition: all .1s linear;
+  cursor: pointer;
+}
+/* line 1745, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number {
+  padding: 0 10px;
+}
+/* line 1748, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span {
+  font-size: 36px;
+  opacity: 1;
+}
+/* line 1753, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span, .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span {
+  font-size: 26px;
+  opacity: 0.7;
+}
+/* line 1758, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span, .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span {
+  font-size: 20px;
+  opacity: 0.5;
+}
+/* line 1763, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span, .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span {
+  font-size: 15px;
+  opacity: 0.3;
+}
+/* line 1771, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_link a.active,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_link a.active,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_link a.active,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_link a.active,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_link a.active {
+  background: #00DA74;
+}
+/* line 1776, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_description p:last-of-type,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_description p:last-of-type,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_description p:last-of-type,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_description p:last-of-type,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_description p:last-of-type {
+  color: #00DA74;
+}
+/* line 1780, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total {
+  position: relative;
+}
+/* line 1782, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide {
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  background: rgba(26, 27, 35, 0.7);
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: all .25s linear;
+  opacity: 0;
+}
+/* line 1791, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p {
+  font-family: 'Courier New';
+  font-size: 13px;
+  color: #fff;
+}
+/* line 1797, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_title p,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_title p,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_title p,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_title p,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_title p {
+  text-transform: uppercase;
+}
+/* line 1802, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table {
+  min-width: 195px;
+}
+/* line 1804, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 77, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left,
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right {
+  width: 50%;
+}
+/* line 1807, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left p,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left p,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left p,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left p,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left p {
+  text-align: right;
+}
+/* line 1811, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right {
+  padding-left: 10px;
+}
+/* line 1818, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total p:hover + .box_hide,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total p:hover + .box_hide,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total p:hover + .box_hide,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total p:hover + .box_hide,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total p:hover + .box_hide {
+  opacity: 1;
+}
+/* line 1824, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_bottom {
+  margin-top: 30px;
+}
+/* line 1826, ../sass/screen.scss */
+.main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
+.main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
+.main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
+.main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
+.main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_bottom p {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.1;
+  text-align: center;
+  color: #E0E0E0;
+}
+/* line 1845, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-header h3, .main_page #myModal.modal_audio .modal-content .modal-header h3, .main_page #myModal.modal_video .modal-content .modal-header h3,
+.main_page #myModal2.modal_passcode .modal-content .modal-header h3,
+.main_page #myModal2.modal_audio .modal-content .modal-header h3,
+.main_page #myModal2.modal_video .modal-content .modal-header h3,
+.main_page #myModal3.modal_passcode .modal-content .modal-header h3,
+.main_page #myModal3.modal_audio .modal-content .modal-header h3,
+.main_page #myModal3.modal_video .modal-content .modal-header h3,
+.main_page #myModal4.modal_passcode .modal-content .modal-header h3,
+.main_page #myModal4.modal_audio .modal-content .modal-header h3,
+.main_page #myModal4.modal_video .modal-content .modal-header h3,
+.main_page #myModal5.modal_passcode .modal-content .modal-header h3,
+.main_page #myModal5.modal_audio .modal-content .modal-header h3,
+.main_page #myModal5.modal_video .modal-content .modal-header h3 {
+  margin-top: 35px;
+}
+/* line 1850, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_passcode,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_passcode,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_passcode,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_passcode,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_passcode,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_passcode,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_passcode {
+  margin-top: 30px;
+}
+/* line 1852, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_button, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_button,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_button,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_passcode .box_button,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_passcode .box_button,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_passcode .box_button,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_passcode .box_button,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_passcode .box_button,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_passcode .box_button,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_passcode .box_button {
+  text-align: center;
+}
+/* line 1854, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_button label, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_button label,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_button label,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_passcode .box_button label,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_passcode .box_button label,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_passcode .box_button label,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_passcode .box_button label,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_passcode .box_button label,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_passcode .box_button label,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_passcode .box_button label {
+  display: block;
+  max-width: 432px;
+  margin: auto;
+  position: relative;
+}
+/* line 1859, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_button label .box_line,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_passcode .box_button label .box_line,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_passcode .box_button label .box_line,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_passcode .box_button label .box_line,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_passcode .box_button label .box_line {
+  position: absolute;
+  top: 92px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  width: 288px;
+}
+/* line 1867, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line .line, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_passcode .box_button label .box_line .line {
+  width: 43px;
+  height: 3px;
+  background: #e0e0e0;
+}
+/* line 1874, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button input, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_button input, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_button input,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_button input,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_passcode .box_button input,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_passcode .box_button input,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_passcode .box_button input,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_passcode .box_button input,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_passcode .box_button input,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_passcode .box_button input,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_passcode .box_button input {
+  display: inline-block;
+  width: 100%;
+  max-width: 432px;
+  background: rgba(217, 217, 217, 0.1);
+  border: 2px solid #E0E0E0;
+  border-radius: 10px;
+  padding: 25px 20px 25px 81px;
+  letter-spacing: 60px;
+  font-size: 60px;
+  color: #fff;
+}
+/* line 1887, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_attempt, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_attempt, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_attempt,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_attempt,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_attempt,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_passcode .box_attempt,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_attempt,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_passcode .box_attempt,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_passcode .box_attempt,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_attempt,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_passcode .box_attempt,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_passcode .box_attempt,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_attempt,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_passcode .box_attempt,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_passcode .box_attempt {
+  margin-top: 5px;
+}
+/* line 1889, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_attempt p, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_attempt p, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_attempt p,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_attempt p,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_attempt p,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_passcode .box_attempt p,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_attempt p,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_passcode .box_attempt p,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_passcode .box_attempt p,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_attempt p,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_passcode .box_attempt p,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_passcode .box_attempt p,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_attempt p,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_passcode .box_attempt p,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_passcode .box_attempt p {
+  font-family: 'Courier New';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.1;
+  text-align: center;
+  color: #E0E0E0;
+}
+/* line 1900, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_buttons, .main_page #myModal.modal_audio .modal-content .modal-body .box_buttons, .main_page #myModal.modal_video .modal-content .modal-body .box_buttons,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_buttons,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_buttons,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_buttons,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_buttons,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_buttons,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_buttons,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_buttons,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_buttons,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_buttons,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_buttons,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_buttons,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_buttons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  margin: 25px auto 0;
+  max-width: 264px;
+}
+/* line 1905, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_buttons span, .main_page #myModal.modal_audio .modal-content .modal-body .box_buttons span, .main_page #myModal.modal_video .modal-content .modal-body .box_buttons span,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_buttons span,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_buttons span,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_buttons span,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_buttons span,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_buttons span,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_buttons span,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_buttons span,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_buttons span,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_buttons span,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_buttons span,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_buttons span,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_buttons span {
+  font-family: 'Lavvo Personal Use';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  display: inline-block;
+  width: 100%;
+  max-width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+/* line 1920, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_buttons span.btn-1, .main_page #myModal.modal_audio .modal-content .modal-body .box_buttons span.btn-1, .main_page #myModal.modal_video .modal-content .modal-body .box_buttons span.btn-1,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_buttons span.btn-1,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_buttons span.btn-1,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_buttons span.btn-1,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_buttons span.btn-1,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_buttons span.btn-1,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_buttons span.btn-1,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_buttons span.btn-1,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_buttons span.btn-1,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_buttons span.btn-1,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_buttons span.btn-1,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_buttons span.btn-1,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_buttons span.btn-1 {
+  background: #00DA74;
+}
+/* line 1923, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_buttons span.btn-2, .main_page #myModal.modal_audio .modal-content .modal-body .box_buttons span.btn-2, .main_page #myModal.modal_video .modal-content .modal-body .box_buttons span.btn-2,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_buttons span.btn-2,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_buttons span.btn-2,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_buttons span.btn-2,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_buttons span.btn-2,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_buttons span.btn-2,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_buttons span.btn-2,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_buttons span.btn-2,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_buttons span.btn-2,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_buttons span.btn-2,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_buttons span.btn-2,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_buttons span.btn-2,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_buttons span.btn-2 {
+  background: #EB5757;
+}
+/* line 1926, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_buttons span:hover, .main_page #myModal.modal_audio .modal-content .modal-body .box_buttons span:hover, .main_page #myModal.modal_video .modal-content .modal-body .box_buttons span:hover,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_buttons span:hover,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_buttons span:hover,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_buttons span:hover,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_buttons span:hover,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_buttons span:hover,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_buttons span:hover,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_buttons span:hover,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_buttons span:hover,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_buttons span:hover,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_buttons span:hover,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_buttons span:hover,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_buttons span:hover {
+  background: #828282;
+}
+/* line 1931, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_bottom, .main_page #myModal.modal_audio .modal-content .modal-body .box_bottom, .main_page #myModal.modal_video .modal-content .modal-body .box_bottom,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_bottom,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_bottom,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_bottom,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_bottom,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_bottom,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_bottom,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_bottom,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_bottom,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_bottom,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_bottom,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_bottom,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_bottom {
+  margin-top: 60px;
+  padding-bottom: 45px;
+}
+/* line 1934, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_bottom .box_button, .main_page #myModal.modal_audio .modal-content .modal-body .box_bottom .box_button, .main_page #myModal.modal_video .modal-content .modal-body .box_bottom .box_button,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_bottom .box_button,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_bottom .box_button,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_bottom .box_button,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_bottom .box_button,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_bottom .box_button,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_bottom .box_button,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_bottom .box_button,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_bottom .box_button,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_bottom .box_button,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_bottom .box_button,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_bottom .box_button,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_bottom .box_button {
+  text-align: center;
+}
+/* line 1936, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_bottom .box_button .link, .main_page #myModal.modal_audio .modal-content .modal-body .box_bottom .box_button .link, .main_page #myModal.modal_video .modal-content .modal-body .box_bottom .box_button .link,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_bottom .box_button .link,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_bottom .box_button .link,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_bottom .box_button .link,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_bottom .box_button .link,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_bottom .box_button .link,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_bottom .box_button .link,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_bottom .box_button .link,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_bottom .box_button .link,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_bottom .box_button .link,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_bottom .box_button .link,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_bottom .box_button .link,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_bottom .box_button .link {
+  display: inline-block;
+  font-family: 'Lavvo Personal Use';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 224px;
+  background: #2D9CDB;
+  border-radius: 5px;
+  transition: all .2s linear;
+}
+/* line 1951, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_bottom .box_button .link:hover, .main_page #myModal.modal_audio .modal-content .modal-body .box_bottom .box_button .link:hover, .main_page #myModal.modal_video .modal-content .modal-body .box_bottom .box_button .link:hover,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_bottom .box_button .link:hover,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_bottom .box_button .link:hover,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_bottom .box_button .link:hover,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_bottom .box_button .link:hover,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_bottom .box_button .link:hover,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_bottom .box_button .link:hover,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_bottom .box_button .link:hover,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_bottom .box_button .link:hover,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_bottom .box_button .link:hover,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_bottom .box_button .link:hover,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_bottom .box_button .link:hover,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_bottom .box_button .link:hover {
+  background: #828282;
+}
+/* line 1956, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_bottom .box_text, .main_page #myModal.modal_audio .modal-content .modal-body .box_bottom .box_text, .main_page #myModal.modal_video .modal-content .modal-body .box_bottom .box_text,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_bottom .box_text,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_bottom .box_text,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_bottom .box_text,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_bottom .box_text,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_bottom .box_text,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_bottom .box_text,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_bottom .box_text,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_bottom .box_text,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_bottom .box_text,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_bottom .box_text,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_bottom .box_text,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_bottom .box_text {
+  margin-top: 10px;
+}
+/* line 1958, ../sass/screen.scss */
+.main_page #myModal.modal_passcode .modal-content .modal-body .box_bottom .box_text p, .main_page #myModal.modal_audio .modal-content .modal-body .box_bottom .box_text p, .main_page #myModal.modal_video .modal-content .modal-body .box_bottom .box_text p,
+.main_page #myModal2.modal_passcode .modal-content .modal-body .box_bottom .box_text p,
+.main_page #myModal2.modal_audio .modal-content .modal-body .box_bottom .box_text p,
+.main_page #myModal2.modal_video .modal-content .modal-body .box_bottom .box_text p,
+.main_page #myModal3.modal_passcode .modal-content .modal-body .box_bottom .box_text p,
+.main_page #myModal3.modal_audio .modal-content .modal-body .box_bottom .box_text p,
+.main_page #myModal3.modal_video .modal-content .modal-body .box_bottom .box_text p,
+.main_page #myModal4.modal_passcode .modal-content .modal-body .box_bottom .box_text p,
+.main_page #myModal4.modal_audio .modal-content .modal-body .box_bottom .box_text p,
+.main_page #myModal4.modal_video .modal-content .modal-body .box_bottom .box_text p,
+.main_page #myModal5.modal_passcode .modal-content .modal-body .box_bottom .box_text p,
+.main_page #myModal5.modal_audio .modal-content .modal-body .box_bottom .box_text p,
+.main_page #myModal5.modal_video .modal-content .modal-body .box_bottom .box_text p {
+  font-family: 'Courier New';
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.1;
+  text-align: center;
+  color: #FFFFFF;
+}
+/* line 1975, ../sass/screen.scss */
+.main_page #myModal.modal_audio .modal-dialog .modal-content .modal-header button,
+.main_page #myModal2.modal_audio .modal-dialog .modal-content .modal-header button,
+.main_page #myModal3.modal_audio .modal-dialog .modal-content .modal-header button,
+.main_page #myModal4.modal_audio .modal-dialog .modal-content .modal-header button,
+.main_page #myModal5.modal_audio .modal-dialog .modal-content .modal-header button {
+  top: -15px;
+  right: 1px;
+  width: 40px;
+  height: 45px;
+}
+/* line 1982, ../sass/screen.scss */
+.main_page #myModal.modal_audio .modal-dialog .modal-content .modal-body .box_audio,
+.main_page #myModal2.modal_audio .modal-dialog .modal-content .modal-body .box_audio,
+.main_page #myModal3.modal_audio .modal-dialog .modal-content .modal-body .box_audio,
+.main_page #myModal4.modal_audio .modal-dialog .modal-content .modal-body .box_audio,
+.main_page #myModal5.modal_audio .modal-dialog .modal-content .modal-body .box_audio {
+  width: 100%;
+  max-width: 584px;
+  margin: 30px auto 0;
+}
+/* line 1986, ../sass/screen.scss */
+.main_page #myModal.modal_audio .modal-dialog .modal-content .modal-body .box_audio audio,
+.main_page #myModal2.modal_audio .modal-dialog .modal-content .modal-body .box_audio audio,
+.main_page #myModal3.modal_audio .modal-dialog .modal-content .modal-body .box_audio audio,
+.main_page #myModal4.modal_audio .modal-dialog .modal-content .modal-body .box_audio audio,
+.main_page #myModal5.modal_audio .modal-dialog .modal-content .modal-body .box_audio audio {
+  display: block;
+  width: 100%;
+}
+/* line 1999, ../sass/screen.scss */
+.main_page #myModal.modal_video .modal-dialog .modal-content .modal-header button,
+.main_page #myModal2.modal_video .modal-dialog .modal-content .modal-header button,
+.main_page #myModal3.modal_video .modal-dialog .modal-content .modal-header button,
+.main_page #myModal4.modal_video .modal-dialog .modal-content .modal-header button,
+.main_page #myModal5.modal_video .modal-dialog .modal-content .modal-header button {
+  top: -3px;
+  right: 1px;
+  width: 40px;
+  height: 45px;
+}
+/* line 2006, ../sass/screen.scss */
+.main_page #myModal.modal_video .modal-dialog .modal-content .modal-body .box_video,
+.main_page #myModal2.modal_video .modal-dialog .modal-content .modal-body .box_video,
+.main_page #myModal3.modal_video .modal-dialog .modal-content .modal-body .box_video,
+.main_page #myModal4.modal_video .modal-dialog .modal-content .modal-body .box_video,
+.main_page #myModal5.modal_video .modal-dialog .modal-content .modal-body .box_video {
+  width: 100%;
+  max-width: 584px;
+  margin: 30px auto 0;
+}
+/* line 2010, ../sass/screen.scss */
+.main_page #myModal.modal_video .modal-dialog .modal-content .modal-body .box_video video,
+.main_page #myModal2.modal_video .modal-dialog .modal-content .modal-body .box_video video,
+.main_page #myModal3.modal_video .modal-dialog .modal-content .modal-body .box_video video,
+.main_page #myModal4.modal_video .modal-dialog .modal-content .modal-body .box_video video,
+.main_page #myModal5.modal_video .modal-dialog .modal-content .modal-body .box_video video {
+  display: block;
+  width: 100%;
+}
+@media (min-width: 600) and (max-width: 992px) {
+  /* line 2024, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog,
+  .main_page #myModal2 .modal-dialog {
+    width: 95%;
+  }
+  /* line 2026, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content,
+  .main_page #myModal2 .modal-dialog .modal-content {
+    padding: 2.778vw;
+  }
+  /* line 2028, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-header,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-header {
+    padding-top: 2.222vw;
+  }
+  /* line 2030, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-header h3,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-header h3 {
+    font-size: 5vw;
+  }
+  /* line 2033, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-header p,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-header p {
+    font-size: 1.889vw;
+  }
+  /* line 2036, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-header button {
+    top: -.333vw;
+    right: .111vw;
+    width: 26px;
+    height: 26px;
+  }
+  /* line 2044, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points {
+    max-width: 624px;
+    margin: 2.778vw auto 0;
+    border-radius: 1.111vw;
+    padding: 1.111vw 1.667vw;
+  }
+  /* line 2049, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions {
+    height: 19.444vw;
+    border-bottom: .111vw solid #F2F2F2;
+    padding-bottom: 1.667vw;
+  }
+  /* line 2054, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar {
+    width: .667vw;
+    /* ширина всей полосы прокрутки */
+  }
+  /* line 2057, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-thumb,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-thumb {
+    border-radius: 2.222vw;
+    /* округлось бегунка */
+  }
+  /* line 2060, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box {
+    padding-right: 2.222vw;
+  }
+  /* line 2062, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span {
+    font-size: 1.8889vw;
+  }
+  /* line 2065, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point {
+    padding: 0 2.222vw;
+  }
+  /* line 2071, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_total span,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_total span {
+    font-size: 1.8889vw;
+  }
+  /* line 2074, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_total .box_point,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_total .box_point {
+    padding-left: 1.667vw;
+  }
+  /* line 2079, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_link,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_link {
+    margin: 4.444vw auto 6.667vw;
+  }
+  /* line 2081, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_link a,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_link a {
+    font-size: 3.555vw;
+    border-radius: .555vw;
+    padding: 1.111vw 3.555vw;
+  }
+}
+@media (max-width: 900px) {
+  /* line 2098, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal3 .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal4 .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal5 .modal-dialog .modal-content .modal-header button {
+    top: -5px;
+    right: -0.8vw;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 600px) {
+  /* line 2113, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog::after,
+  .main_page #myModal2 .modal-dialog::after,
+  .main_page #myModal3 .modal-dialog::after,
+  .main_page #myModal4 .modal-dialog::after,
+  .main_page #myModal5 .modal-dialog::after {
+    background-image: url(../images/modal_bg_mobile.webp);
+  }
+  /* line 2118, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-header h3,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-header h3,
+  .main_page #myModal3 .modal-dialog .modal-content .modal-header h3,
+  .main_page #myModal4 .modal-dialog .modal-content .modal-header h3,
+  .main_page #myModal5 .modal-dialog .modal-content .modal-header h3 {
+    font-size: 30px;
+  }
+  /* line 2121, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-header p,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-header p,
+  .main_page #myModal3 .modal-dialog .modal-content .modal-header p,
+  .main_page #myModal4 .modal-dialog .modal-content .modal-header p,
+  .main_page #myModal5 .modal-dialog .modal-content .modal-header p {
+    font-size: 13px;
+  }
+  /* line 2124, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal3 .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal4 .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal5 .modal-dialog .modal-content .modal-header button {
+    top: -19px;
+    right: -2.8vw;
+    width: 30px;
+    height: 30px;
+  }
+  /* line 2131, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points,
+  .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points,
+  .main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points,
+  .main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points {
+    padding: 10px 5px 10px 10px;
+  }
+  /* line 2133, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
+  .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
+  .main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
+  .main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions .box {
+    padding-right: 8px;
+  }
+  /* line 2135, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
+  .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
+  .main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
+  .main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span {
+    font-size: 12px;
+  }
+  /* line 2138, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
+  .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
+  .main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
+  .main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name {
+    width: 55%;
+  }
+  /* line 2141, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
+  .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
+  .main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
+  .main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point {
+    padding: 0 10px;
+  }
+  /* line 2144, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
+  .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
+  .main_page #myModal4 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
+  .main_page #myModal5 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status {
+    width: 25%;
+  }
+  /* line 2153, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content {
+    padding: 4.167vw 4.167vw 10vw 4.167vw;
+  }
+  /* line 2155, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-header h3,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-header h3,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-header h3,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-header h3,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-header h3 {
+    font-size: 7.667vw;
+  }
+  /* line 2158, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body {
+    padding: 5vw 1.667vw 0;
+  }
+  /* line 2162, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a {
+    max-width: 40vw;
+    font-size: 5.333vw;
+    border-radius: .8333vw;
+    padding: 1.667vw 3.333vw;
+  }
+  /* line 2169, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description {
+    margin-top: .8333vw;
+  }
+  /* line 2171, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type {
+    font-size: 2.8333vw;
+  }
+  /* line 2174, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type {
+    font-size: 2.8333vw;
+    line-height: 1.1;
+    margin-top: .8333vw;
+  }
+  /* line 2180, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status {
+    margin-top: 1.667vw;
+  }
+  /* line 2183, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li {
+    font-size: 2.8333vw;
+    padding-left: 2.1667vw;
+  }
+  /* line 2187, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before {
+    content: '';
+    top: 1vw;
+    width: 1.333vw;
+    height: .6667vw;
+    border-bottom: .167vw solid #00DA74;
+    border-left: .167vw solid #00DA74;
+  }
+  /* line 2197, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before {
+    content: '';
+    top: 1vw;
+    width: 1.667vw;
+    height: 1.667vw;
+  }
+  /* line 2208, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total {
+    margin-top: 1.667vw;
+  }
+  /* line 2210, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p {
+    font-size: 3.333vw;
+    line-height: 1.1;
+    padding-left: 2.1667vw;
+  }
+  /* line 2214, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before {
+    content: '';
+    top: -.167vw;
+    width: 3.5vw;
+    height: 1.8333vw;
+    border-bottom: .667vw solid #00DA74;
+    border-left: .667vw solid #00DA74;
+  }
+  /* line 2224, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left {
+    width: 40vw;
+    padding-top: 6.1667vw;
+  }
+  /* line 2228, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right {
+    width: 40vw;
+  }
+  /* line 2230, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount {
+    height: 6.16667vw;
+  }
+  /* line 2232, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span {
+    font-size: 1.667vw;
+  }
+  /* line 2235, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number {
+    padding: 0 1.667vw;
+  }
+  /* line 2238, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span {
+    font-size: 6vw;
+  }
+  /* line 2242, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span, .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span {
+    font-size: 4.333vw;
+  }
+  /* line 2246, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span, .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span {
+    font-size: 3.333vw;
+  }
+  /* line 2250, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span, .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span {
+    font-size: 2.5vw;
+  }
+  /* line 2257, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide {
+    padding: 1.667vw 2.5vw;
+  }
+  /* line 2259, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p {
+    font-size: 2.1667vw;
+  }
+  /* line 2263, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table {
+    min-width: 32.5vw;
+  }
+  /* line 2266, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right {
+    padding-left: 1.667vw;
+  }
+  /* line 2276, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_bottom {
+    margin-top: 5vw;
+  }
+  /* line 2278, ../sass/screen.scss */
+  .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
+  .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
+  .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
+  .main_page #myModal4.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
+  .main_page #myModal5.modal_options .modal-dialog .modal-content .modal-body .box_bottom p {
+    font-size: 2.8333vw;
+  }
+}
+@media (max-width: 480px) {
+  /* line 2294, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal3 .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal4 .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal5 .modal-dialog .modal-content .modal-header button {
+    right: -4.3vw;
+  }
+  /* line 2298, ../sass/screen.scss */
+  .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
+  .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
+  .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
+  .main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
+  .main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button label {
+    max-width: 290px;
+  }
+  /* line 2300, ../sass/screen.scss */
+  .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
+  .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
+  .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
+  .main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
+  .main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line {
+    top: 64px;
+    width: 212px;
+  }
+  /* line 2303, ../sass/screen.scss */
+  .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+  .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+  .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+  .main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+  .main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line {
+    width: 34px;
+  }
+  /* line 2308, ../sass/screen.scss */
+  .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
+  .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
+  .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
+  .main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
+  .main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button input {
+    max-width: 290px;
+    padding: 15px 20px 15px 47px;
+    letter-spacing: 45px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 2323, ../sass/screen.scss */
+  .main_page #myModal .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal2 .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal3 .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal4 .modal-dialog .modal-content .modal-header button,
+  .main_page #myModal5 .modal-dialog .modal-content .modal-header button {
+    right: -5.3vw;
+  }
+  /* line 2327, ../sass/screen.scss */
+  .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
+  .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
+  .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
+  .main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
+  .main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button label {
+    max-width: 250px;
+  }
+  /* line 2329, ../sass/screen.scss */
+  .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
+  .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
+  .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
+  .main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
+  .main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line {
+    top: 58px;
+    width: 184px;
+  }
+  /* line 2332, ../sass/screen.scss */
+  .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+  .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+  .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+  .main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
+  .main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line {
+    width: 30px;
+  }
+  /* line 2337, ../sass/screen.scss */
+  .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
+  .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
+  .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
+  .main_page #myModal4.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
+  .main_page #myModal5.modal_passcode .modal-content .modal-body .box_passcode .box_button input {
+    max-width: 250px;
+    padding: 15px 15px 15px 42px;
+    letter-spacing: 39px;
+    font-size: 34px;
+  }
+}
+
+@keyframes myAnim {
+  0%,
+	50%,
+	100% {
+    opacity: 1;
+  }
+  25%,
+	75% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes animation-leaf {
+  0% {
+    background-position: right top;
+  }
+  10% {
+    background-position: right -.4vw top -.4vw;
+  }
+  20% {
+    background-position: right -.8vw top -.8vw;
+  }
+  30% {
+    background-position: right -1.2vw top -1.2vw;
+  }
+  40% {
+    background-position: right -1.6vw top -1.6vw;
+  }
+  50% {
+    background-position: right -2vw top -2vw;
+  }
+  51% {
+    background-position: right -1,4vw top -1,4vw;
+  }
+  52% {
+    background-position: right -2vw top -2vw;
+  }
+  53% {
+    background-position: right -1.4vw top -1.4vw;
+  }
+  54% {
+    background-position: right -2vw top -2vw;
+  }
+  55% {
+    background-position: right -1,4vw top -1,4vw;
+  }
+  56% {
+    background-position: right -2vw top -2vw;
+  }
+  57% {
+    background-position: right -1.4vw top -1.4vw;
+  }
+  58% {
+    background-position: right -2vw top -2vw;
+  }
+  60% {
+    background-position: right -1.6vw top -1.6vw;
+  }
+  70% {
+    background-position: right -1.2vw top -1.2vw;
+  }
+  80% {
+    background-position: right -.8vw top -.8vw;
+  }
+  90% {
+    background-position: right -.4vw top -.4vw;
+  }
+  100% {
+    background-position: right top;
+  }
+}
+@keyframes animation-leaf {
+  0% {
+    background-position: right top;
+  }
+  10% {
+    background-position: right -.4vw top -.4vw;
+  }
+  20% {
+    background-position: right -.8vw top -.8vw;
+  }
+  30% {
+    background-position: right -1.2vw top -1.2vw;
+  }
+  40% {
+    background-position: right -1.6vw top -1.6vw;
+  }
+  50% {
+    background-position: right -2vw top -2vw;
+  }
+  51% {
+    background-position: right -1,4vw top -1,4vw;
+  }
+  52% {
+    background-position: right -2vw top -2vw;
+  }
+  53% {
+    background-position: right -1.4vw top -1.4vw;
+  }
+  54% {
+    background-position: right -2vw top -2vw;
+  }
+  55% {
+    background-position: right -1,4vw top -1,4vw;
+  }
+  56% {
+    background-position: right -2vw top -2vw;
+  }
+  57% {
+    background-position: right -1.4vw top -1.4vw;
+  }
+  58% {
+    background-position: right -2vw top -2vw;
+  }
+  60% {
+    background-position: right -1.6vw top -1.6vw;
+  }
+  70% {
+    background-position: right -1.2vw top -1.2vw;
+  }
+  80% {
+    background-position: right -.8vw top -.8vw;
+  }
+  90% {
+    background-position: right -.4vw top -.4vw;
+  }
+  100% {
+    background-position: right top;
+  }
+}
+@-webkit-keyframes animation-shadow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animation-shadow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes animation-button-4 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(30px, 30px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes animation-button-4 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(30px, 30px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-webkit-keyframes animation-button-7 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes animation-button-7 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes fall {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(0deg);
+  }
+  10% {
+    transform-origin: left bottom;
+    transform: rotate(50deg);
+  }
+  20% {
+    transform-origin: left bottom;
+    transform: rotate(100deg);
+  }
+  30% {
+    transform-origin: left bottom;
+    transform: rotate(150deg);
+  }
+  38% {
+    transform-origin: left bottom;
+    transform: rotate(110deg);
+  }
+  42% {
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+  }
+  52% {
+    transform-origin: left bottom;
+    transform: rotate(140deg);
+  }
+  61% {
+    transform-origin: left bottom;
+    transform: rotate(105deg);
+  }
+  68% {
+    transform-origin: left bottom;
+    transform: rotate(130deg);
+  }
+  73% {
+    transform-origin: left bottom;
+    transform: rotate(115deg);
+  }
+  77% {
+    transform-origin: left bottom;
+    transform: rotate(125deg);
+  }
+  90% {
+    transform-origin: left bottom;
+    transform: rotate(125deg);
+  }
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(125deg);
+  }
+}
+@keyframes bounce {
+  0%,
+	50%,
+	100% {
+    opacity: 1;
+  }
+  25%,
+	75% {
+    opacity: 0;
+  }
+}
+@keyframes jello {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+@keyframes wobble {
+  0%,
+	100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes bounce-left {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateX(-48px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateX(-26px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateX(-13px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateX(-6.5px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateX(-4px);
+  }
+  25%,
+	55%,
+	75%,
+	87%,
+	98% {
+    animation-timing-function: ease-out;
+    transform: translateX(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
