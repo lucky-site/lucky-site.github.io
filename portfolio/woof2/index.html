@@ -745,12 +745,12 @@
 
 window.onload = function() {
   
-  var file = document.getElementById("thefile");
+  var box_audio = document.getElementById("content");
   var myButton = document.getElementById("myButton");
   var audio = document.getElementById("audio");
   
   myButton.onclick = function() {
-    var files = this.files;
+    // var files = this.files;
     // audio.src = URL.createObjectURL(files[0]);
     // audio.load();
     audio.play();
@@ -759,8 +759,8 @@ window.onload = function() {
     var analyser = context.createAnalyser();
 
     var canvas = document.getElementById("canvas");
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = box_audio.innerWidth;
+    canvas.height = box_audio.innerHeight;
     var ctx = canvas.getContext("2d");
 
     src.connect(analyser);
