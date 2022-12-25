@@ -759,8 +759,8 @@ window.onload = function() {
     var analyser = context.createAnalyser();
 
     var canvas = document.getElementById("canvas");
-    canvas.width = box_audio.innerWidth;
-    canvas.height = box_audio.innerHeight;
+    canvas.width = '100%';
+    canvas.height = '100%';
     var ctx = canvas.getContext("2d");
 
     src.connect(analyser);
