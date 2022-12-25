@@ -615,7 +615,7 @@
                     <input type="file" id="thefile" accept="audio/*" />
                     <input type="button" id="myButton" value="click me">
                     <canvas id="canvas"></canvas>
-                    <audio src="media/shchedrivka.mp3" id="audio" controls></audio>
+                    <audio src="media/shchedrivka.mp3" class="av-tag" id="audio" controls></audio>
                   </div>
                 </div>
               </div>
@@ -747,7 +747,8 @@
 document.addEventListener("DOMContentLoaded", (e)=> {
 
 //dom об'єкти елементів контролю
-          var av = document.getElementById("av-tag");
+          // var av = document.getElementById("av-tag");
+          var av = document.querySelector(".av-tag");
           var playTime = document.getElementsByClassName("play-time")[0];
           var playBtn=document.getElementsByClassName("play-btn")[0];
           var curTime=document.getElementById("cur-time");
@@ -816,19 +817,15 @@ document.addEventListener("DOMContentLoaded", (e)=> {
         });
 
 
-    });
 
 
-
-window.onload = function() {
-  
-  var box_audio = document.getElementById("content");
+        var box_audio = document.getElementById("content");
   var myButton = document.getElementById("myButton");
   var audio = document.getElementById("audio");
 
   
   
-  myButton.onclick = function() {
+  av.onclick = function() {
     console.log(box_audio.offsetHeight);
     // var files = this.files;
     // audio.src = URL.createObjectURL(files[0]);
@@ -867,7 +864,7 @@ window.onload = function() {
 
       analyser.getByteFrequencyData(dataArray);
 
-      ctx.fillStyle = "transparent";
+      ctx.fillStyle = "#303242";
       ctx.fillRect(0, 0, WIDTH, HEIGHT);
 
       for (var i = 0; i < bufferLength; i++) {
@@ -887,7 +884,14 @@ window.onload = function() {
     audio.play();
     renderFrame();
   };
-};
+    });
+
+
+
+// window.onload = function() {
+  
+
+// };
 
 
       let btn_sound = document.querySelector('.btn-6');
