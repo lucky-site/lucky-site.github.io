@@ -748,8 +748,11 @@ window.onload = function() {
   var box_audio = document.getElementById("content");
   var myButton = document.getElementById("myButton");
   var audio = document.getElementById("audio");
+
+  
   
   myButton.onclick = function() {
+    console.log(box_audio.offsetHeight);
     // var files = this.files;
     // audio.src = URL.createObjectURL(files[0]);
     // audio.load();
@@ -759,10 +762,10 @@ window.onload = function() {
     var analyser = context.createAnalyser();
 
     var canvas = document.getElementById("canvas");
-    canvas.width = '100%';
-    canvas.height = '100%';
+    canvas.width = box_audio.offsetWidth;
+    canvas.height = box_audio.offsetHeight;
     var ctx = canvas.getContext("2d");
-
+    
     src.connect(analyser);
     analyser.connect(context.destination);
 
