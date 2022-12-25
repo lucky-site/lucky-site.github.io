@@ -599,7 +599,7 @@
                         Download audio
                     </a>
                 </audio> -->
-                <!-- <div class="player">
+                <div class="player">
                   <audio id="av-tag" controls><source src="media/shchedrivka.mp3" type="audio/mp3">
                   Your browser does not support the audio element.
                   </audio>
@@ -608,6 +608,15 @@
                   <input id="cur-time" type="range" min="0" max="10" step="0">
                   <div id="speaker">🔊</div>
                   <input id="volume" type="range" min="0" max="10">
+
+
+
+                  <div id="content">
+                    <input type="file" id="thefile" accept="audio/*" />
+                    <input type="button" id="myButton" value="click me">
+                    <canvas id="canvas"></canvas>
+                    <audio src="media/shchedrivka.mp3" id="audio" controls></audio>
+                  </div>
                 </div>
               </div>
               <div class="box_bottom">
@@ -616,13 +625,6 @@
                 </div>
                 <div class="box_text">
                   <p>Tweet to get extra points</p>
-                </div> -->
-
-                <div id="content">
-                  <input type="file" id="thefile" accept="audio/*" />
-                  <input type="button" id="myButton" value="click me">
-                  <canvas id="canvas"></canvas>
-                  <audio src="media/shchedrivka.mp3" id="audio" controls></audio>
                 </div>
               </div>
             </div>
@@ -742,6 +744,81 @@
     <script src="js/main.js"></script>
 
     <script>
+document.addEventListener("DOMContentLoaded", (e)=> {
+
+//dom об'єкти елементів контролю
+          var av = document.getElementById("av-tag");
+          var playTime = document.getElementsByClassName("play-time")[0];
+          var playBtn=document.getElementsByClassName("play-btn")[0];
+          var curTime=document.getElementById("cur-time");
+          var volume = document.getElementById("volume");
+          var speaker=document.getElementById("speaker");
+
+//змінна для того, щоб відстежувати чи відбувається відтворення звуку
+          var isPlaying = false;
+
+          av.onloadedmetadata = function() {
+            curTime.max=av.duration;
+            };
+            
+//функція виведення поточного часу відтворення
+          av.ontimeupdate=function() {
+            
+              var sec_num = av.currentTime;
+              var hours   = Math.floor(sec_num / 3600);
+              var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+              var seconds = sec_num - (hours * 3600) - (minutes * 60);
+              seconds=Math.round(seconds);
+
+              if (hours < 10) {
+                hours   = "0"+hours;
+              }
+              if (minutes < 10) {
+                minutes = "0"+minutes;
+              }
+              if (seconds < 10) { seconds = "0"+seconds; } playTime.innerHTML = minutes+':'+seconds; 
+              if(isPlaying) curTime.value=av.currentTime; 
+         }; 
+//функція для встановлення гучності
+         volume.onchange=function() { 
+
+              av.volume = volume.value/10;
+         }; 
+//функція для встановлення початку відтворення
+         curTime.onchange=function() { 
+
+              av.pause(); av.currentTime=curTime.value; av.play(); 
+         }; 
+//функція для вімк/вивмк гучності
+         speaker.onclick=function() { 
+         
+          if(volume.value==0) { 
+             volume.value=10; av.volume=1;
+          } else { 
+             volume.value=0; av.volume=0;
+          } }; 
+//функція для play/pause та зображення кнопки відтворення
+         playBtn.addEventListener("click", (a)=> {
+
+          if(isPlaying)
+          {
+            av.pause();
+            isPlaying=false;
+            playBtn.innerHTML="►";
+          }
+          else
+          {
+            av.play();
+            isPlaying=true;
+            playBtn.innerHTML="❚❚";
+          }
+          
+        });
+
+
+    });
+
+
 
 window.onload = function() {
   
@@ -790,7 +867,7 @@ window.onload = function() {
 
       analyser.getByteFrequencyData(dataArray);
 
-      ctx.fillStyle = "#000";
+      ctx.fillStyle = "transparent";
       ctx.fillRect(0, 0, WIDTH, HEIGHT);
 
       for (var i = 0; i < bufferLength; i++) {
