@@ -602,15 +602,15 @@
                 <canvas id='canvas' width="800" height="350"></canvas>
                 <br>
                 <br>
-                <audio src="media/shchedrivka.mp3" id="audio" controls>audio element not supported</audio>
+                <audio src="media/Superstar.mp3" id="audio" controls>audio element not supported</audio>
                 <!-- <audio id="av-tag" controls><source src="media/shchedrivka.mp3" type="audio/mp3">
                   Your browser does not support the audio element.
-                </audio>
+                </audio> -->
                 <div id="controls" class="hidden">
                   <a id="playBtn">Play</a>
                   <span id="timer">00:00</span>
                   <input type="range" step="0.1" min="0" max="1" value="0" id="volume" />
-                </div> -->
+                </div>
               </div>
               <div class="box_bottom">
                 <div class="box_button">
@@ -801,34 +801,34 @@ audio.onplay = function(){
     start();
 }
 		        // получаем все элементы
-            // var videoEl = document.getElementById('av-tag'),
-            // playBtn = document.getElementById('playBtn'),
-            // vidControls = document.getElementById('controls'),
-            // volumeControl = document.getElementById('volume'),
-            // timePicker = document.getElementById('timer');
+            var videoEl = document.getElementById('audio'),
+            playBtn = document.getElementById('playBtn'),
+            vidControls = document.getElementById('controls'),
+            volumeControl = document.getElementById('volume'),
+            timePicker = document.getElementById('timer');
 
 		        // запускам или останавливаем воспроизведение
-		// playBtn.addEventListener('click', function () {
-    //         if (videoEl.paused) {
-    //             videoEl.play();
-    //         } else {
-    //             videoEl.pause();
-    //         }
-    //     }, false);
+		playBtn.addEventListener('click', function () {
+            if (videoEl.paused) {
+                videoEl.play();
+            } else {
+                videoEl.pause();
+            }
+        }, false);
 
 
-    //     videoEl.addEventListener('play', function () {
+        videoEl.addEventListener('play', function () {
 
 
-    //         playBtn.innerText = "Pause";
-    //     }, false);
+            playBtn.innerText = "Pause";
+        }, false);
 
 
-    //     videoEl.addEventListener('pause', function () {
+        videoEl.addEventListener('pause', function () {
 
 
-    //         playBtn.innerText = "Play";
-    //     }, false);
+            playBtn.innerText = "Play";
+        }, false);
 
 
 
