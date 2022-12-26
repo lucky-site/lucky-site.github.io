@@ -599,25 +599,18 @@
                         Download audio
                     </a>
                 </audio> -->
-                <div class="player">
-                  <audio id="av-tag" controls><source src="media/shchedrivka.mp3" type="audio/mp3">
+                <canvas id='canvas' width="800" height="350"></canvas>
+                <br>
+                <br>
+                <audio src="media/shchedrivka.mp3" id="audio" controls>audio element not supported</audio>
+                <!-- <audio id="av-tag" controls><source src="media/shchedrivka.mp3" type="audio/mp3">
                   Your browser does not support the audio element.
-                  </audio>
-                  <button class="play-btn">►</button>
-                  <div class="play-time">1:00</div>
-                  <input id="cur-time" type="range" min="0" max="10" step="0">
-                  <div id="speaker">🔊</div>
-                  <input id="volume" type="range" min="0" max="10">
-
-
-
-                  <div id="content">
-                    <input type="file" id="thefile" accept="audio/*" />
-                    <input type="button" id="myButton" value="click me">
-                    <canvas id="canvas"></canvas>
-                    <audio src="media/shchedrivka.mp3" class="av-tag" id="audio" controls></audio>
-                  </div>
-                </div>
+                </audio>
+                <div id="controls" class="hidden">
+                  <a id="playBtn">Play</a>
+                  <span id="timer">00:00</span>
+                  <input type="range" step="0.1" min="0" max="1" value="0" id="volume" />
+                </div> -->
               </div>
               <div class="box_bottom">
                 <div class="box_button">
@@ -740,159 +733,106 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     
-    <script src="js/slick.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
     <script src="js/main.js"></script>
 
     <script>
-document.addEventListener("DOMContentLoaded", (e)=> {
-
-//dom об'єкти елементів контролю
-          // var av = document.getElementById("av-tag");
-          var av = document.querySelector(".av-tag");
-          var playTime = document.getElementsByClassName("play-time")[0];
-          var playBtn=document.getElementsByClassName("play-btn")[0];
-          var curTime=document.getElementById("cur-time");
-          var volume = document.getElementById("volume");
-          var speaker=document.getElementById("speaker");
-
-//змінна для того, щоб відстежувати чи відбувається відтворення звуку
-          var isPlaying = false;
-
-          av.onloadedmetadata = function() {
-            curTime.max=av.duration;
-            };
-            
-//функція виведення поточного часу відтворення
-          av.ontimeupdate=function() {
-            
-              var sec_num = av.currentTime;
-              var hours   = Math.floor(sec_num / 3600);
-              var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
-              var seconds = sec_num - (hours * 3600) - (minutes * 60);
-              seconds=Math.round(seconds);
-
-              if (hours < 10) {
-                hours   = "0"+hours;
-              }
-              if (minutes < 10) {
-                minutes = "0"+minutes;
-              }
-              if (seconds < 10) { seconds = "0"+seconds; } playTime.innerHTML = minutes+':'+seconds; 
-              if(isPlaying) curTime.value=av.currentTime; 
-         }; 
-//функція для встановлення гучності
-         volume.onchange=function() { 
-
-              av.volume = volume.value/10;
-         }; 
-//функція для встановлення початку відтворення
-         curTime.onchange=function() { 
-
-              av.pause(); av.currentTime=curTime.value; av.play(); 
-         }; 
-//функція для вімк/вивмк гучності
-         speaker.onclick=function() { 
-         
-          if(volume.value==0) { 
-             volume.value=10; av.volume=1;
-          } else { 
-             volume.value=0; av.volume=0;
-          } }; 
-//функція для play/pause та зображення кнопки відтворення
-         playBtn.addEventListener("click", (a)=> {
-
-          if(isPlaying)
-          {
-            av.pause();
-            isPlaying=false;
-            playBtn.innerHTML="►";
-          }
-          else
-          {
-            av.play();
-            isPlaying=true;
-            playBtn.innerHTML="❚❚";
-          }
-          
-        });
 
 
+window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext;
 
+var start = function() {
+    var audio = document.getElementById('audio');
+    var ctx = new AudioContext();
+    var analyser = ctx.createAnalyser();
+    var audioSrc = ctx.createMediaElementSource(audio);
+    // we have to connect the MediaElementSource with the analyser 
+    audioSrc.connect(analyser);
+    analyser.connect(ctx.destination);
+    // we could configure the analyser: e.g. analyser.fftSize (for further infos read the spec)
+    // analyser.fftSize = 64;
+    // frequencyBinCount tells you how many values you'll receive from the analyser
+    var frequencyData = new Uint8Array(analyser.frequencyBinCount);
 
-        var box_audio = document.getElementById("content");
-  var myButton = document.getElementById("myButton");
-  var audio = document.getElementById("audio");
-
-  
-  
-  av.onclick = function() {
-    console.log(box_audio.offsetHeight);
-    // var files = this.files;
-    // audio.src = URL.createObjectURL(files[0]);
-    // audio.load();
-    audio.play();
-    var context = new AudioContext();
-    var src = context.createMediaElementSource(audio);
-    var analyser = context.createAnalyser();
-
-    var canvas = document.getElementById("canvas");
-    canvas.width = box_audio.offsetWidth;
-    canvas.height = box_audio.offsetHeight;
-    var ctx = canvas.getContext("2d");
-    
-    src.connect(analyser);
-    analyser.connect(context.destination);
-
-    analyser.fftSize = 256;
-
-    var bufferLength = analyser.frequencyBinCount;
-    console.log(bufferLength);
-
-    var dataArray = new Uint8Array(bufferLength);
-
-    var WIDTH = canvas.width;
-    var HEIGHT = canvas.height;
-
-    var barWidth = (WIDTH / bufferLength) * 2.5;
-    var barHeight;
-    var x = 0;
-
+    // we're ready to receive some data!
+    var canvas = document.getElementById('canvas'),
+        cwidth = canvas.width,
+        cheight = canvas.height - 2,
+        meterWidth = 10, //width of the meters in the spectrum
+        gap = 2, //gap between meters
+        capHeight = 2,
+        capStyle = '#fff',
+        meterNum = 800 / (10 + 2), //count of the meters
+        capYPositionArray = []; ////store the vertical position of hte caps for the preivous frame
+    ctx = canvas.getContext('2d'),
+    gradient = ctx.createLinearGradient(0, 0, 0, 300);
+    gradient.addColorStop(1, '#0f0');
+    gradient.addColorStop(0.5, '#ff0');
+    gradient.addColorStop(0, '#f00');
+    // loop
     function renderFrame() {
-      requestAnimationFrame(renderFrame);
-
-      x = 0;
-
-      analyser.getByteFrequencyData(dataArray);
-
-      ctx.fillStyle = "#303242";
-      ctx.fillRect(0, 0, WIDTH, HEIGHT);
-
-      for (var i = 0; i < bufferLength; i++) {
-        barHeight = dataArray[i];
-        
-        var r = barHeight + (25 * (i/bufferLength));
-        var g = 250 * (i/bufferLength);
-        var b = 50;
-
-        ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
-        ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
-
-        x += barWidth + 1;
-      }
+        var array = new Uint8Array(analyser.frequencyBinCount);
+        analyser.getByteFrequencyData(array);
+        var step = Math.round(array.length / meterNum); //sample limited data from the total array
+        ctx.clearRect(0, 0, cwidth, cheight);
+        for (var i = 0; i < meterNum; i++) {
+            var value = array[i * step];
+            if (capYPositionArray.length < Math.round(meterNum)) {
+                capYPositionArray.push(value);
+            };
+            ctx.fillStyle = capStyle;
+            //draw the cap, with transition effect
+            if (value < capYPositionArray[i]) {
+                ctx.fillRect(i * 12, cheight - (--capYPositionArray[i]), meterWidth, capHeight);
+            } else {
+                ctx.fillRect(i * 12, cheight - value, meterWidth, capHeight);
+                capYPositionArray[i] = value;
+            };
+            ctx.fillStyle = gradient; //set the filllStyle to gradient for a better look
+            ctx.fillRect(i * 12 /*meterWidth+gap*/ , cheight - value + capHeight, meterWidth, cheight); //the meter
+        }
+        requestAnimationFrame(renderFrame);
     }
-
-    audio.play();
     renderFrame();
-  };
-    });
+    // audio.play();
+};
+
+audio.onplay = function(){
+    start();
+}
+		        // получаем все элементы
+            // var videoEl = document.getElementById('av-tag'),
+            // playBtn = document.getElementById('playBtn'),
+            // vidControls = document.getElementById('controls'),
+            // volumeControl = document.getElementById('volume'),
+            // timePicker = document.getElementById('timer');
+
+		        // запускам или останавливаем воспроизведение
+		// playBtn.addEventListener('click', function () {
+    //         if (videoEl.paused) {
+    //             videoEl.play();
+    //         } else {
+    //             videoEl.pause();
+    //         }
+    //     }, false);
+
+
+    //     videoEl.addEventListener('play', function () {
+
+
+    //         playBtn.innerText = "Pause";
+    //     }, false);
+
+
+    //     videoEl.addEventListener('pause', function () {
+
+
+    //         playBtn.innerText = "Play";
+    //     }, false);
 
 
 
-// window.onload = function() {
-  
-
-// };
-
+        // music and lamp
 
       let btn_sound = document.querySelector('.btn-6');
       let btn_lamp = document.querySelector('.btn-7');
