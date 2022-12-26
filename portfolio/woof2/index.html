@@ -599,18 +599,29 @@
                         Download audio
                     </a>
                 </audio> -->
-                <canvas id='canvas' width="800" height="350"></canvas>
+                <!-- <canvas id='canvas' width="800" height="350"></canvas>
                 <br>
                 <br>
-                <audio src="media/Superstar.mp3" id="audio" controls>audio element not supported</audio>
-                <!-- <audio id="av-tag" controls><source src="media/shchedrivka.mp3" type="audio/mp3">
+                <audio src="media/Superstar.mp3" id="audio" controls>audio element not supported</audio> -->
+                
+                <div class="player">
+                  <canvas id='canvas' width="800" height="350"></canvas>
+                  <audio id="audio" controls>
+                    <source src="media/Superstar.mp3" type="audio/mp3">
                   Your browser does not support the audio element.
-                </audio> -->
-                <div id="controls" class="hidden">
+                  </audio>
+                  <button class="play-btn">►</button>
+                  <div class="play-time">1:00</div>
+                  <input id="cur-time" type="range" min="0" max="10" step="0">
+                  <div id="speaker">🔊</div>
+                  <input id="volume" type="range" min="0" max="10">
+                </div>
+
+                <!-- <div id="controls" class="hidden">
                   <a id="playBtn">Play</a>
                   <span id="timer">00:00</span>
                   <input type="range" step="0.1" min="0" max="1" value="0" id="volume" />
-                </div>
+                </div> -->
               </div>
               <div class="box_bottom">
                 <div class="box_button">
@@ -800,36 +811,124 @@ var start = function() {
 audio.onplay = function(){
     start();
 }
+
+
+
+
+document.addEventListener("DOMContentLoaded", (e)=> {
+
+//dom об'єкти елементів контролю
+          var av = document.getElementById("audio");
+          var playTime = document.getElementsByClassName("play-time")[0];
+          var playBtn=document.getElementsByClassName("play-btn")[0];
+          var curTime=document.getElementById("cur-time");
+          var volume = document.getElementById("volume");
+          var speaker=document.getElementById("speaker");
+
+//змінна для того, щоб відстежувати чи відбувається відтворення звуку
+          var isPlaying = false;
+
+          av.onloadedmetadata = function() {
+            curTime.max=av.duration;
+            };
+            
+//функція виведення поточного часу відтворення
+          av.ontimeupdate=function() {
+            
+              var sec_num = av.currentTime;
+              var hours   = Math.floor(sec_num / 3600);
+              var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+              var seconds = sec_num - (hours * 3600) - (minutes * 60);
+              seconds=Math.round(seconds);
+
+              if (hours < 10) {
+                hours   = "0"+hours;
+              }
+              if (minutes < 10) {
+                minutes = "0"+minutes;
+              }
+              if (seconds < 10) { seconds = "0"+seconds; } playTime.innerHTML = minutes+':'+seconds; 
+              if(isPlaying) curTime.value=av.currentTime; 
+         }; 
+//функція для встановлення гучності
+         volume.onchange=function() { 
+
+              av.volume = volume.value/10;
+         }; 
+//функція для встановлення початку відтворення
+         curTime.onchange=function() { 
+
+              av.pause(); av.currentTime=curTime.value; av.play(); 
+         }; 
+//функція для вімк/вивмк гучності
+         speaker.onclick=function() { 
+         
+          if(volume.value==0) { 
+             volume.value=10; av.volume=1;
+          } else { 
+             volume.value=0; av.volume=0;
+          } }; 
+//функція для play/pause та зображення кнопки відтворення
+         playBtn.addEventListener("click", (a)=> {
+
+          if(isPlaying)
+          {
+            av.pause();
+            isPlaying=false;
+            playBtn.innerHTML="►";
+          }
+          else
+          {
+            av.play();
+            isPlaying=true;
+            playBtn.innerHTML="❚❚";
+          }
+          
+        });
+
+
+    });
+
+
 		        // получаем все элементы
-            var videoEl = document.getElementById('audio'),
-            playBtn = document.getElementById('playBtn'),
-            vidControls = document.getElementById('controls'),
-            volumeControl = document.getElementById('volume'),
-            timePicker = document.getElementById('timer');
+            // var videoEl = document.getElementById('audio'),
+            // playBtn = document.getElementById('playBtn'),
+            // vidControls = document.getElementById('controls'),
+            // volumeControl = document.getElementById('volume'),
+            // timePicker = document.getElementById('timer');
+
+
+                  // если браузер может воспроизводить видео удаляем класс
+        // videoEl.addEventListener('canplaythrough', function () {
+        //     vidControls.classList.remove('hidden');
+        //     videoEl.volume = volumeControl.value;
+        // }, false);
+
+
 
 		        // запускам или останавливаем воспроизведение
-		playBtn.addEventListener('click', function () {
-            if (videoEl.paused) {
-                videoEl.play();
-            } else {
-                videoEl.pause();
-            }
-        }, false);
+		// playBtn.addEventListener('click', function () {
+    //         if (videoEl.paused) {
+    //             videoEl.play();
+    //         } else {
+    //             videoEl.pause();
+    //         }
+    //     }, false);
 
 
-        videoEl.addEventListener('play', function () {
+    //     videoEl.addEventListener('play', function () {
+
+    //       playBtn.classList.add('active')
+    //         playBtn.innerText = "Pause";
+    //     }, false);
 
 
-            playBtn.innerText = "Pause";
-        }, false);
+    //     videoEl.addEventListener('pause', function () {
 
-
-        videoEl.addEventListener('pause', function () {
-
-
-            playBtn.innerText = "Play";
-        }, false);
-
+    //       playBtn.classList.remove('active')
+    //         playBtn.innerText = "Play";
+    //     }, false);
+        
 
 
         // music and lamp

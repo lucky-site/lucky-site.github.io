@@ -710,7 +710,7 @@ body {
   border: .365vw solid #933f22;
   cursor: pointer;
   box-sizing: content-box;
-  transition: all .25s linear;
+  transition: animation .25s linear;
   overflow: hidden;
   text-indent: -9999px;
 }
@@ -776,35 +776,33 @@ body {
 /* line 827, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-1 .box .btn-1 {
   animation: flicker 1s ease 20s 1 normal;
-  overflow: hidden;
-  text-indent: -9999px;
 }
-/* line 834, ../sass/screen.scss */
+/* line 832, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-2 {
   left: 38.1vw;
   top: 22.22vw;
   z-index: 3;
   height: 9.4vw;
 }
-/* line 839, ../sass/screen.scss */
+/* line 837, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-2 .box {
   left: 56%;
   top: 79%;
 }
-/* line 842, ../sass/screen.scss */
+/* line 840, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-2 .box .btn-2 {
   animation: flicker 1s ease 30s 1 normal;
 }
-/* line 845, ../sass/screen.scss */
+/* line 843, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-2 .box .box_hide {
   right: 100%;
   left: auto;
 }
-/* line 848, ../sass/screen.scss */
+/* line 846, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-2 .box .box_hide p {
   margin: 0 .26vw 0 0;
 }
-/* line 854, ../sass/screen.scss */
+/* line 852, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-3 {
   left: 38.6vw;
   top: 31.4vw;
@@ -812,200 +810,176 @@ body {
   height: 7.4vw;
   z-index: 2;
 }
-/* line 860, ../sass/screen.scss */
+/* line 858, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-3 .btn-3 {
   animation: flicker 1s ease 40s 1 normal;
 }
-/* line 863, ../sass/screen.scss */
+/* line 861, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-3 .box {
   left: 72%;
   top: 20%;
 }
-/* line 866, ../sass/screen.scss */
+/* line 864, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-3 .box .box_hide {
   right: 100%;
   left: auto;
   bottom: auto;
   top: 100%;
 }
-/* line 871, ../sass/screen.scss */
+/* line 869, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-3 .box .box_hide p {
   margin: 0 .26vw 0 0;
 }
-/* line 877, ../sass/screen.scss */
+/* line 875, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-4 {
   left: 55.1vw;
   top: 25.22vw;
   width: 11vw;
 }
-/* line 881, ../sass/screen.scss */
+/* line 879, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-4 .btn-4 {
   animation: flicker 1s ease 50s 1 normal;
 }
-/* line 884, ../sass/screen.scss */
+/* line 882, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-4 .box {
   left: 56%;
   top: 56%;
 }
-/* line 887, ../sass/screen.scss */
+/* line 885, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-4 .box .box_hide {
   right: 100%;
   left: auto;
 }
-/* line 890, ../sass/screen.scss */
+/* line 888, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-4 .box .box_hide p {
   margin: 0 .26vw 0 0;
 }
-/* line 896, ../sass/screen.scss */
+/* line 894, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-5 {
   left: 70.6vw;
   top: 28.4vw;
   z-index: 3;
 }
-/* line 900, ../sass/screen.scss */
+/* line 898, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-5 .btn-5 {
   animation: flicker 1s ease 60s 1 normal;
 }
-/* line 904, ../sass/screen.scss */
+/* line 902, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-5 .box .box_hide {
   right: 100%;
   left: auto;
   bottom: auto;
   top: 100%;
 }
-/* line 909, ../sass/screen.scss */
+/* line 907, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-5 .box .box_hide p {
   margin: 0 .26vw 0 0;
 }
-/* line 915, ../sass/screen.scss */
+/* line 913, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 {
   right: 14.9vw;
   top: 19.7vw;
   z-index: 2;
 }
-/* line 920, ../sass/screen.scss */
+/* line 918, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .btn-6 {
   z-index: 5;
   position: relative;
   animation: flicker 1s ease 70s 1 normal;
 }
-/* line 925, ../sass/screen.scss */
+/* line 923, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_hide {
   right: 100%;
   left: auto;
   bottom: auto;
   top: 100%;
 }
-/* line 930, ../sass/screen.scss */
+/* line 928, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_hide p {
   margin: 0 .26vw 0 0;
 }
-/* line 934, ../sass/screen.scss */
+/* line 932, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_img {
   position: absolute;
   top: 3px;
   left: 0;
 }
-/* line 938, ../sass/screen.scss */
+/* line 936, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_img img {
   display: block;
   width: 100%;
 }
-/* line 942, ../sass/screen.scss */
+/* line 940, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_img .box_img_on {
   opacity: 1;
 }
-/* line 944, ../sass/screen.scss */
+/* line 942, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_img .box_img_on img {
   width: 1.77vw;
   height: auto;
 }
-/* line 949, ../sass/screen.scss */
+/* line 947, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_img .box_img_off {
   opacity: 0;
   position: relative;
   top: -1.529vw;
 }
-/* line 953, ../sass/screen.scss */
+/* line 951, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .box_img .box_img_off img {
   width: 1.77vw;
   height: auto;
 }
-/* line 960, ../sass/screen.scss */
+/* line 958, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .sound_off + .box_hide + .box_img .box_img_on {
   opacity: 0;
 }
-/* line 963, ../sass/screen.scss */
+/* line 961, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-6 .box .sound_off + .box_hide + .box_img .box_img_off {
   opacity: 1;
 }
-/* line 972, ../sass/screen.scss */
+/* line 970, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-7 {
   right: 9.9vw;
   top: 27.7vw;
   z-index: 2;
 }
-/* line 976, ../sass/screen.scss */
+/* line 974, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-7 .box {
   left: 44%;
   top: 38%;
 }
-/* line 979, ../sass/screen.scss */
+/* line 977, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-7 .box .btn-7 {
   animation: flicker 1s ease 80s 1 normal;
 }
-/* line 982, ../sass/screen.scss */
+/* line 980, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-7 .box .box_hide {
   right: 100%;
   left: auto;
   bottom: auto;
   top: 100%;
 }
-/* line 987, ../sass/screen.scss */
+/* line 985, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_btn.box_btn-7 .box .box_hide p {
   margin: 0 .26vw 0 0;
 }
-/* line 994, ../sass/screen.scss */
+/* line 992, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_lamp {
   position: absolute;
   top: 21.94vw;
   right: 6.6vw;
   opacity: 0;
 }
-/* line 999, ../sass/screen.scss */
+/* line 997, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_lamp.lamp_active {
   opacity: 0;
   animation: myAnim 2s ease 0s infinite normal forwards;
 }
-/* line 1004, ../sass/screen.scss */
+/* line 1002, ../sass/screen.scss */
 .main_page .section-1 .box_content .box_buttons .box_lamp .box_img img {
   display: block;
   width: 4.0625vw;
   height: auto;
-}
-/* line 1015, ../sass/screen.scss */
-.main_page #content {
-  min-height: 300px;
-  position: relative;
-}
-/* line 1019, ../sass/screen.scss */
-.main_page #thefile {
-  top: 10px;
-  left: 10px;
-  z-index: 100;
-}
-/* line 1026, ../sass/screen.scss */
-.main_page #canvas {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-/* line 1034, ../sass/screen.scss */
-.main_page audio {
-  left: 10px;
-  bottom: 10px;
-  width: calc(100% - 20px);
 }
 @media (max-width: 600px) {
   /* line 241, ../sass/screen.scss */
@@ -1015,20 +989,20 @@ body {
     max-height: 100vh;
     background: #353d4e;
   }
-  /* line 1047, ../sass/screen.scss */
+  /* line 1021, ../sass/screen.scss */
   .main_page header {
     display: block;
     padding: 15px 20px;
   }
-  /* line 1050, ../sass/screen.scss */
+  /* line 1024, ../sass/screen.scss */
   .main_page header .container {
     padding: 0px 45px 0px 0px;
   }
-  /* line 1052, ../sass/screen.scss */
+  /* line 1026, ../sass/screen.scss */
   .main_page header .container .burger {
     display: block;
   }
-  /* line 1055, ../sass/screen.scss */
+  /* line 1029, ../sass/screen.scss */
   .main_page header .container nav {
     position: fixed;
     top: 0;
@@ -1051,7 +1025,7 @@ body {
     margin-top: 0;
     text-align: left;
   }
-  /* line 1076, ../sass/screen.scss */
+  /* line 1050, ../sass/screen.scss */
   .main_page header .container nav ul {
     list-style-type: none;
     padding: 0;
@@ -1063,33 +1037,33 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  /* line 1082, ../sass/screen.scss */
+  /* line 1056, ../sass/screen.scss */
   .main_page header .container nav ul li {
     display: block;
   }
-  /* line 1084, ../sass/screen.scss */
+  /* line 1058, ../sass/screen.scss */
   .main_page header .container nav ul li a {
     display: inline-block;
     font-size: 22px;
   }
-  /* line 1092, ../sass/screen.scss */
+  /* line 1066, ../sass/screen.scss */
   .main_page header .menu-opened nav {
     visibility: visible;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-  /* line 1099, ../sass/screen.scss */
+  /* line 1073, ../sass/screen.scss */
   .main_page .section-1 .box_content {
     position: static;
     left: 0;
     max-width: 100%;
   }
-  /* line 1104, ../sass/screen.scss */
+  /* line 1078, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_img::after {
     content: '';
     background-image: url(../images/woof-agents-mob-animathions.gif);
   }
-  /* line 1111, ../sass/screen.scss */
+  /* line 1085, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-1 {
     transform: rotate(-6.74deg);
     top: 64vw;
@@ -1097,12 +1071,12 @@ body {
     width: 15.4vw;
     height: 6.8vw;
   }
-  /* line 1117, ../sass/screen.scss */
+  /* line 1091, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-1 .box_text p {
     font-size: 2.1vw;
     line-height: 1.1;
   }
-  /* line 1122, ../sass/screen.scss */
+  /* line 1096, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-2 {
     transform: rotate(-1.9deg);
     top: 38.7vw;
@@ -1110,12 +1084,12 @@ body {
     width: 16vw;
     height: 3.5vw;
   }
-  /* line 1128, ../sass/screen.scss */
+  /* line 1102, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-2 .box_text p {
     font-size: 2.5vw;
     line-height: 1.1;
   }
-  /* line 1133, ../sass/screen.scss */
+  /* line 1107, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-3 {
     transform: rotate(2.8deg);
     top: 43.4vw;
@@ -1123,15 +1097,15 @@ body {
     width: 25.5vw;
     height: 27vw;
   }
-  /* line 1139, ../sass/screen.scss */
+  /* line 1113, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-3 p {
     font-size: 2.3vw;
   }
-  /* line 1142, ../sass/screen.scss */
+  /* line 1116, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-3 .box_line p {
     font-size: 2.2vw;
   }
-  /* line 1146, ../sass/screen.scss */
+  /* line 1120, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-4 {
     transform: rotate(0.3deg);
     top: 22.9vw;
@@ -1139,35 +1113,35 @@ body {
     width: 34.3vw;
     height: 5.5vw;
   }
-  /* line 1152, ../sass/screen.scss */
+  /* line 1126, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-4 .box_socials .link {
     width: 5.3vw;
     height: 5.3vw;
   }
-  /* line 1157, ../sass/screen.scss */
+  /* line 1131, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-5, .main_page .section-1 .box_content .box_fields .box_field.box_field-8 {
     display: none;
   }
-  /* line 1161, ../sass/screen.scss */
+  /* line 1135, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-6 {
     top: auto;
     bottom: 85px;
   }
-  /* line 1164, ../sass/screen.scss */
+  /* line 1138, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-6 .box_link .link_options {
     padding: 8px 24px;
     border-radius: 5px;
     font-size: 27px;
     line-height: 1.1;
   }
-  /* line 1171, ../sass/screen.scss */
+  /* line 1145, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-7 {
     right: 50%;
     bottom: 30px;
     top: auto;
     transform: translateX(50%);
   }
-  /* line 1177, ../sass/screen.scss */
+  /* line 1151, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-7 .box_link .link_missions {
     padding: 4px 18px;
     font-size: 22px;
@@ -1175,89 +1149,89 @@ body {
     font-size: 22px;
     line-height: 1.1;
   }
-  /* line 1188, ../sass/screen.scss */
+  /* line 1162, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn {
     position: absolute;
     width: 3.042vw;
     height: 3.042vw;
   }
-  /* line 1192, ../sass/screen.scss */
+  /* line 1166, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn .box {
     left: 50%;
     top: 50%;
   }
-  /* line 1195, ../sass/screen.scss */
+  /* line 1169, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn .box .btn {
     opacity: 0.5;
     width: 3.042vw;
     height: 3.042vw;
   }
-  /* line 1200, ../sass/screen.scss */
+  /* line 1174, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn .box .box_hide {
     opacity: 1;
     border-radius: 0.26vw;
     padding: 0.365vw 0.52vw;
     min-width: 14.375vw;
   }
-  /* line 1205, ../sass/screen.scss */
+  /* line 1179, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn .box .box_hide p {
     font-size: 1.3vw;
     margin-left: 0.26vw;
   }
-  /* line 1209, ../sass/screen.scss */
+  /* line 1183, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn .box .box_hide svg {
     width: 1.2vw;
     height: 1.2vw;
   }
-  /* line 1215, ../sass/screen.scss */
+  /* line 1189, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn:not(.box_btn-1) .box .box_hide {
     display: none;
   }
-  /* line 1218, ../sass/screen.scss */
+  /* line 1192, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-1 {
     left: 32.3vw;
     top: 89.1vw;
   }
-  /* line 1222, ../sass/screen.scss */
+  /* line 1196, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-2 {
     left: 62.1vw;
     top: 89.1vw;
   }
-  /* line 1226, ../sass/screen.scss */
+  /* line 1200, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-3 {
     left: 63.6vw;
     top: 105.4vw;
   }
-  /* line 1230, ../sass/screen.scss */
+  /* line 1204, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-4 {
     left: 63.1vw;
     top: 96.22vw;
   }
-  /* line 1234, ../sass/screen.scss */
+  /* line 1208, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-5 {
     left: auto;
     right: 11.9vw;
     top: 91.2vw;
   }
-  /* line 1239, ../sass/screen.scss */
+  /* line 1213, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-6 {
     right: auto;
     left: 16.5vw;
     top: 49.9vw;
   }
-  /* line 1244, ../sass/screen.scss */
+  /* line 1218, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img .box_img_on img {
     width: 3.1vw;
   }
-  /* line 1247, ../sass/screen.scss */
+  /* line 1221, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img .box_img_off {
     top: -2.8vw;
   }
-  /* line 1249, ../sass/screen.scss */
+  /* line 1223, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img .box_img_off img {
     width: 3.1vw;
   }
-  /* line 1255, ../sass/screen.scss */
+  /* line 1229, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_buttons .box_btn.box_btn.box_btn-7 {
     right: auto;
     left: 17vw;
@@ -1265,17 +1239,17 @@ body {
   }
 }
 @media (max-width: 480px) {
-  /* line 1266, ../sass/screen.scss */
+  /* line 1240, ../sass/screen.scss */
   .main_page .section-1 > .box_content {
     margin-left: -17vw;
     margin-right: -17vw;
     max-width: none;
   }
-  /* line 1270, ../sass/screen.scss */
+  /* line 1244, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_img img {
     max-width: 100%;
   }
-  /* line 1274, ../sass/screen.scss */
+  /* line 1248, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_fields .box_field.box_field-1 {
     transform: rotate(-5.74deg);
     top: 86.5vw;
@@ -1283,11 +1257,11 @@ body {
     width: 21.4vw;
     height: 7.8vw;
   }
-  /* line 1280, ../sass/screen.scss */
+  /* line 1254, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_fields .box_field.box_field-1 .box_text p {
     font-size: 3.1vw;
   }
-  /* line 1284, ../sass/screen.scss */
+  /* line 1258, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_fields .box_field.box_field-2 {
     transform: rotate(-1.9deg);
     top: 52.2vw;
@@ -1295,11 +1269,11 @@ body {
     width: 23vw;
     height: 3.8vw;
   }
-  /* line 1290, ../sass/screen.scss */
+  /* line 1264, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_fields .box_field.box_field-2 .box_text p {
     font-size: 3.5vw;
   }
-  /* line 1294, ../sass/screen.scss */
+  /* line 1268, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_fields .box_field.box_field-3 {
     transform: rotate(2.8deg);
     top: 57.1vw;
@@ -1307,19 +1281,19 @@ body {
     width: 38.5vw;
     height: 41vw;
   }
-  /* line 1300, ../sass/screen.scss */
+  /* line 1274, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_fields .box_field.box_field-3 .box:not(.box-1) {
     margin-top: 0.66vw;
   }
-  /* line 1303, ../sass/screen.scss */
+  /* line 1277, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_fields .box_field.box_field-3 p {
     font-size: 3.1vw;
   }
-  /* line 1306, ../sass/screen.scss */
+  /* line 1280, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_fields .box_field.box_field-3 .box_line p {
     font-size: 2.8vw;
   }
-  /* line 1310, ../sass/screen.scss */
+  /* line 1284, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_fields .box_field.box_field-4 {
     transform: rotate(0deg);
     top: 30.6vw;
@@ -1327,22 +1301,22 @@ body {
     width: 39.3vw;
     height: 8.5vw;
   }
-  /* line 1316, ../sass/screen.scss */
+  /* line 1290, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_fields .box_field.box_field-4 .box_socials .link {
     width: 7.3vw;
     height: 7.3vw;
   }
-  /* line 1322, ../sass/screen.scss */
+  /* line 1296, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn {
     width: 4.042vw;
     height: 4.042vw;
   }
-  /* line 1326, ../sass/screen.scss */
+  /* line 1300, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn .box .btn {
     width: 4.042vw;
     height: 4.042vw;
   }
-  /* line 1330, ../sass/screen.scss */
+  /* line 1304, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn .box .box_hide {
     border-radius: 0.26vw;
     padding: 0.8vw 0.8vw;
@@ -1351,65 +1325,65 @@ body {
     bottom: auto;
     top: 110%;
   }
-  /* line 1337, ../sass/screen.scss */
+  /* line 1311, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn .box .box_hide svg {
     width: 1.7vw;
     height: 1.7vw;
   }
-  /* line 1341, ../sass/screen.scss */
+  /* line 1315, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn .box .box_hide p {
     font-size: 1.8vw;
     margin-left: 1.26vw;
   }
-  /* line 1347, ../sass/screen.scss */
+  /* line 1321, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-1 {
     left: 27.3vw;
     top: 119.7vw;
   }
-  /* line 1351, ../sass/screen.scss */
+  /* line 1325, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-2 {
     left: 66.1vw;
     top: 119.8vw;
   }
-  /* line 1355, ../sass/screen.scss */
+  /* line 1329, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-3 {
     left: 68.6vw;
     top: 141.4vw;
   }
-  /* line 1359, ../sass/screen.scss */
+  /* line 1333, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-4 {
     left: 68.1vw;
     top: 128.22vw;
   }
-  /* line 1363, ../sass/screen.scss */
+  /* line 1337, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-5 {
     left: auto;
     right: 1.9vw;
     top: 123.2vw;
   }
-  /* line 1368, ../sass/screen.scss */
+  /* line 1342, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-6 {
     right: auto;
     left: 5.3vw;
     top: 66.9vw;
   }
-  /* line 1372, ../sass/screen.scss */
+  /* line 1346, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img {
     top: 0;
   }
-  /* line 1374, ../sass/screen.scss */
+  /* line 1348, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img .box_img_on img {
     width: 4.5vw;
   }
-  /* line 1377, ../sass/screen.scss */
+  /* line 1351, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img .box_img_off {
     top: -3.8vw;
   }
-  /* line 1379, ../sass/screen.scss */
+  /* line 1353, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-6 .box .box_img .box_img_off img {
     width: 4.5vw;
   }
-  /* line 1385, ../sass/screen.scss */
+  /* line 1359, ../sass/screen.scss */
   .main_page .section-1 > .box_content .box_buttons .box_btn.box_btn.box_btn-7 {
     right: auto;
     left: 6vw;
@@ -1417,28 +1391,28 @@ body {
   }
 }
 @media (max-width: 400px) {
-  /* line 1395, ../sass/screen.scss */
+  /* line 1369, ../sass/screen.scss */
   .main_page header {
     padding: 15px 10px;
   }
-  /* line 1397, ../sass/screen.scss */
+  /* line 1371, ../sass/screen.scss */
   .main_page header .container {
     padding: 0px 30px 0px 0px;
   }
-  /* line 1399, ../sass/screen.scss */
+  /* line 1373, ../sass/screen.scss */
   .main_page header .container .box_wallet {
     max-width: 125px;
   }
-  /* line 1401, ../sass/screen.scss */
+  /* line 1375, ../sass/screen.scss */
   .main_page header .container .box_wallet .link_wallet {
     padding: 7px 5px;
   }
-  /* line 1407, ../sass/screen.scss */
+  /* line 1381, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_fields .box_field.box_field-6 .box_link .link_options {
     font-size: 25px;
   }
 }
-/* line 1414, ../sass/screen.scss */
+/* line 1388, ../sass/screen.scss */
 .main_page .modal {
   display: none;
   position: fixed;
@@ -1451,7 +1425,7 @@ body {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
-/* line 1426, ../sass/screen.scss */
+/* line 1400, ../sass/screen.scss */
 .main_page #myModal,
 .main_page #myModal2,
 .main_page #myModal3,
@@ -1462,7 +1436,7 @@ body {
   padding: 0 !important;
   text-align: center;
 }
-/* line 1436, ../sass/screen.scss */
+/* line 1410, ../sass/screen.scss */
 .main_page #myModal:before,
 .main_page #myModal2:before,
 .main_page #myModal3:before,
@@ -1476,7 +1450,7 @@ body {
   vertical-align: middle;
   margin-right: -4px;
 }
-/* line 1443, ../sass/screen.scss */
+/* line 1417, ../sass/screen.scss */
 .main_page #myModal .modal-dialog,
 .main_page #myModal2 .modal-dialog,
 .main_page #myModal3 .modal-dialog,
@@ -1491,7 +1465,7 @@ body {
   max-width: 864px;
   position: relative;
 }
-/* line 1450, ../sass/screen.scss */
+/* line 1424, ../sass/screen.scss */
 .main_page #myModal .modal-dialog::before,
 .main_page #myModal2 .modal-dialog::before,
 .main_page #myModal3 .modal-dialog::before,
@@ -1507,7 +1481,7 @@ body {
   left: 10px;
   background: rgba(48, 50, 66, 0.9);
 }
-/* line 1459, ../sass/screen.scss */
+/* line 1433, ../sass/screen.scss */
 .main_page #myModal .modal-dialog::after,
 .main_page #myModal2 .modal-dialog::after,
 .main_page #myModal3 .modal-dialog::after,
@@ -1525,7 +1499,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-/* line 1470, ../sass/screen.scss */
+/* line 1444, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content,
 .main_page #myModal2 .modal-dialog .modal-content,
 .main_page #myModal3 .modal-dialog .modal-content,
@@ -1540,7 +1514,7 @@ body {
   animation-duration: 0.5s;
   position: relative;
 }
-/* line 1477, ../sass/screen.scss */
+/* line 1451, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-header,
 .main_page #myModal2 .modal-dialog .modal-content .modal-header,
 .main_page #myModal3 .modal-dialog .modal-content .modal-header,
@@ -1552,7 +1526,7 @@ body {
   position: relative;
   padding-top: 20px;
 }
-/* line 1481, ../sass/screen.scss */
+/* line 1455, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-header h3,
 .main_page #myModal2 .modal-dialog .modal-content .modal-header h3,
 .main_page #myModal3 .modal-dialog .modal-content .modal-header h3,
@@ -1570,7 +1544,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-/* line 1492, ../sass/screen.scss */
+/* line 1466, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-header p,
 .main_page #myModal2 .modal-dialog .modal-content .modal-header p,
 .main_page #myModal3 .modal-dialog .modal-content .modal-header p,
@@ -1586,7 +1560,7 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
-/* line 1501, ../sass/screen.scss */
+/* line 1475, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-header button,
 .main_page #myModal2 .modal-dialog .modal-content .modal-header button,
 .main_page #myModal3 .modal-dialog .modal-content .modal-header button,
@@ -1610,7 +1584,7 @@ body {
   z-index: 5;
   cursor: pointer;
 }
-/* line 1517, ../sass/screen.scss */
+/* line 1491, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-header button::before, .main_page #myModal .modal-dialog .modal-content .modal-header button::after,
 .main_page #myModal2 .modal-dialog .modal-content .modal-header button::before,
 .main_page #myModal2 .modal-dialog .modal-content .modal-header button::after,
@@ -1631,7 +1605,7 @@ body {
   height: 5px;
   background: var(--color-red);
 }
-/* line 1527, ../sass/screen.scss */
+/* line 1501, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-header button::before,
 .main_page #myModal2 .modal-dialog .modal-content .modal-header button::before,
 .main_page #myModal3 .modal-dialog .modal-content .modal-header button::before,
@@ -1641,7 +1615,7 @@ body {
 .main_page #myModal7 .modal-dialog .modal-content .modal-header button::before {
   transform: rotate(45deg);
 }
-/* line 1530, ../sass/screen.scss */
+/* line 1504, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-header button::after,
 .main_page #myModal2 .modal-dialog .modal-content .modal-header button::after,
 .main_page #myModal3 .modal-dialog .modal-content .modal-header button::after,
@@ -1651,7 +1625,7 @@ body {
 .main_page #myModal7 .modal-dialog .modal-content .modal-header button::after {
   transform: rotate(-45deg);
 }
-/* line 1533, ../sass/screen.scss */
+/* line 1507, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-header button:focus,
 .main_page #myModal2 .modal-dialog .modal-content .modal-header button:focus,
 .main_page #myModal3 .modal-dialog .modal-content .modal-header button:focus,
@@ -1661,7 +1635,7 @@ body {
 .main_page #myModal7 .modal-dialog .modal-content .modal-header button:focus {
   outline: none;
 }
-/* line 1541, ../sass/screen.scss */
+/* line 1515, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body,
@@ -1672,7 +1646,7 @@ body {
   position: relative;
   z-index: 1;
 }
-/* line 1544, ../sass/screen.scss */
+/* line 1518, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points,
@@ -1686,7 +1660,7 @@ body {
   border-radius: 10px;
   padding: 10px 15px;
 }
-/* line 1550, ../sass/screen.scss */
+/* line 1524, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions,
@@ -1703,7 +1677,7 @@ body {
   scrollbar-color: #BDBDBD #383946;
   /* цвет бегунка и зоны отслеживания */
 }
-/* line 1557, ../sass/screen.scss */
+/* line 1531, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar,
@@ -1714,7 +1688,7 @@ body {
   width: 6px;
   /* ширина всей полосы прокрутки */
 }
-/* line 1560, ../sass/screen.scss */
+/* line 1534, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-track,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-track,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-track,
@@ -1725,7 +1699,7 @@ body {
   background: #383946;
   /* цвет зоны отслеживания */
 }
-/* line 1563, ../sass/screen.scss */
+/* line 1537, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-thumb,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-thumb,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-thumb,
@@ -1738,7 +1712,7 @@ body {
   border-radius: 20px;
   /* округлось бегунка */
 }
-/* line 1567, ../sass/screen.scss */
+/* line 1541, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
@@ -1756,7 +1730,7 @@ body {
   justify-content: space-between;
   padding-right: 20px;
 }
-/* line 1571, ../sass/screen.scss */
+/* line 1545, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
@@ -1772,7 +1746,7 @@ body {
   line-height: 1.1;
   color: #FFFFFF;
 }
-/* line 1579, ../sass/screen.scss */
+/* line 1553, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_progress,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_progress,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_progress,
@@ -1782,7 +1756,7 @@ body {
 .main_page #myModal7 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_progress {
   color: #BDBDBD;
 }
-/* line 1582, ../sass/screen.scss */
+/* line 1556, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_done,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_done,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_done,
@@ -1792,7 +1766,7 @@ body {
 .main_page #myModal7 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span.mission_done {
   color: #00DA74;
 }
-/* line 1586, ../sass/screen.scss */
+/* line 1560, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
@@ -1802,7 +1776,7 @@ body {
 .main_page #myModal7 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name {
   width: 60%;
 }
-/* line 1592, ../sass/screen.scss */
+/* line 1566, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
@@ -1814,7 +1788,7 @@ body {
   padding: 0 20px;
   text-align: right;
 }
-/* line 1597, ../sass/screen.scss */
+/* line 1571, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
@@ -1825,7 +1799,7 @@ body {
   width: 20%;
   text-align: right;
 }
-/* line 1604, ../sass/screen.scss */
+/* line 1578, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_total,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_total,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_total,
@@ -1839,7 +1813,7 @@ body {
   display: -webkit-flex;
   display: flex;
 }
-/* line 1606, ../sass/screen.scss */
+/* line 1580, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_total span,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_total span,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_total span,
@@ -1854,7 +1828,7 @@ body {
   line-height: 1.1;
   color: #00DA74;
 }
-/* line 1614, ../sass/screen.scss */
+/* line 1588, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_total .box_point,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_total .box_point,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_total .box_point,
@@ -1864,7 +1838,7 @@ body {
 .main_page #myModal7 .modal-dialog .modal-content .modal-body .box_points .box_total .box_point {
   padding-left: 15px;
 }
-/* line 1619, ../sass/screen.scss */
+/* line 1593, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_link,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_link,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_link,
@@ -1875,7 +1849,7 @@ body {
   text-align: center;
   margin: 40px auto 60px;
 }
-/* line 1622, ../sass/screen.scss */
+/* line 1596, ../sass/screen.scss */
 .main_page #myModal .modal-dialog .modal-content .modal-body .box_link a,
 .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_link a,
 .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_link a,
@@ -1896,7 +1870,7 @@ body {
   border-radius: 5px;
   padding: 10px 32px;
 }
-/* line 1642, ../sass/screen.scss */
+/* line 1616, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content,
 .main_page #myModal2.modal_options .modal-dialog .modal-content,
 .main_page #myModal3.modal_options .modal-dialog .modal-content,
@@ -1906,7 +1880,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content {
   padding: 25px 25px 60px 25px;
 }
-/* line 1644, ../sass/screen.scss */
+/* line 1618, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body,
@@ -1916,7 +1890,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body {
   padding-top: 30px;
 }
-/* line 1646, ../sass/screen.scss */
+/* line 1620, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint,
@@ -1935,7 +1909,7 @@ body {
   max-width: 600px;
   margin: auto;
 }
-/* line 1651, ../sass/screen.scss */
+/* line 1625, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link,
@@ -1946,7 +1920,7 @@ body {
   text-align: center;
   margin: 0px;
 }
-/* line 1654, ../sass/screen.scss */
+/* line 1628, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
@@ -1971,7 +1945,7 @@ body {
   pointer-events: none;
   transition: all .2s linear;
 }
-/* line 1671, ../sass/screen.scss */
+/* line 1645, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active,
@@ -1982,7 +1956,7 @@ body {
   background: #EF933F;
   pointer-events: auto;
 }
-/* line 1674, ../sass/screen.scss */
+/* line 1648, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active:hover,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active:hover,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active:hover,
@@ -1992,7 +1966,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a.active:hover {
   background: #828282;
 }
-/* line 1680, ../sass/screen.scss */
+/* line 1654, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
@@ -2002,7 +1976,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description {
   margin-top: 5px;
 }
-/* line 1682, ../sass/screen.scss */
+/* line 1656, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
@@ -2018,7 +1992,7 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
-/* line 1691, ../sass/screen.scss */
+/* line 1665, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
@@ -2035,7 +2009,7 @@ body {
   color: #EF933F;
   margin-top: 5px;
 }
-/* line 1702, ../sass/screen.scss */
+/* line 1676, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
@@ -2045,7 +2019,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status {
   margin-top: 10px;
 }
-/* line 1705, ../sass/screen.scss */
+/* line 1679, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
@@ -2062,7 +2036,7 @@ body {
   padding-left: 13px;
   position: relative;
 }
-/* line 1715, ../sass/screen.scss */
+/* line 1689, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
@@ -2080,7 +2054,7 @@ body {
   border-left: 1px solid #00DA74;
   transform: rotate(-45deg);
 }
-/* line 1728, ../sass/screen.scss */
+/* line 1702, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
@@ -2098,7 +2072,7 @@ body {
   -webkit-clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 62%, 90% 100%, 100% 90%, 61% 51%, 100% 10%, 90% 0, 51% 40%);
   clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 62%, 90% 100%, 100% 90%, 61% 51%, 100% 10%, 90% 0, 51% 40%);
 }
-/* line 1740, ../sass/screen.scss */
+/* line 1714, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li:last-of-type.status-ok,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li:last-of-type.status-ok,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li:last-of-type.status-ok,
@@ -2108,7 +2082,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li:last-of-type.status-ok {
   color: #F2C94C;
 }
-/* line 1747, ../sass/screen.scss */
+/* line 1721, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
@@ -2118,7 +2092,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total {
   margin-top: 10px;
 }
-/* line 1749, ../sass/screen.scss */
+/* line 1723, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
@@ -2135,7 +2109,7 @@ body {
   padding-left: 13px;
   position: relative;
 }
-/* line 1758, ../sass/screen.scss */
+/* line 1732, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
@@ -2154,7 +2128,7 @@ body {
   transform: rotate(-50deg);
   opacity: 0.2;
 }
-/* line 1772, ../sass/screen.scss */
+/* line 1746, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
@@ -2165,7 +2139,7 @@ body {
   width: 240px;
   padding-top: 37px;
 }
-/* line 1776, ../sass/screen.scss */
+/* line 1750, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
@@ -2175,7 +2149,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right {
   width: 240px;
 }
-/* line 1778, ../sass/screen.scss */
+/* line 1752, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_slider,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_slider,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_slider,
@@ -2189,7 +2163,7 @@ body {
   display: -webkit-flex;
   display: flex;
 }
-/* line 1781, ../sass/screen.scss */
+/* line 1755, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_prev,
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_next,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_prev,
@@ -2209,7 +2183,7 @@ body {
   position: relative;
   cursor: pointer;
 }
-/* line 1787, ../sass/screen.scss */
+/* line 1761, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_prev::before,
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_next::before,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_prev::before,
@@ -2231,7 +2205,7 @@ body {
   height: 10px;
   transform: rotate(45deg);
 }
-/* line 1797, ../sass/screen.scss */
+/* line 1771, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_prev::before,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_prev::before,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_prev::before,
@@ -2242,7 +2216,7 @@ body {
   border-bottom: 3px solid #00da74;
   border-left: 3px solid #00da74;
 }
-/* line 1803, ../sass/screen.scss */
+/* line 1777, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_next::before,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_next::before,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_next::before,
@@ -2253,7 +2227,7 @@ body {
   border-top: 3px solid #00da74;
   border-right: 3px solid #00da74;
 }
-/* line 1808, ../sass/screen.scss */
+/* line 1782, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
@@ -2272,7 +2246,7 @@ body {
   align-items: center;
   height: 37px;
 }
-/* line 1812, ../sass/screen.scss */
+/* line 1786, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
@@ -2289,7 +2263,7 @@ body {
   transition: all .1s linear;
   cursor: pointer;
 }
-/* line 1822, ../sass/screen.scss */
+/* line 1796, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
@@ -2299,7 +2273,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number {
   padding: 0 10px;
 }
-/* line 1827, ../sass/screen.scss */
+/* line 1801, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span, .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span,
@@ -2316,7 +2290,7 @@ body {
   font-size: 15px;
   opacity: 0.3;
 }
-/* line 1832, ../sass/screen.scss */
+/* line 1806, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span, .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span,
@@ -2333,7 +2307,7 @@ body {
   font-size: 20px;
   opacity: 0.5;
 }
-/* line 1837, ../sass/screen.scss */
+/* line 1811, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span, .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span,
@@ -2350,7 +2324,7 @@ body {
   font-size: 26px;
   opacity: 0.7;
 }
-/* line 1843, ../sass/screen.scss */
+/* line 1817, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
@@ -2361,7 +2335,7 @@ body {
   font-size: 36px;
   opacity: 1;
 }
-/* line 1851, ../sass/screen.scss */
+/* line 1825, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_link a.active,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_link a.active,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_link a.active,
@@ -2371,7 +2345,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_link a.active {
   background: #00DA74;
 }
-/* line 1856, ../sass/screen.scss */
+/* line 1830, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_description p:last-of-type,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_description p:last-of-type,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_description p:last-of-type,
@@ -2381,7 +2355,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_description p:last-of-type {
   color: #00DA74;
 }
-/* line 1860, ../sass/screen.scss */
+/* line 1834, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total,
@@ -2391,7 +2365,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total {
   position: relative;
 }
-/* line 1862, ../sass/screen.scss */
+/* line 1836, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
@@ -2408,7 +2382,7 @@ body {
   transition: all .25s linear;
   opacity: 0;
 }
-/* line 1871, ../sass/screen.scss */
+/* line 1845, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
@@ -2420,7 +2394,7 @@ body {
   font-size: 13px;
   color: #fff;
 }
-/* line 1877, ../sass/screen.scss */
+/* line 1851, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_title p,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_title p,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_title p,
@@ -2430,7 +2404,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_title p {
   text-transform: uppercase;
 }
-/* line 1882, ../sass/screen.scss */
+/* line 1856, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
@@ -2440,7 +2414,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table {
   min-width: 195px;
 }
-/* line 1884, ../sass/screen.scss */
+/* line 1858, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box,
@@ -2471,7 +2445,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right {
   width: 50%;
 }
-/* line 1887, ../sass/screen.scss */
+/* line 1861, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left p,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left p,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left p,
@@ -2481,7 +2455,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_left p {
   text-align: right;
 }
-/* line 1891, ../sass/screen.scss */
+/* line 1865, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
@@ -2491,7 +2465,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right {
   padding-left: 10px;
 }
-/* line 1898, ../sass/screen.scss */
+/* line 1872, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total p:hover + .box_hide,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total p:hover + .box_hide,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total p:hover + .box_hide,
@@ -2501,7 +2475,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total p:hover + .box_hide {
   opacity: 1;
 }
-/* line 1904, ../sass/screen.scss */
+/* line 1878, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
@@ -2511,7 +2485,7 @@ body {
 .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_bottom {
   margin-top: 30px;
 }
-/* line 1906, ../sass/screen.scss */
+/* line 1880, ../sass/screen.scss */
 .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
 .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
 .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
@@ -2527,7 +2501,7 @@ body {
   text-align: center;
   color: #E0E0E0;
 }
-/* line 1927, ../sass/screen.scss */
+/* line 1901, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-header h3, .main_page #myModal.modal_audio .modal-content .modal-header h3, .main_page #myModal.modal_video .modal-content .modal-header h3, .main_page #myModal.modal_img .modal-content .modal-header h3, .main_page #myModal.modal_phone .modal-content .modal-header h3,
 .main_page #myModal2.modal_passcode .modal-content .modal-header h3,
 .main_page #myModal2.modal_audio .modal-content .modal-header h3,
@@ -2561,7 +2535,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-header h3 {
   margin-top: 35px;
 }
-/* line 1932, ../sass/screen.scss */
+/* line 1906, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode, .main_page #myModal.modal_img .modal-content .modal-body .box_passcode, .main_page #myModal.modal_phone .modal-content .modal-body .box_passcode,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode,
@@ -2595,7 +2569,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-body .box_passcode {
   margin-top: 30px;
 }
-/* line 1934, ../sass/screen.scss */
+/* line 1908, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_button, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_button, .main_page #myModal.modal_img .modal-content .modal-body .box_passcode .box_button, .main_page #myModal.modal_phone .modal-content .modal-body .box_passcode .box_button,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_button,
@@ -2629,7 +2603,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-body .box_passcode .box_button {
   text-align: center;
 }
-/* line 1936, ../sass/screen.scss */
+/* line 1910, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_button label, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_button label, .main_page #myModal.modal_img .modal-content .modal-body .box_passcode .box_button label, .main_page #myModal.modal_phone .modal-content .modal-body .box_passcode .box_button label,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_button label,
@@ -2666,7 +2640,7 @@ body {
   margin: auto;
   position: relative;
 }
-/* line 1941, ../sass/screen.scss */
+/* line 1915, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_button label .box_line, .main_page #myModal.modal_img .modal-content .modal-body .box_passcode .box_button label .box_line, .main_page #myModal.modal_phone .modal-content .modal-body .box_passcode .box_button label .box_line,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line,
@@ -2712,7 +2686,7 @@ body {
   justify-content: space-between;
   width: 288px;
 }
-/* line 1949, ../sass/screen.scss */
+/* line 1923, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line .line, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_button label .box_line .line, .main_page #myModal.modal_img .modal-content .modal-body .box_passcode .box_button label .box_line .line, .main_page #myModal.modal_phone .modal-content .modal-body .box_passcode .box_button label .box_line .line,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_button label .box_line .line,
@@ -2748,7 +2722,7 @@ body {
   height: 3px;
   background: #e0e0e0;
 }
-/* line 1956, ../sass/screen.scss */
+/* line 1930, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button input, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_button input, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_button input, .main_page #myModal.modal_img .modal-content .modal-body .box_passcode .box_button input, .main_page #myModal.modal_phone .modal-content .modal-body .box_passcode .box_button input,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_button input,
@@ -2791,7 +2765,7 @@ body {
   font-size: 60px;
   color: #fff;
 }
-/* line 1969, ../sass/screen.scss */
+/* line 1943, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_attempt, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_attempt, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_attempt, .main_page #myModal.modal_img .modal-content .modal-body .box_passcode .box_attempt, .main_page #myModal.modal_phone .modal-content .modal-body .box_passcode .box_attempt,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_attempt,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_attempt,
@@ -2825,7 +2799,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-body .box_passcode .box_attempt {
   margin-top: 5px;
 }
-/* line 1971, ../sass/screen.scss */
+/* line 1945, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_attempt p, .main_page #myModal.modal_audio .modal-content .modal-body .box_passcode .box_attempt p, .main_page #myModal.modal_video .modal-content .modal-body .box_passcode .box_attempt p, .main_page #myModal.modal_img .modal-content .modal-body .box_passcode .box_attempt p, .main_page #myModal.modal_phone .modal-content .modal-body .box_passcode .box_attempt p,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_attempt p,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_passcode .box_attempt p,
@@ -2865,7 +2839,7 @@ body {
   text-align: center;
   color: #E0E0E0;
 }
-/* line 1982, ../sass/screen.scss */
+/* line 1956, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_buttons, .main_page #myModal.modal_audio .modal-content .modal-body .box_buttons, .main_page #myModal.modal_video .modal-content .modal-body .box_buttons, .main_page #myModal.modal_img .modal-content .modal-body .box_buttons, .main_page #myModal.modal_phone .modal-content .modal-body .box_buttons,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_buttons,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_buttons,
@@ -2908,7 +2882,7 @@ body {
   margin: 25px auto 0;
   max-width: 264px;
 }
-/* line 1987, ../sass/screen.scss */
+/* line 1961, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_buttons span, .main_page #myModal.modal_audio .modal-content .modal-body .box_buttons span, .main_page #myModal.modal_video .modal-content .modal-body .box_buttons span, .main_page #myModal.modal_img .modal-content .modal-body .box_buttons span, .main_page #myModal.modal_phone .modal-content .modal-body .box_buttons span,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_buttons span,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_buttons span,
@@ -2955,7 +2929,7 @@ body {
   transition: all .2s linear;
   cursor: pointer;
 }
-/* line 2002, ../sass/screen.scss */
+/* line 1976, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_buttons span.btn-1, .main_page #myModal.modal_audio .modal-content .modal-body .box_buttons span.btn-1, .main_page #myModal.modal_video .modal-content .modal-body .box_buttons span.btn-1, .main_page #myModal.modal_img .modal-content .modal-body .box_buttons span.btn-1, .main_page #myModal.modal_phone .modal-content .modal-body .box_buttons span.btn-1,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_buttons span.btn-1,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_buttons span.btn-1,
@@ -2989,7 +2963,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-body .box_buttons span.btn-1 {
   background: #00DA74;
 }
-/* line 2005, ../sass/screen.scss */
+/* line 1979, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_buttons span.btn-2, .main_page #myModal.modal_audio .modal-content .modal-body .box_buttons span.btn-2, .main_page #myModal.modal_video .modal-content .modal-body .box_buttons span.btn-2, .main_page #myModal.modal_img .modal-content .modal-body .box_buttons span.btn-2, .main_page #myModal.modal_phone .modal-content .modal-body .box_buttons span.btn-2,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_buttons span.btn-2,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_buttons span.btn-2,
@@ -3023,7 +2997,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-body .box_buttons span.btn-2 {
   background: #EB5757;
 }
-/* line 2008, ../sass/screen.scss */
+/* line 1982, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_buttons span:hover, .main_page #myModal.modal_audio .modal-content .modal-body .box_buttons span:hover, .main_page #myModal.modal_video .modal-content .modal-body .box_buttons span:hover, .main_page #myModal.modal_img .modal-content .modal-body .box_buttons span:hover, .main_page #myModal.modal_phone .modal-content .modal-body .box_buttons span:hover,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_buttons span:hover,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_buttons span:hover,
@@ -3057,7 +3031,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-body .box_buttons span:hover {
   background: #828282;
 }
-/* line 2013, ../sass/screen.scss */
+/* line 1987, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_bottom, .main_page #myModal.modal_audio .modal-content .modal-body .box_bottom, .main_page #myModal.modal_video .modal-content .modal-body .box_bottom, .main_page #myModal.modal_img .modal-content .modal-body .box_bottom, .main_page #myModal.modal_phone .modal-content .modal-body .box_bottom,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_bottom,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_bottom,
@@ -3092,7 +3066,7 @@ body {
   margin-top: 60px;
   padding-bottom: 45px;
 }
-/* line 2016, ../sass/screen.scss */
+/* line 1990, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_bottom .box_button, .main_page #myModal.modal_audio .modal-content .modal-body .box_bottom .box_button, .main_page #myModal.modal_video .modal-content .modal-body .box_bottom .box_button, .main_page #myModal.modal_img .modal-content .modal-body .box_bottom .box_button, .main_page #myModal.modal_phone .modal-content .modal-body .box_bottom .box_button,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_bottom .box_button,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_bottom .box_button,
@@ -3126,7 +3100,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-body .box_bottom .box_button {
   text-align: center;
 }
-/* line 2018, ../sass/screen.scss */
+/* line 1992, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_bottom .box_button .link, .main_page #myModal.modal_audio .modal-content .modal-body .box_bottom .box_button .link, .main_page #myModal.modal_video .modal-content .modal-body .box_bottom .box_button .link, .main_page #myModal.modal_img .modal-content .modal-body .box_bottom .box_button .link, .main_page #myModal.modal_phone .modal-content .modal-body .box_bottom .box_button .link,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_bottom .box_button .link,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_bottom .box_button .link,
@@ -3173,7 +3147,7 @@ body {
   border-radius: 5px;
   transition: all .2s linear;
 }
-/* line 2033, ../sass/screen.scss */
+/* line 2007, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_bottom .box_button .link:hover, .main_page #myModal.modal_audio .modal-content .modal-body .box_bottom .box_button .link:hover, .main_page #myModal.modal_video .modal-content .modal-body .box_bottom .box_button .link:hover, .main_page #myModal.modal_img .modal-content .modal-body .box_bottom .box_button .link:hover, .main_page #myModal.modal_phone .modal-content .modal-body .box_bottom .box_button .link:hover,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_bottom .box_button .link:hover,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_bottom .box_button .link:hover,
@@ -3207,7 +3181,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-body .box_bottom .box_button .link:hover {
   background: #828282;
 }
-/* line 2038, ../sass/screen.scss */
+/* line 2012, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_bottom .box_text, .main_page #myModal.modal_audio .modal-content .modal-body .box_bottom .box_text, .main_page #myModal.modal_video .modal-content .modal-body .box_bottom .box_text, .main_page #myModal.modal_img .modal-content .modal-body .box_bottom .box_text, .main_page #myModal.modal_phone .modal-content .modal-body .box_bottom .box_text,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_bottom .box_text,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_bottom .box_text,
@@ -3241,7 +3215,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-body .box_bottom .box_text {
   margin-top: 10px;
 }
-/* line 2040, ../sass/screen.scss */
+/* line 2014, ../sass/screen.scss */
 .main_page #myModal.modal_passcode .modal-content .modal-body .box_bottom .box_text p, .main_page #myModal.modal_audio .modal-content .modal-body .box_bottom .box_text p, .main_page #myModal.modal_video .modal-content .modal-body .box_bottom .box_text p, .main_page #myModal.modal_img .modal-content .modal-body .box_bottom .box_text p, .main_page #myModal.modal_phone .modal-content .modal-body .box_bottom .box_text p,
 .main_page #myModal2.modal_passcode .modal-content .modal-body .box_bottom .box_text p,
 .main_page #myModal2.modal_audio .modal-content .modal-body .box_bottom .box_text p,
@@ -3280,7 +3254,7 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
-/* line 2057, ../sass/screen.scss */
+/* line 2031, ../sass/screen.scss */
 .main_page #myModal.modal_audio .modal-dialog .modal-content .modal-header button,
 .main_page #myModal2.modal_audio .modal-dialog .modal-content .modal-header button,
 .main_page #myModal3.modal_audio .modal-dialog .modal-content .modal-header button,
@@ -3293,7 +3267,7 @@ body {
   width: 40px;
   height: 45px;
 }
-/* line 2064, ../sass/screen.scss */
+/* line 2038, ../sass/screen.scss */
 .main_page #myModal.modal_audio .modal-dialog .modal-content .modal-body .box_audio,
 .main_page #myModal2.modal_audio .modal-dialog .modal-content .modal-body .box_audio,
 .main_page #myModal3.modal_audio .modal-dialog .modal-content .modal-body .box_audio,
@@ -3305,7 +3279,7 @@ body {
   max-width: 584px;
   margin: 30px auto 0;
 }
-/* line 2068, ../sass/screen.scss */
+/* line 2042, ../sass/screen.scss */
 .main_page #myModal.modal_audio .modal-dialog .modal-content .modal-body .box_audio audio,
 .main_page #myModal2.modal_audio .modal-dialog .modal-content .modal-body .box_audio audio,
 .main_page #myModal3.modal_audio .modal-dialog .modal-content .modal-body .box_audio audio,
@@ -3316,7 +3290,7 @@ body {
   display: block;
   width: 100%;
 }
-/* line 2081, ../sass/screen.scss */
+/* line 2055, ../sass/screen.scss */
 .main_page #myModal.modal_video .modal-dialog .modal-content .modal-header button,
 .main_page #myModal2.modal_video .modal-dialog .modal-content .modal-header button,
 .main_page #myModal3.modal_video .modal-dialog .modal-content .modal-header button,
@@ -3329,7 +3303,7 @@ body {
   width: 40px;
   height: 45px;
 }
-/* line 2088, ../sass/screen.scss */
+/* line 2062, ../sass/screen.scss */
 .main_page #myModal.modal_video .modal-dialog .modal-content .modal-body .box_video,
 .main_page #myModal2.modal_video .modal-dialog .modal-content .modal-body .box_video,
 .main_page #myModal3.modal_video .modal-dialog .modal-content .modal-body .box_video,
@@ -3341,7 +3315,7 @@ body {
   max-width: 584px;
   margin: 30px auto 0;
 }
-/* line 2092, ../sass/screen.scss */
+/* line 2066, ../sass/screen.scss */
 .main_page #myModal.modal_video .modal-dialog .modal-content .modal-body .box_video video,
 .main_page #myModal2.modal_video .modal-dialog .modal-content .modal-body .box_video video,
 .main_page #myModal3.modal_video .modal-dialog .modal-content .modal-body .box_video video,
@@ -3352,7 +3326,7 @@ body {
   display: block;
   width: 100%;
 }
-/* line 2106, ../sass/screen.scss */
+/* line 2080, ../sass/screen.scss */
 .main_page #myModal.modal_img .modal-dialog .modal-content .modal-body .box_img,
 .main_page #myModal2.modal_img .modal-dialog .modal-content .modal-body .box_img,
 .main_page #myModal3.modal_img .modal-dialog .modal-content .modal-body .box_img,
@@ -3363,7 +3337,7 @@ body {
   max-width: 341px;
   margin: auto;
 }
-/* line 2109, ../sass/screen.scss */
+/* line 2083, ../sass/screen.scss */
 .main_page #myModal.modal_img .modal-dialog .modal-content .modal-body .box_img img,
 .main_page #myModal2.modal_img .modal-dialog .modal-content .modal-body .box_img img,
 .main_page #myModal3.modal_img .modal-dialog .modal-content .modal-body .box_img img,
@@ -3375,7 +3349,7 @@ body {
   width: 100%;
   height: auto;
 }
-/* line 2115, ../sass/screen.scss */
+/* line 2089, ../sass/screen.scss */
 .main_page #myModal.modal_img .modal-dialog .modal-content .modal-body .box_bottom,
 .main_page #myModal2.modal_img .modal-dialog .modal-content .modal-body .box_bottom,
 .main_page #myModal3.modal_img .modal-dialog .modal-content .modal-body .box_bottom,
@@ -3385,7 +3359,7 @@ body {
 .main_page #myModal7.modal_img .modal-dialog .modal-content .modal-body .box_bottom {
   margin-top: 10px;
 }
-/* line 2126, ../sass/screen.scss */
+/* line 2100, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_phone,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_phone,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_phone,
@@ -3396,7 +3370,7 @@ body {
   max-width: 388px;
   margin: auto;
 }
-/* line 2130, ../sass/screen.scss */
+/* line 2104, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_phone .box_display .display,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_phone .box_display .display,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_phone .box_display .display,
@@ -3414,7 +3388,7 @@ body {
   font-size: 25px;
   color: #E0E0E0;
 }
-/* line 2142, ../sass/screen.scss */
+/* line 2116, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_phone .box_bottom,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_phone .box_bottom,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_phone .box_bottom,
@@ -3430,7 +3404,7 @@ body {
   margin-top: 24px;
   padding-bottom: 0;
 }
-/* line 2146, ../sass/screen.scss */
+/* line 2120, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_left,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_left,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_left,
@@ -3441,7 +3415,7 @@ body {
   width: calc(100% - 100px);
   padding-right: 24px;
 }
-/* line 2149, ../sass/screen.scss */
+/* line 2123, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_left .box_numbers,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_left .box_numbers,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_left .box_numbers,
@@ -3453,7 +3427,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 8px;
 }
-/* line 2155, ../sass/screen.scss */
+/* line 2129, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_left .box_numbers .number_phone,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_left .box_numbers .number_phone,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_left .box_numbers .number_phone,
@@ -3473,7 +3447,7 @@ body {
   padding: 8px;
   cursor: pointer;
 }
-/* line 2170, ../sass/screen.scss */
+/* line 2144, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right,
@@ -3483,7 +3457,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right {
   width: 100px;
 }
-/* line 2172, ../sass/screen.scss */
+/* line 2146, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons,
@@ -3494,7 +3468,7 @@ body {
   display: block;
   margin-top: 0;
 }
-/* line 2175, ../sass/screen.scss */
+/* line 2149, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span,
@@ -3517,7 +3491,7 @@ body {
   transition: all .2s linear;
   cursor: pointer;
 }
-/* line 2190, ../sass/screen.scss */
+/* line 2164, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span.btn-1,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span.btn-1,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span.btn-1,
@@ -3527,7 +3501,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span.btn-1 {
   background: #00DA74;
 }
-/* line 2193, ../sass/screen.scss */
+/* line 2167, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span.btn-2,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span.btn-2,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span.btn-2,
@@ -3538,7 +3512,7 @@ body {
   background: #EB5757;
   margin-top: 8px;
 }
-/* line 2197, ../sass/screen.scss */
+/* line 2171, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span:hover,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span:hover,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span:hover,
@@ -3548,7 +3522,7 @@ body {
 .main_page #myModal7.modal_phone .modal-content .modal-body .box_phone .box_bottom .box_right .box_buttons span:hover {
   background: #828282;
 }
-/* line 2206, ../sass/screen.scss */
+/* line 2180, ../sass/screen.scss */
 .main_page #myModal.modal_phone .modal-content .modal-body .box_bottom,
 .main_page #myModal2.modal_phone .modal-content .modal-body .box_bottom,
 .main_page #myModal3.modal_phone .modal-content .modal-body .box_bottom,
@@ -3559,32 +3533,32 @@ body {
   margin-top: 20px;
 }
 @media (min-width: 600) and (max-width: 992px) {
-  /* line 2217, ../sass/screen.scss */
+  /* line 2191, ../sass/screen.scss */
   .main_page #myModal .modal-dialog,
   .main_page #myModal2 .modal-dialog {
     width: 95%;
   }
-  /* line 2219, ../sass/screen.scss */
+  /* line 2193, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content,
   .main_page #myModal2 .modal-dialog .modal-content {
     padding: 2.778vw;
   }
-  /* line 2221, ../sass/screen.scss */
+  /* line 2195, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-header,
   .main_page #myModal2 .modal-dialog .modal-content .modal-header {
     padding-top: 2.222vw;
   }
-  /* line 2223, ../sass/screen.scss */
+  /* line 2197, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-header h3,
   .main_page #myModal2 .modal-dialog .modal-content .modal-header h3 {
     font-size: 5vw;
   }
-  /* line 2226, ../sass/screen.scss */
+  /* line 2200, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-header p,
   .main_page #myModal2 .modal-dialog .modal-content .modal-header p {
     font-size: 1.889vw;
   }
-  /* line 2229, ../sass/screen.scss */
+  /* line 2203, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-header button,
   .main_page #myModal2 .modal-dialog .modal-content .modal-header button {
     top: -.333vw;
@@ -3592,7 +3566,7 @@ body {
     width: 26px;
     height: 26px;
   }
-  /* line 2237, ../sass/screen.scss */
+  /* line 2211, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points {
     max-width: 624px;
@@ -3600,56 +3574,56 @@ body {
     border-radius: 1.111vw;
     padding: 1.111vw 1.667vw;
   }
-  /* line 2242, ../sass/screen.scss */
+  /* line 2216, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions {
     height: 19.444vw;
     border-bottom: .111vw solid #F2F2F2;
     padding-bottom: 1.667vw;
   }
-  /* line 2247, ../sass/screen.scss */
+  /* line 2221, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar {
     width: .667vw;
     /* ширина всей полосы прокрутки */
   }
-  /* line 2250, ../sass/screen.scss */
+  /* line 2224, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-thumb,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions::-webkit-scrollbar-thumb {
     border-radius: 2.222vw;
     /* округлось бегунка */
   }
-  /* line 2253, ../sass/screen.scss */
+  /* line 2227, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box {
     padding-right: 2.222vw;
   }
-  /* line 2255, ../sass/screen.scss */
+  /* line 2229, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span {
     font-size: 1.8889vw;
   }
-  /* line 2258, ../sass/screen.scss */
+  /* line 2232, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point {
     padding: 0 2.222vw;
   }
-  /* line 2264, ../sass/screen.scss */
+  /* line 2238, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_total span,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_total span {
     font-size: 1.8889vw;
   }
-  /* line 2267, ../sass/screen.scss */
+  /* line 2241, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_total .box_point,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_total .box_point {
     padding-left: 1.667vw;
   }
-  /* line 2272, ../sass/screen.scss */
+  /* line 2246, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_link,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_link {
     margin: 4.444vw auto 6.667vw;
   }
-  /* line 2274, ../sass/screen.scss */
+  /* line 2248, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_link a,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_link a {
     font-size: 3.555vw;
@@ -3658,7 +3632,7 @@ body {
   }
 }
 @media (max-width: 900px) {
-  /* line 2293, ../sass/screen.scss */
+  /* line 2267, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-header button,
   .main_page #myModal2 .modal-dialog .modal-content .modal-header button,
   .main_page #myModal3 .modal-dialog .modal-content .modal-header button,
@@ -3673,7 +3647,7 @@ body {
   }
 }
 @media (max-width: 600px) {
-  /* line 2310, ../sass/screen.scss */
+  /* line 2284, ../sass/screen.scss */
   .main_page #myModal .modal-dialog::after,
   .main_page #myModal2 .modal-dialog::after,
   .main_page #myModal3 .modal-dialog::after,
@@ -3683,7 +3657,7 @@ body {
   .main_page #myModal7 .modal-dialog::after {
     background-image: url(../images/modal_bg_mobile.webp);
   }
-  /* line 2315, ../sass/screen.scss */
+  /* line 2289, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-header h3,
   .main_page #myModal2 .modal-dialog .modal-content .modal-header h3,
   .main_page #myModal3 .modal-dialog .modal-content .modal-header h3,
@@ -3693,7 +3667,7 @@ body {
   .main_page #myModal7 .modal-dialog .modal-content .modal-header h3 {
     font-size: 30px;
   }
-  /* line 2318, ../sass/screen.scss */
+  /* line 2292, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-header p,
   .main_page #myModal2 .modal-dialog .modal-content .modal-header p,
   .main_page #myModal3 .modal-dialog .modal-content .modal-header p,
@@ -3703,7 +3677,7 @@ body {
   .main_page #myModal7 .modal-dialog .modal-content .modal-header p {
     font-size: 13px;
   }
-  /* line 2321, ../sass/screen.scss */
+  /* line 2295, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-header button,
   .main_page #myModal2 .modal-dialog .modal-content .modal-header button,
   .main_page #myModal3 .modal-dialog .modal-content .modal-header button,
@@ -3716,7 +3690,7 @@ body {
     width: 30px;
     height: 30px;
   }
-  /* line 2328, ../sass/screen.scss */
+  /* line 2302, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points,
   .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points,
@@ -3726,7 +3700,7 @@ body {
   .main_page #myModal7 .modal-dialog .modal-content .modal-body .box_points {
     padding: 10px 5px 10px 10px;
   }
-  /* line 2330, ../sass/screen.scss */
+  /* line 2304, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
   .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box,
@@ -3736,7 +3710,7 @@ body {
   .main_page #myModal7 .modal-dialog .modal-content .modal-body .box_points .box_missions .box {
     padding-right: 8px;
   }
-  /* line 2332, ../sass/screen.scss */
+  /* line 2306, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
   .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span,
@@ -3746,7 +3720,7 @@ body {
   .main_page #myModal7 .modal-dialog .modal-content .modal-body .box_points .box_missions .box span {
     font-size: 12px;
   }
-  /* line 2335, ../sass/screen.scss */
+  /* line 2309, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
   .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name,
@@ -3756,7 +3730,7 @@ body {
   .main_page #myModal7 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_name {
     width: 55%;
   }
-  /* line 2338, ../sass/screen.scss */
+  /* line 2312, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
   .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point,
@@ -3766,7 +3740,7 @@ body {
   .main_page #myModal7 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_point {
     padding: 0 10px;
   }
-  /* line 2341, ../sass/screen.scss */
+  /* line 2315, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
   .main_page #myModal2 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
   .main_page #myModal3 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status,
@@ -3776,7 +3750,7 @@ body {
   .main_page #myModal7 .modal-dialog .modal-content .modal-body .box_points .box_missions .box .box_mission_status {
     width: 25%;
   }
-  /* line 2350, ../sass/screen.scss */
+  /* line 2324, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content,
   .main_page #myModal2.modal_options .modal-dialog .modal-content,
   .main_page #myModal3.modal_options .modal-dialog .modal-content,
@@ -3786,7 +3760,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content {
     padding: 4.167vw 4.167vw 10vw 4.167vw;
   }
-  /* line 2352, ../sass/screen.scss */
+  /* line 2326, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-header h3,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-header h3,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-header h3,
@@ -3796,7 +3770,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-header h3 {
     font-size: 7.667vw;
   }
-  /* line 2355, ../sass/screen.scss */
+  /* line 2329, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body,
@@ -3806,7 +3780,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body {
     padding: 5vw 1.667vw 0;
   }
-  /* line 2359, ../sass/screen.scss */
+  /* line 2333, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_link a,
@@ -3819,7 +3793,7 @@ body {
     border-radius: .8333vw;
     padding: 1.667vw 3.333vw;
   }
-  /* line 2366, ../sass/screen.scss */
+  /* line 2340, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description,
@@ -3829,7 +3803,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description {
     margin-top: .8333vw;
   }
-  /* line 2368, ../sass/screen.scss */
+  /* line 2342, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type,
@@ -3839,7 +3813,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:first-of-type {
     font-size: 2.8333vw;
   }
-  /* line 2371, ../sass/screen.scss */
+  /* line 2345, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_description p:last-of-type,
@@ -3851,7 +3825,7 @@ body {
     line-height: 1.1;
     margin-top: .8333vw;
   }
-  /* line 2377, ../sass/screen.scss */
+  /* line 2351, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status,
@@ -3861,7 +3835,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status {
     margin-top: 1.667vw;
   }
-  /* line 2380, ../sass/screen.scss */
+  /* line 2354, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li,
@@ -3872,7 +3846,7 @@ body {
     font-size: 2.8333vw;
     padding-left: 2.1667vw;
   }
-  /* line 2384, ../sass/screen.scss */
+  /* line 2358, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-ok::before,
@@ -3887,7 +3861,7 @@ body {
     border-bottom: .167vw solid #00DA74;
     border-left: .167vw solid #00DA74;
   }
-  /* line 2394, ../sass/screen.scss */
+  /* line 2368, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_status ul li.status-cancel::before,
@@ -3900,7 +3874,7 @@ body {
     width: 1.667vw;
     height: 1.667vw;
   }
-  /* line 2405, ../sass/screen.scss */
+  /* line 2379, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total,
@@ -3910,7 +3884,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total {
     margin-top: 1.667vw;
   }
-  /* line 2407, ../sass/screen.scss */
+  /* line 2381, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p,
@@ -3922,7 +3896,7 @@ body {
     line-height: 1.1;
     padding-left: 2.1667vw;
   }
-  /* line 2411, ../sass/screen.scss */
+  /* line 2385, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint .box_total > p::before,
@@ -3937,7 +3911,7 @@ body {
     border-bottom: .667vw solid #00DA74;
     border-left: .667vw solid #00DA74;
   }
-  /* line 2421, ../sass/screen.scss */
+  /* line 2395, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_left,
@@ -3948,7 +3922,7 @@ body {
     width: 40vw;
     padding-top: 6.1667vw;
   }
-  /* line 2425, ../sass/screen.scss */
+  /* line 2399, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right,
@@ -3958,7 +3932,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right {
     width: 40vw;
   }
-  /* line 2427, ../sass/screen.scss */
+  /* line 2401, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount,
@@ -3968,7 +3942,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount {
     height: 6.16667vw;
   }
-  /* line 2429, ../sass/screen.scss */
+  /* line 2403, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span,
@@ -3978,7 +3952,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount span {
     font-size: 1.667vw;
   }
-  /* line 2432, ../sass/screen.scss */
+  /* line 2406, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number,
@@ -3988,7 +3962,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number {
     padding: 0 1.667vw;
   }
-  /* line 2435, ../sass/screen.scss */
+  /* line 2409, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span,
@@ -3998,7 +3972,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active span {
     font-size: 6vw;
   }
-  /* line 2439, ../sass/screen.scss */
+  /* line 2413, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span, .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number span,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span,
@@ -4014,7 +3988,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-1_active span {
     font-size: 4.333vw;
   }
-  /* line 2443, ../sass/screen.scss */
+  /* line 2417, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span, .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number span,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span,
@@ -4030,7 +4004,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-2_active span {
     font-size: 3.333vw;
   }
-  /* line 2447, ../sass/screen.scss */
+  /* line 2421, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span, .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.active + .box_number + .box_number + .box_number span,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span,
@@ -4046,7 +4020,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_amount .box_number.prev-3_active span {
     font-size: 2.5vw;
   }
-  /* line 2454, ../sass/screen.scss */
+  /* line 2428, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide,
@@ -4056,7 +4030,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide {
     padding: 1.667vw 2.5vw;
   }
-  /* line 2456, ../sass/screen.scss */
+  /* line 2430, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p,
@@ -4066,7 +4040,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide p {
     font-size: 2.1667vw;
   }
-  /* line 2460, ../sass/screen.scss */
+  /* line 2434, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table,
@@ -4076,7 +4050,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table {
     min-width: 32.5vw;
   }
-  /* line 2463, ../sass/screen.scss */
+  /* line 2437, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right,
@@ -4086,7 +4060,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_mint > .box_right .box_total .box_hide .box_cashback .box_table .box .box_right {
     padding-left: 1.667vw;
   }
-  /* line 2473, ../sass/screen.scss */
+  /* line 2447, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_bottom,
@@ -4096,7 +4070,7 @@ body {
   .main_page #myModal7.modal_options .modal-dialog .modal-content .modal-body .box_bottom {
     margin-top: 5vw;
   }
-  /* line 2475, ../sass/screen.scss */
+  /* line 2449, ../sass/screen.scss */
   .main_page #myModal.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
   .main_page #myModal2.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
   .main_page #myModal3.modal_options .modal-dialog .modal-content .modal-body .box_bottom p,
@@ -4108,7 +4082,7 @@ body {
   }
 }
 @media (max-width: 480px) {
-  /* line 2493, ../sass/screen.scss */
+  /* line 2467, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-header button,
   .main_page #myModal2 .modal-dialog .modal-content .modal-header button,
   .main_page #myModal3 .modal-dialog .modal-content .modal-header button,
@@ -4118,7 +4092,7 @@ body {
   .main_page #myModal7 .modal-dialog .modal-content .modal-header button {
     right: -4.3vw;
   }
-  /* line 2497, ../sass/screen.scss */
+  /* line 2471, ../sass/screen.scss */
   .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
   .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
   .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
@@ -4128,7 +4102,7 @@ body {
   .main_page #myModal7.modal_passcode .modal-content .modal-body .box_passcode .box_button label {
     max-width: 290px;
   }
-  /* line 2499, ../sass/screen.scss */
+  /* line 2473, ../sass/screen.scss */
   .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
   .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
   .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
@@ -4139,7 +4113,7 @@ body {
     top: 64px;
     width: 212px;
   }
-  /* line 2502, ../sass/screen.scss */
+  /* line 2476, ../sass/screen.scss */
   .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
   .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
   .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
@@ -4149,7 +4123,7 @@ body {
   .main_page #myModal7.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line {
     width: 34px;
   }
-  /* line 2507, ../sass/screen.scss */
+  /* line 2481, ../sass/screen.scss */
   .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
   .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
   .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
@@ -4164,7 +4138,7 @@ body {
   }
 }
 @media (max-width: 400px) {
-  /* line 2524, ../sass/screen.scss */
+  /* line 2498, ../sass/screen.scss */
   .main_page #myModal .modal-dialog .modal-content .modal-header button,
   .main_page #myModal2 .modal-dialog .modal-content .modal-header button,
   .main_page #myModal3 .modal-dialog .modal-content .modal-header button,
@@ -4174,7 +4148,7 @@ body {
   .main_page #myModal7 .modal-dialog .modal-content .modal-header button {
     right: -5.3vw;
   }
-  /* line 2528, ../sass/screen.scss */
+  /* line 2502, ../sass/screen.scss */
   .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
   .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
   .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label,
@@ -4184,7 +4158,7 @@ body {
   .main_page #myModal7.modal_passcode .modal-content .modal-body .box_passcode .box_button label {
     max-width: 250px;
   }
-  /* line 2530, ../sass/screen.scss */
+  /* line 2504, ../sass/screen.scss */
   .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
   .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
   .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line,
@@ -4195,7 +4169,7 @@ body {
     top: 58px;
     width: 184px;
   }
-  /* line 2533, ../sass/screen.scss */
+  /* line 2507, ../sass/screen.scss */
   .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
   .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
   .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line,
@@ -4205,7 +4179,7 @@ body {
   .main_page #myModal7.modal_passcode .modal-content .modal-body .box_passcode .box_button label .box_line .line {
     width: 30px;
   }
-  /* line 2538, ../sass/screen.scss */
+  /* line 2512, ../sass/screen.scss */
   .main_page #myModal.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
   .main_page #myModal2.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
   .main_page #myModal3.modal_passcode .modal-content .modal-body .box_passcode .box_button input,
@@ -4220,8 +4194,84 @@ body {
   }
 }
 
-@keyframes flicker {
+/* line 2526, ../sass/screen.scss */
+#canvas {
+  width: 100% !important;
+}
+
+/* line 2530, ../sass/screen.scss */
+.player * {
+  display: inline-block;
+  vertical-align: middle;
+  background: none;
+  border: none;
+  font-size: x-large;
+}
+
+/* line 2537, ../sass/screen.scss */
+.player audio {
+  display: none;
+}
+
+/* line 2540, ../sass/screen.scss */
+.player {
+  border: 2px solid #600a6f;
+  background: #e9defd;
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+}
+
+/* line 2548, ../sass/screen.scss */
+.player input[type="range"] {
+  -webkit-appearance: none;
+  height: 5px;
+  border-radius: 5px;
+  background: white;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* line 2559, ../sass/screen.scss */
+.player input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+/* line 2569, ../sass/screen.scss */
+.player input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+/* line 2576, ../sass/screen.scss */
+#volume {
+  width: 40px;
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
   100% {
+    opacity: 0;
+  }
+}
+@keyframes flicker {
+  0% {
     opacity: 0;
   }
   50% {
