@@ -4219,6 +4219,19 @@ body {
 }
 
 /* line 2544, ../sass/screen.scss */
+.play-btn {
+  margin: 25px auto 0;
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* line 2556, ../sass/screen.scss */
 .player input[type="range"] {
   -webkit-appearance: none;
   height: 5px;
@@ -4230,7 +4243,7 @@ body {
   transition: opacity .2s;
 }
 
-/* line 2555, ../sass/screen.scss */
+/* line 2567, ../sass/screen.scss */
 .player input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -4241,7 +4254,7 @@ body {
   cursor: pointer;
 }
 
-/* line 2565, ../sass/screen.scss */
+/* line 2577, ../sass/screen.scss */
 .player input[type="range"]::-moz-range-thumb {
   width: 10px;
   height: 10px;
@@ -4250,7 +4263,7 @@ body {
   cursor: pointer;
 }
 
-/* line 2572, ../sass/screen.scss */
+/* line 2584, ../sass/screen.scss */
 #volume {
   width: 40px;
 }
