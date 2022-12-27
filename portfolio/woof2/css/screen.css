@@ -4197,14 +4197,16 @@ body {
 /* line 2526, ../sass/screen.scss */
 #canvas {
   width: 100% !important;
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 10px;
 }
 
-/* line 2529, ../sass/screen.scss */
+/* line 2531, ../sass/screen.scss */
 #audio#audio {
   display: none;
 }
 
-/* line 2533, ../sass/screen.scss */
+/* line 2535, ../sass/screen.scss */
 .player * {
   display: inline-block;
   vertical-align: middle;
@@ -4213,12 +4215,12 @@ body {
   font-size: x-large;
 }
 
-/* line 2540, ../sass/screen.scss */
+/* line 2542, ../sass/screen.scss */
 .player audio {
   display: none;
 }
 
-/* line 2544, ../sass/screen.scss */
+/* line 2546, ../sass/screen.scss */
 .play-btn {
   margin: 25px auto 0;
   display: block;
@@ -4231,7 +4233,7 @@ body {
   line-height: 1;
 }
 
-/* line 2556, ../sass/screen.scss */
+/* line 2558, ../sass/screen.scss */
 .player input[type="range"] {
   -webkit-appearance: none;
   height: 5px;
@@ -4241,29 +4243,30 @@ body {
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  width: 100%;
 }
 
-/* line 2567, ../sass/screen.scss */
+/* line 2570, ../sass/screen.scss */
 .player input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #4CAF50;
+  background: #333b4b;
   cursor: pointer;
 }
 
-/* line 2577, ../sass/screen.scss */
+/* line 2580, ../sass/screen.scss */
 .player input[type="range"]::-moz-range-thumb {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #4CAF50;
+  background: #333b4b;
   cursor: pointer;
 }
 
-/* line 2584, ../sass/screen.scss */
+/* line 2587, ../sass/screen.scss */
 #volume {
   width: 40px;
 }
