@@ -7,7 +7,7 @@
     <meta property="og:image" content="#" />
     <meta name="description" content=" PFP collection of 1111 Soy Boys on the Aptos blockchain. This meme NFTs are funny stories about every crypto degens who ever got nervous looking at a volatile market. Soy Boys are 100% real.">
     <meta name="keywords" content="nft, pfp, nft collection, crypto, pfp collection, aptos, blockchain, crypto art, nft art, solana, eth, sol, ethereum, buy nft, buy art, buy nft art, metamask, martian wallet, nft marketplace, nft crypto, token, Non-fungible token, opensea, mint nft, claim nft, free mint, free NFTs">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/ico" />
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/svg" />
     <!-- <link rel="stylesheet" href="css/slick.css" type="text/css" media="all" />
     <link rel="stylesheet" href="css/slick-theme.css" type="text/css" media="all" /> -->
     <link rel="stylesheet" href="css/screen.css" type="text/css" media="all" />
@@ -44,6 +44,44 @@
                 <source srcset="images/woof-agents-desktop.jpg">
                 <img srcset="images/woof-agents-desktop.jpg" alt="My default image">
             </picture>
+          </div>
+          <div class="box_lights">
+            <div class="box_light box_light-1">
+              <div class="box_img">
+                <picture>
+                  <source srcset="images/img_light-1.png" media="(max-width: 600px)">
+                    <source srcset="images/img_light-1.png">
+                    <img srcset="images/img_light-1.png" alt="My default image">
+                </picture>
+              </div>
+            </div>
+            <div class="box_light box_light-2">
+              <div class="box_img">
+                <picture>
+                  <source srcset="images/img_light-2.png" media="(max-width: 600px)">
+                    <source srcset="images/img_light-2.png">
+                    <img srcset="images/img_light-2.png" alt="My default image">
+                </picture>
+              </div>
+            </div>
+            <div class="box_light box_light-3">
+              <div class="box_img">
+                <picture>
+                  <source srcset="images/img_light-3.png" media="(max-width: 600px)">
+                    <source srcset="images/img_light-3.png">
+                    <img srcset="images/img_light-3.png" alt="My default image">
+                </picture>
+              </div>
+            </div>
+            <div class="box_light box_light-4">
+              <div class="box_img">
+                <picture>
+                  <source srcset="images/img_light-4.png" media="(max-width: 600px)">
+                    <source srcset="images/img_light-4.png">
+                    <img srcset="images/img_light-4.png" alt="My default image">
+                </picture>
+              </div>
+            </div>
           </div>
           <div class="box_fields">
             <div class="box_field box_field-1">
@@ -173,6 +211,11 @@
                 </div>
               </div>
             </div>
+            <div class="box_field box_field-9">
+              <div class="box_logo">
+                <img src="images/logo.svg" alt="logo">
+              </div>
+            </div>
           </div>
           <div class="box_buttons">
             <div class="box_btn box_btn-1">
@@ -281,6 +324,13 @@
               </div>
             </div>
             <div class="box_lamp">
+              <div class="box_img-2">
+                <picture>
+                  <source srcset="images/indicator-green-mob.png" media="(max-width: 600px)">
+                    <source srcset="images/indicator-green-deskpop.png">
+                    <img srcset="images/indicator-green-deskpop.png" alt="My default image">
+                </picture>
+              </div>
               <div class="box_img">
                 <picture>
                   <source srcset="images/indicator-red-mob.png" media="(max-width: 600px)">
@@ -605,23 +655,15 @@
                 <audio src="media/Superstar.mp3" id="audio" controls>audio element not supported</audio> -->
                 
                 <div class="player">
-                  <canvas id='canvas' width="800" height="350"></canvas>
+                  <canvas id='canvas'></canvas>
                   <audio id="audio" controls>
                     <source src="media/Superstar.mp3" type="audio/mp3">
                   Your browser does not support the audio element.
                   </audio>
                   <input id="cur-time" type="range" min="0" max="10" step="0">
                   <button class="play-btn">►</button>
-                  <div class="play-time">1:00</div>
-                  <!-- <div id="speaker">🔊</div> -->
-                  <!-- <input id="volume" type="range" min="0" max="10"> -->
+                  <!-- <div class="play-time">1:00</div> -->
                 </div>
-
-                <!-- <div id="controls" class="hidden">
-                  <a id="playBtn">Play</a>
-                  <span id="timer">00:00</span>
-                  <input type="range" step="0.1" min="0" max="1" value="0" id="volume" />
-                </div> -->
               </div>
               <div class="box_bottom">
                 <div class="box_button">
@@ -819,7 +861,7 @@ document.addEventListener("DOMContentLoaded", (e)=> {
 
 //dom об'єкти елементів контролю
           var av = document.getElementById("audio");
-          var playTime = document.getElementsByClassName("play-time")[0];
+          // var playTime = document.getElementsByClassName("play-time")[0];
           var playBtn=document.getElementsByClassName("play-btn")[0];
           var curTime=document.getElementById("cur-time");
           // var volume = document.getElementById("volume");
@@ -833,23 +875,23 @@ document.addEventListener("DOMContentLoaded", (e)=> {
             };
             
 //функція виведення поточного часу відтворення
-          av.ontimeupdate=function() {
+        //   av.ontimeupdate=function() {
             
-              var sec_num = av.currentTime;
-              var hours   = Math.floor(sec_num / 3600);
-              var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
-              var seconds = sec_num - (hours * 3600) - (minutes * 60);
-              seconds=Math.round(seconds);
+        //       var sec_num = av.currentTime;
+        //       var hours   = Math.floor(sec_num / 3600);
+        //       var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+        //       var seconds = sec_num - (hours * 3600) - (minutes * 60);
+        //       seconds=Math.round(seconds);
 
-              if (hours < 10) {
-                hours   = "0"+hours;
-              }
-              if (minutes < 10) {
-                minutes = "0"+minutes;
-              }
-              if (seconds < 10) { seconds = "0"+seconds; } playTime.innerHTML = minutes+':'+seconds; 
-              if(isPlaying) curTime.value=av.currentTime; 
-         }; 
+        //       if (hours < 10) {
+        //         hours   = "0"+hours;
+        //       }
+        //       if (minutes < 10) {
+        //         minutes = "0"+minutes;
+        //       }
+        //       if (seconds < 10) { seconds = "0"+seconds; } playTime.innerHTML = minutes+':'+seconds; 
+        //       if(isPlaying) curTime.value=av.currentTime; 
+        //  }; 
 //функція для встановлення гучності
         //  volume.onchange=function() { 
 
