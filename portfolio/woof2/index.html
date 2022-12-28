@@ -655,14 +655,14 @@
                 <audio src="media/Superstar.mp3" id="audio" controls>audio element not supported</audio> -->
                 
                 <div class="player">
-                  <canvas id='canvas'></canvas>
+                  <canvas id='canvas' width="584" height="124"></canvas>
                   <audio id="audio" controls>
                     <source src="media/Superstar.mp3" type="audio/mp3">
                   Your browser does not support the audio element.
                   </audio>
                   <input id="cur-time" type="range" min="0" max="10" step="0">
                   <button class="play-btn">►</button>
-                  <!-- <div class="play-time">1:00</div> -->
+                  <div class="play-time">1:00</div>
                 </div>
               </div>
               <div class="box_bottom">
@@ -861,7 +861,7 @@ document.addEventListener("DOMContentLoaded", (e)=> {
 
 //dom об'єкти елементів контролю
           var av = document.getElementById("audio");
-          // var playTime = document.getElementsByClassName("play-time")[0];
+          var playTime = document.getElementsByClassName("play-time")[0];
           var playBtn=document.getElementsByClassName("play-btn")[0];
           var curTime=document.getElementById("cur-time");
           // var volume = document.getElementById("volume");
@@ -875,23 +875,23 @@ document.addEventListener("DOMContentLoaded", (e)=> {
             };
             
 //функція виведення поточного часу відтворення
-        //   av.ontimeupdate=function() {
+          av.ontimeupdate=function() {
             
-        //       var sec_num = av.currentTime;
-        //       var hours   = Math.floor(sec_num / 3600);
-        //       var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
-        //       var seconds = sec_num - (hours * 3600) - (minutes * 60);
-        //       seconds=Math.round(seconds);
+              var sec_num = av.currentTime;
+              var hours   = Math.floor(sec_num / 3600);
+              var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+              var seconds = sec_num - (hours * 3600) - (minutes * 60);
+              seconds=Math.round(seconds);
 
-        //       if (hours < 10) {
-        //         hours   = "0"+hours;
-        //       }
-        //       if (minutes < 10) {
-        //         minutes = "0"+minutes;
-        //       }
-        //       if (seconds < 10) { seconds = "0"+seconds; } playTime.innerHTML = minutes+':'+seconds; 
-        //       if(isPlaying) curTime.value=av.currentTime; 
-        //  }; 
+              if (hours < 10) {
+                hours   = "0"+hours;
+              }
+              if (minutes < 10) {
+                minutes = "0"+minutes;
+              }
+              if (seconds < 10) { seconds = "0"+seconds; } playTime.innerHTML = minutes+':'+seconds; 
+              if(isPlaying) curTime.value=av.currentTime; 
+         }; 
 //функція для встановлення гучності
         //  volume.onchange=function() { 
 
