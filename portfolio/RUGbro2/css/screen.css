@@ -846,7 +846,7 @@ body {
   }
   /* line 1107, ../sass/screen.scss */
   .main_page .section-1 {
-    min-height: 568px;
+    min-height: 400px;
   }
   /* line 1110, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_top {
@@ -947,16 +947,17 @@ body {
     -ms-justify-content: space-between;
     justify-content: space-between;
     position: relative;
+    padding-bottom: 25vw;
   }
-  /* line 1188, ../sass/screen.scss */
+  /* line 1189, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_top .box_right .box {
     position: static;
   }
-  /* line 1190, ../sass/screen.scss */
+  /* line 1191, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_top .box_right .box img {
     width: 25.9vw;
   }
-  /* line 1193, ../sass/screen.scss */
+  /* line 1194, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_top .box_right .box .box_hide {
     top: 9vw;
     left: -5vw;
@@ -965,54 +966,54 @@ body {
     padding: 5.5625vw 5.04vw;
     width: auto;
   }
-  /* line 1201, ../sass/screen.scss */
+  /* line 1202, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_top .box_right .box.box_2 {
     margin-top: 25.5vw;
     margin-bottom: -25.5vw;
   }
-  /* line 1212, ../sass/screen.scss */
+  /* line 1213, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_bottom {
-    margin-top: 30vw;
     margin-bottom: 0;
+    min-height: 30vw;
   }
-  /* line 1217, ../sass/screen.scss */
+  /* line 1219, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_bottom .box_left {
     display: none;
   }
-  /* line 1224, ../sass/screen.scss */
+  /* line 1226, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_bottom .box_human {
     bottom: 0;
   }
-  /* line 1232, ../sass/screen.scss */
+  /* line 1234, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_bottom .box_human img {
     display: block;
     width: 100%;
     height: auto;
   }
-  /* line 1237, ../sass/screen.scss */
+  /* line 1239, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_bottom .box_human.human_1 {
     width: 21.667vw;
     height: 28vw;
   }
-  /* line 1261, ../sass/screen.scss */
+  /* line 1263, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_bottom .box_human.human_2 {
     width: 25vw;
     height: 27.5vw;
   }
-  /* line 1281, ../sass/screen.scss */
+  /* line 1283, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_bottom .box_human.human_3 {
     width: 25vw;
     height: 28.8333vw;
   }
-  /* line 1302, ../sass/screen.scss */
+  /* line 1304, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_bottom .box_human.human_4 {
     display: none;
   }
-  /* line 1305, ../sass/screen.scss */
+  /* line 1307, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_bottom .box_human.human_5 {
     display: none;
   }
-  /* line 1309, ../sass/screen.scss */
+  /* line 1311, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_bottom .box_fence {
     display: none;
   }
@@ -1038,7 +1039,7 @@ body {
   }
 }
 @media (max-width: 500px) and (min-height: 680px) {
-  /* line 1331, ../sass/screen.scss */
+  /* line 1333, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_bottom {
     position: absolute;
     bottom: 0;

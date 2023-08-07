@@ -1105,7 +1105,7 @@ body {
 			}
 		}
 		.section-1 {
-			min-height: 568px;
+			min-height: 400px;
 			.box_content {
 				.box_top {
 					// padding: 24px;
@@ -1185,6 +1185,7 @@ body {
 						@include flex;
 						@include justify-content(space-between);
 						position: relative;
+						padding-bottom: 25vw;
 						.box {
 							position: static;
 							img {
@@ -1210,10 +1211,11 @@ body {
 					}
 				}
 				.box_bottom {
-					margin-top: 30vw;
+					// margin-top: 30vw;
 					// padding-bottom: 202px;
 					// padding-bottom: 33.667vw;
 					margin-bottom: 0;
+					min-height: 30vw;
 					.box_left {
 						display: none;
 					}
