@@ -844,6 +844,10 @@ body {
   .main_page .main_header .box_content.menu_opened .burger::after {
     top: 3.167vw;
   }
+  /* line 1107, ../sass/screen.scss */
+  .main_page .section-1 {
+    min-height: 565px;
+  }
   /* line 1110, ../sass/screen.scss */
   .main_page .section-1 .box_content .box_top {
     padding: 4vw;
