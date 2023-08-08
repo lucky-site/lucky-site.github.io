@@ -1,0 +1,268 @@
+@font-face{font-family:pixelmix;src:url(/build/fonts/pixelmix.43079f34.ttf)}
+.container{align-items:center;display:flex;justify-content:space-between;padding:20px 0}
+.logo,.menu{flex:1}
+.menu ul{display:flex;justify-content:space-between;list-style:none}
+.menu ul li a{color:#000;font-size:18px;font-weight:500;text-decoration:none}
+.icons{display:flex;flex:1;justify-content:flex-end}
+.icons ul{display:flex;justify-content:space-between;list-style:none;margin-right:25px}
+.icons ul li a{color:#000;font-size:18px;font-weight:500;text-decoration:none}
+.footer-container{align-items:center;bottom:0;padding:20px 0;position:fixed;width:100%}
+.footer-container,
+.footer-container ul{display:flex;justify-content:space-between}
+.footer-container ul{list-style:none}
+.footer-container ul li a{color:#000;font-size:18px;font-weight:500;text-decoration:none}
+.footer-icons{display:flex;flex:1;justify-content:flex-start}
+.main-container{align-items:center;flex-direction:column}
+.main-container,.main-image{display:flex;justify-content:center}
+.main-image{padding-left:2rem}
+.main-buttons{display:flex;height:35vh;justify-content:center}
+.btn{color:#fff;cursor:pointer;display:inline-block;font-family:pixelmix;font-size:16px;height:8vh;margin:4px 5px;text-align:center;text-decoration:none;transition:all .3s ease-in-out}
+.btn-mint{cursor:pointer;height:10vh}
+.btn-mint:hover,.btn:hover{background-color:#fff;border-radius:20px;color:#f7931a;cursor:pointer;transition:all .3s ease-in-out}
+.pix-icons{cursor:pointer;margin:10px;width:90px}
+.btn-container{position:relative;width:100%}
+.image{display:block;height:auto;width:100%}
+.text{color:#fff;font-size:20px;left:50%;text-align:center;top:50%;transform:translate(-50%,-50%)}
+.overlay,.text{position:absolute}
+.overlay{background-color:rgba(0,0,0,.5);border-radius:3rem;bottom:-1.7vh;height:85%;left:0;opacity:0;right:0;top:1.7vh;transition:.5s ease;width:100%}
+body{height:100vh;overflow:hidden}
+h2{font-size:40px}
+h2,h3{color:#fff;font-family:pixelmix;margin-top:20px;text-align:center}
+h3{font-size:30px}
+.bg-image{background-position:50%;background-repeat:no-repeat;background-size:cover;height:100%;top:-1vh;width:100%;z-index:-1}
+.bg-image,
+.person-1{left:0;position:absolute}
+
+.person-1{
+    animation:move 3s linear infinite alternate,rotate 6s linear infinite,jump .3s step-end infinite;
+    background-image:url(/build/images/midget-walk.6ed45174.png);height:187px;
+    width:130px
+}
+
+.person-1:hover{animation-play-state:paused}
+
+.person-2{animation:move 5s linear infinite alternate,rotate 10s linear infinite,jump .4s step-end infinite;background-image:url(/build/images/midget-walk.6ed45174.png);height:187px;left:0;position:absolute;width:130px}
+
+.person-2:hover{animation-play-state:paused}
+
+.person-3{animation:move 2s linear infinite alternate,rotate 4s linear infinite,jump .5s step-end infinite;background-image:url(/build/images/midget-walk.6ed45174.png);height:187px;left:0;position:absolute;width:130px}
+.person-3:hover{animation-play-state:paused}
+.person-4{animation:move 1s linear infinite alternate,rotate 2s linear infinite,jump .1s step-end infinite;background-image:url(/build/images/midget-walk.6ed45174.png);height:187px;left:0;position:absolute;width:130px}
+.person-4:hover{animation-play-state:paused}
+.person-5{animation:move 4s linear infinite alternate,rotate 8s linear infinite,jump .6s step-end infinite;background-image:url(/build/images/midget-walk.6ed45174.png);height:187px;left:0;position:absolute;width:130px}
+.person-5:hover{animation-play-state:paused}
+.person-6{animation:move 6s linear infinite alternate,rotate 12s linear infinite,jump .18s step-end infinite;background-image:url(/build/images/AMOGUS.379cb1e9.png);height:200px;left:0;margin-top:-1vh;position:absolute;width:180px}
+.person-6:hover{animation-play-state:paused}.person-7{animation:move 7s linear infinite alternate,rotate 14s linear infinite,jump .7s step-end infinite;background-image:url(/build/images/midget-walk.6ed45174.png);height:187px;left:0;position:absolute;width:130px}
+.person-7:hover{animation-play-state:paused}
+.person-8{animation:move 8s linear infinite alternate,rotate 16s linear infinite,jump .8s step-end infinite;background-image:url(/build/images/midget-walk.6ed45174.png);height:187px;left:0;position:absolute;width:130px}
+.person-8:hover{animation-play-state:paused}
+.person-9{animation:move 9s linear infinite alternate,rotate 18s linear infinite,jump .2s step-end infinite;background-image:url(/build/images/midget-walk.6ed45174.png);height:187px;left:0;position:absolute;width:130px}
+.person-9:hover{animation-play-state:paused}
+
+.person-10{animation:move 10s linear infinite alternate,rotate 20s linear infinite,jump .2s step-end infinite;background-image:url(/build/images/midget-walk.6ed45174.png);height:187px;left:0;position:absolute;width:130px}
+
+.person-10:hover{animation-play-state:paused}
+
+@keyframes walk{
+    to{background-position:-1280px 0}
+}
+
+@keyframes move{
+    to{left:calc(100% - 120px)}
+}
+
+@keyframes jump{
+    0%{top:80vh}
+    50%{top:calc(80vh - 7px)}
+    to{top:80vh}
+}
+
+@keyframes rotate{
+    0%{transform:rotateY(0deg)}
+    50%{transform:rotateY(0deg)}
+    50.001%{transform:rotateY(180deg)}
+    to{transform:rotateY(180deg)}
+}
+
+
+.Toastify__toast-container{box-sizing:border-box;color:#fff;padding:4px;position:fixed;-webkit-transform:translateZ(var(--toastify-z-index));width:var(--toastify-toast-width);z-index:var(--toastify-z-index)}
+
+.Toastify__toast-container--top-left{left:1em;top:1em}
+
+.Toastify__toast-container--top-center{left:50%;top:1em;transform:translateX(-50%)}
+
+.Toastify__toast-container--top-right{right:1em;top:1em}
+
+.Toastify__toast-container--bottom-left{bottom:1em;left:1em}
+
+.Toastify__toast-container--bottom-center{bottom:1em;left:50%;transform:translateX(-50%)}
+
+.Toastify__toast-container--bottom-right{bottom:1em;right:1em}
+@media only screen and (max-width:480px){
+    
+    .Toastify__toast-container{left:0;margin:0;padding:0;width:100vw}
+    
+    .Toastify__toast-container--top-center,
+    
+    .Toastify__toast-container--top-left,
+    
+    .Toastify__toast-container--top-right{top:0;transform:translateX(0)}
+    
+    .Toastify__toast-container--bottom-center,
+    
+    .Toastify__toast-container--bottom-left,
+    
+    .Toastify__toast-container--bottom-right{bottom:0;transform:translateX(0)}
+    
+    .Toastify__toast-container--rtl{left:auto;right:0}}
+    
+    .Toastify__toast{border-radius:4px;box-shadow:0 1px 10px 0 rgba(0,0,0,.1),0 2px 15px 0 rgba(0,0,0,.05);box-sizing:border-box;cursor:default;direction:ltr;display:flex;font-family:var(--toastify-font-family);justify-content:space-between;margin-bottom:1rem;max-height:var(--toastify-toast-max-height);min-height:var(--toastify-toast-min-height);overflow:hidden;padding:8px;position:relative;z-index:0}
+    
+    .Toastify__toast--rtl{direction:rtl}
+    
+    .Toastify__toast--close-on-click{cursor:pointer}
+    
+    .Toastify__toast-body{align-items:center;display:flex;flex:1 1 auto;margin:auto 0;padding:6px}
+    
+    .Toastify__toast-body>div:last-child{flex:1;word-break:break-word}
+    
+    .Toastify__toast-icon{-webkit-margin-end:10px;display:flex;flex-shrink:0;margin-inline-end:10px;width:20px}
+    
+    .Toastify--animate{animation-duration:.7s;animation-fill-mode:both}
+    
+    .Toastify--animate-icon{animation-duration:.3s;animation-fill-mode:both}
+    
+    @media only screen and (max-width:480px){
+        
+        .Toastify__toast{border-radius:0;margin-bottom:0}}
+        
+        .Toastify__toast-theme--dark{background:var(--toastify-color-dark);color:var(--toastify-text-color-dark)}
+        
+        .Toastify__toast-theme--colored.Toastify__toast--default,.Toastify__toast-theme--light{background:var(--toastify-color-light);color:var(--toastify-text-color-light)}
+        
+        .Toastify__toast-theme--colored.Toastify__toast--info{background:var(--toastify-color-info);color:var(--toastify-text-color-info)}
+        
+        .Toastify__toast-theme--colored.Toastify__toast--success{background:var(--toastify-color-success);color:var(--toastify-text-color-success)}
+        
+        .Toastify__toast-theme--colored.Toastify__toast--warning{background:var(--toastify-color-warning);color:var(--toastify-text-color-warning)}
+        
+        .Toastify__toast-theme--colored.Toastify__toast--error{background:var(--toastify-color-error);color:var(--toastify-text-color-error)}
+        
+        .Toastify__progress-bar-theme--light{background:var(--toastify-color-progress-light)}
+        
+        .Toastify__progress-bar-theme--dark{background:var(--toastify-color-progress-dark)}
+        
+        .Toastify__progress-bar--info{background:var(--toastify-color-progress-info)}
+        
+        .Toastify__progress-bar--success{background:var(--toastify-color-progress-success)}
+        
+        .Toastify__progress-bar--warning{background:var(--toastify-color-progress-warning)}
+        
+        .Toastify__progress-bar--error{background:var(--toastify-color-progress-error)}
+        
+        .Toastify__progress-bar-theme--colored
+        .Toastify__progress-bar--error,
+        .Toastify__progress-bar-theme--colored.Toastify__progress-bar--info,
+        .Toastify__progress-bar-theme--colored.Toastify__progress-bar--success,
+        .Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning{background:var(--toastify-color-transparent)}
+        
+        .Toastify__close-button{align-self:flex-start;background:transparent;border:none;color:#fff;cursor:pointer;opacity:.7;outline:none;padding:0;transition:.3s ease}
+        
+        .Toastify__close-button--light{color:#000;opacity:.3}
+        
+        .Toastify__close-button>svg{fill:currentColor;height:16px;width:14px}
+        .Toastify__close-button:focus,
+        .Toastify__close-button:hover{opacity:1}
+        
+        @keyframes Toastify__trackProgress{0%{transform:scaleX(1)}to{transform:scaleX(0)}}
+
+        .Toastify__progress-bar{bottom:0;height:5px;left:0;opacity:.7;position:absolute;transform-origin:left;width:100%;z-index:var(--toastify-z-index)}
+        
+        .Toastify__progress-bar--animated{animation:Toastify__trackProgress linear 1 forwards}
+        
+        .Toastify__progress-bar--controlled{transition:transform .2s}
+        
+        .Toastify__progress-bar--rtl{left:auto;right:0;transform-origin:right}
+        
+        .Toastify__spinner{animation:Toastify__spin .65s linear infinite;border:2px solid;border-color:var(--toastify-spinner-color-empty-area);border-radius:100%;border-right-color:var(--toastify-spinner-color);box-sizing:border-box;height:20px;width:20px}
+        
+        @keyframes Toastify__bounceInRight{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(3000px,0,0)}60%{opacity:1;transform:translate3d(-25px,0,0)}75%{transform:translate3d(10px,0,0)}90%{transform:translate3d(-5px,0,0)}to{transform:none}}
+        
+        @keyframes Toastify__bounceOutRight{20%{opacity:1;transform:translate3d(-20px,0,0)}to{opacity:0;transform:translate3d(2000px,0,0)}}
+        
+        @keyframes Toastify__bounceInLeft{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(-3000px,0,0)}60%{opacity:1;transform:translate3d(25px,0,0)}75%{transform:translate3d(-10px,0,0)}90%{transform:translate3d(5px,0,0)}to{transform:none}}
+        
+        @keyframes Toastify__bounceOutLeft{20%{opacity:1;transform:translate3d(20px,0,0)}to{opacity:0;transform:translate3d(-2000px,0,0)}}
+        
+        @keyframes Toastify__bounceInUp{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(0,3000px,0)}60%{opacity:1;transform:translate3d(0,-20px,0)}75%{transform:translate3d(0,10px,0)}90%{transform:translate3d(0,-5px,0)}to{transform:translateZ(0)}}
+        
+        @keyframes Toastify__bounceOutUp{20%{transform:translate3d(0,-10px,0)}40%,45%{opacity:1;transform:translate3d(0,20px,0)}to{opacity:0;transform:translate3d(0,-2000px,0)}}
+        
+        @keyframes Toastify__bounceInDown{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(0,-3000px,0)}60%{opacity:1;transform:translate3d(0,25px,0)}75%{transform:translate3d(0,-10px,0)}90%{transform:translate3d(0,5px,0)}to{transform:none}}
+        
+        @keyframes Toastify__bounceOutDown{20%{transform:translate3d(0,10px,0)}40%,45%{opacity:1;transform:translate3d(0,-20px,0)}to{opacity:0;transform:translate3d(0,2000px,0)}}
+        
+        .Toastify__bounce-enter--bottom-left,.Toastify__bounce-enter--top-left{animation-name:Toastify__bounceInLeft}
+        
+        .Toastify__bounce-enter--bottom-right,.Toastify__bounce-enter--top-right{animation-name:Toastify__bounceInRight}
+        
+        .Toastify__bounce-enter--top-center{animation-name:Toastify__bounceInDown}
+        
+        .Toastify__bounce-enter--bottom-center{animation-name:Toastify__bounceInUp}
+        
+        .Toastify__bounce-exit--bottom-left,.Toastify__bounce-exit--top-left{animation-name:Toastify__bounceOutLeft}
+        
+        .Toastify__bounce-exit--bottom-right,.Toastify__bounce-exit--top-right{animation-name:Toastify__bounceOutRight}
+        
+        .Toastify__bounce-exit--top-center{animation-name:Toastify__bounceOutUp}
+        
+        .Toastify__bounce-exit--bottom-center{animation-name:Toastify__bounceOutDown}
+        
+        @keyframes Toastify__zoomIn{0%{opacity:0;transform:scale3d(.3,.3,.3)}50%{opacity:1}}
+        
+        @keyframes Toastify__zoomOut{0%{opacity:1}50%{opacity:0;transform:scale3d(.3,.3,.3)}to{opacity:0}}
+        
+        .Toastify__zoom-enter{animation-name:Toastify__zoomIn}
+        
+        .Toastify__zoom-exit{animation-name:Toastify__zoomOut}
+        
+        @keyframes Toastify__flipIn{0%{animation-timing-function:ease-in;opacity:0;transform:perspective(400px) rotateX(90deg)}40%{animation-timing-function:ease-in;transform:perspective(400px) rotateX(-20deg)}60%{opacity:1;transform:perspective(400px) rotateX(10deg)}80%{transform:perspective(400px) rotateX(-5deg)}to{transform:perspective(400px)}}
+        
+        @keyframes Toastify__flipOut{0%{transform:perspective(400px)}30%{opacity:1;transform:perspective(400px) rotateX(-20deg)}to{opacity:0;transform:perspective(400px) rotateX(90deg)}}
+        
+        .Toastify__flip-enter{animation-name:Toastify__flipIn}
+        
+        .Toastify__flip-exit{animation-name:Toastify__flipOut}
+        
+        @keyframes Toastify__slideInRight{0%{transform:translate3d(110%,0,0);visibility:visible}to{transform:translateZ(0)}}
+        
+        @keyframes Toastify__slideInLeft{0%{transform:translate3d(-110%,0,0);visibility:visible}to{transform:translateZ(0)}}
+        
+        @keyframes Toastify__slideInUp{0%{transform:translate3d(0,110%,0);visibility:visible}to{transform:translateZ(0)}}
+        
+        @keyframes Toastify__slideInDown{0%{transform:translate3d(0,-110%,0);visibility:visible}to{transform:translateZ(0)}}
+        
+        @keyframes Toastify__slideOutRight{0%{transform:translateZ(0)}to{transform:translate3d(110%,0,0);visibility:hidden}}
+        
+        @keyframes Toastify__slideOutLeft{0%{transform:translateZ(0)}to{transform:translate3d(-110%,0,0);visibility:hidden}}
+        
+        @keyframes Toastify__slideOutDown{0%{transform:translateZ(0)}to{transform:translate3d(0,500px,0);visibility:hidden}}
+        
+        @keyframes Toastify__slideOutUp{0%{transform:translateZ(0)}to{transform:translate3d(0,-500px,0);visibility:hidden}}
+        
+        .Toastify__slide-enter--bottom-left,.Toastify__slide-enter--top-left{animation-name:Toastify__slideInLeft}
+        
+        .Toastify__slide-enter--bottom-right,.Toastify__slide-enter--top-right{animation-name:Toastify__slideInRight}
+        
+        .Toastify__slide-enter--top-center{animation-name:Toastify__slideInDown}
+        
+        .Toastify__slide-enter--bottom-center{animation-name:Toastify__slideInUp}
+        
+        .Toastify__slide-exit--bottom-left,.Toastify__slide-exit--top-left{animation-name:Toastify__slideOutLeft}
+        
+        .Toastify__slide-exit--bottom-right,.Toastify__slide-exit--top-right{animation-name:Toastify__slideOutRight}
+        
+        .Toastify__slide-exit--top-center{animation-name:Toastify__slideOutUp}
+        
+        .Toastify__slide-exit--bottom-center{animation-name:Toastify__slideOutDown}
+        @keyframes Toastify__spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
