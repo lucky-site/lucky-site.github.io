@@ -1,0 +1,1801 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: 'helveticaneuecyrbold';
+  src: url("../fonts/helveticaneuecyr-bold-webfont.woff2") format("woff2"), url("../fonts/helveticaneuecyr-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'helveticaneuecyrmedium';
+  src: url("../fonts/helveticaneuecyr-medium-webfont.woff2") format("woff2"), url("../fonts/helveticaneuecyr-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 23, ../sass/screen.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 27, ../sass/screen.scss */
+.page-romax .text-color {
+  color: #faa115;
+}
+/* line 30, ../sass/screen.scss */
+.page-romax .text-color-2 {
+  color: #e60027;
+}
+/* line 33, ../sass/screen.scss */
+.page-romax .img-responsive {
+  width: 100%;
+  margin: auto;
+}
+/* line 37, ../sass/screen.scss */
+.page-romax h1 {
+  font-family: 'helveticaneuecyrbold', sans-serif;
+  font-size: 46px;
+  color: #fff;
+}
+/* line 42, ../sass/screen.scss */
+.page-romax h2 {
+  font-family: 'helveticaneuecyrbold', sans-serif;
+  font-size: 60px;
+  color: #232324;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 49, ../sass/screen.scss */
+.page-romax h3 {
+  font-size: 32px;
+}
+/* line 52, ../sass/screen.scss */
+.page-romax h4 {
+  font-size: 19px;
+  text-align: center;
+  color: #525252;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+/* line 60, ../sass/screen.scss */
+.page-romax .btn {
+  display: block;
+  width: 100%;
+  background: #ce031d;
+  background: -moz-linear-gradient(to right, #b30212, #e6012a);
+  background: -webkit-gradient(linear, left, right, color-stop(0%, #b30212), color-stop(100%, #e6012a));
+  background: -webkit-linear-gradient(to right, #b30212, #e6012a);
+  background: -o-linear-gradient(to right, #b30212, #e6012a);
+  background: -ms-linear-gradient(to right, #b30212, #e6012a);
+  background: linear-gradient(to right, #b30212, #e6012a);
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding: 9px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 2px 0 #f4a137;
+  transition: background .2s linear;
+}
+/* line 81, ../sass/screen.scss */
+.page-romax .btn:hover {
+  background: #fba713;
+}
+/* line 84, ../sass/screen.scss */
+.page-romax .d-block {
+  display: block;
+}
+/* line 88, ../sass/screen.scss */
+.page-romax .section-1 {
+  background: url(../images/sct-1_img-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 68px 10px 35px;
+}
+/* line 94, ../sass/screen.scss */
+.page-romax .section-1 h1 {
+  text-align: center;
+  margin: 0px auto 25px;
+  line-height: 1.27;
+}
+/* line 98, ../sass/screen.scss */
+.page-romax .section-1 h1 .text-color {
+  border-bottom: 2px dashed;
+}
+/* line 101, ../sass/screen.scss */
+.page-romax .section-1 h1 .text-size {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 67px;
+  line-height: .5;
+  font-weight: 400;
+}
+/* line 108, ../sass/screen.scss */
+.page-romax .section-1 .box-form {
+  padding: 10px;
+  max-width: 709px;
+  margin: auto;
+  position: relative;
+  border: 1px solid #f26a06;
+}
+/* line 115, ../sass/screen.scss */
+.page-romax .section-1 form {
+  background: rgba(255, 255, 255, 0.5);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 16px 10px 11px;
+  text-align: center;
+}
+/* line 121, ../sass/screen.scss */
+.page-romax .section-1 form .h3-1 {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 35px;
+  position: relative;
+  font-size: 29px;
+  color: #3d3d3d;
+  max-width: 475px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 132, ../sass/screen.scss */
+.page-romax .section-1 form .h3-1:after {
+  content: "";
+  position: absolute;
+  left: 99%;
+  bottom: -60px;
+  width: 67px;
+  height: 134px;
+  background: url(../images/sct-1_img-7.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 143, ../sass/screen.scss */
+.page-romax .section-1 form .h3-1 span {
+  font-weight: 700;
+}
+/* line 147, ../sass/screen.scss */
+.page-romax .section-1 form .h3-2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+/* line 153, ../sass/screen.scss */
+.page-romax .section-1 form input[type="text"] {
+  font-size: 15.55px;
+  padding: 6px 5px 6px 35px;
+  border-radius: 0;
+  border: 1px solid #fff;
+  background: rgba(240, 240, 240, 0.5);
+  background-image: url(../images/sct-1_img-4.png);
+  background-repeat: no-repeat;
+  background-position: 7px 10px;
+  width: 100%;
+  max-width: 408px;
+  margin-bottom: 14px;
+}
+/* line 165, ../sass/screen.scss */
+.page-romax .section-1 form input[type="text"]::-webkit-input-placeholder {
+  color: #000;
+}
+/* line 168, ../sass/screen.scss */
+.page-romax .section-1 form input[type="text"]::-moz-placeholder {
+  color: #000;
+}
+/* line 171, ../sass/screen.scss */
+.page-romax .section-1 form input[type="text"]:-moz-placeholder {
+  color: #000;
+}
+/* line 174, ../sass/screen.scss */
+.page-romax .section-1 form input[type="text"]:-ms-input-placeholder {
+  color: #000;
+}
+/* line 178, ../sass/screen.scss */
+.page-romax .section-1 form input[name="email"] {
+  background-image: url(../images/sct-1_img-5.png);
+}
+/* line 181, ../sass/screen.scss */
+.page-romax .section-1 form input[name="first_name"] {
+  background-image: url(../images/sct-1_img-6.png);
+}
+/* line 184, ../sass/screen.scss */
+.page-romax .section-1 form .btn {
+  width: 100%;
+  max-width: 283px;
+  margin: auto;
+  margin-top: 25px;
+  border: none;
+  background-image: none;
+  background: #ce031d;
+  background: -moz-linear-gradient(to right, #b30212, #e6012a);
+  background: -webkit-gradient(linear, left, right, color-stop(0%, #b30212), color-stop(100%, #e6012a));
+  background: -webkit-linear-gradient(to right, #b30212, #e6012a);
+  background: -o-linear-gradient(to right, #b30212, #e6012a);
+  background: -ms-linear-gradient(to right, #b30212, #e6012a);
+  background: linear-gradient(to right, #b30212, #e6012a);
+}
+/* line 199, ../sass/screen.scss */
+.page-romax .section-1 form .btn:hover {
+  background: #fba713;
+}
+/* line 202, ../sass/screen.scss */
+.page-romax .section-1 form input[type="radio"] {
+  display: inline-block;
+}
+/* line 205, ../sass/screen.scss */
+.page-romax .section-1 form label {
+  margin-right: 7px;
+}
+/* line 210, ../sass/screen.scss */
+.page-romax .line {
+  height: 9px;
+  background: #f4a137;
+  position: relative;
+}
+/* line 214, ../sass/screen.scss */
+.page-romax .line:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0px;
+  background-color: transparent;
+  border-top: 10px solid #f4a137;
+  border-left: 8.5px solid transparent;
+  border-right: 8.5px solid transparent;
+}
+/* line 228, ../sass/screen.scss */
+.page-romax .triangle-not:before {
+  content: none;
+}
+/* line 231, ../sass/screen.scss */
+.page-romax .section-2 {
+  max-width: 1077px;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0 64px;
+}
+/* line 236, ../sass/screen.scss */
+.page-romax .section-2 .logo {
+  max-width: 403px;
+}
+/* line 239, ../sass/screen.scss */
+.page-romax .section-2 p {
+  font-size: 24px;
+  max-width: 1015px;
+  margin: 50px auto 66px;
+  line-height: 1.292;
+}
+/* line 245, ../sass/screen.scss */
+.page-romax .section-2 .box {
+  margin: 0;
+}
+/* line 248, ../sass/screen.scss */
+.page-romax .section-2 .box .box-img .img-responsive {
+  width: 251px;
+  max-width: 251px;
+  margin: 0 auto 30px;
+}
+/* line 256, ../sass/screen.scss */
+.page-romax .section-3 {
+  padding: 33px 10px 95px;
+  text-align: center;
+  position: relative;
+}
+/* line 260, ../sass/screen.scss */
+.page-romax .section-3:before {
+  content: "";
+  background: linear-gradient(to bottom, #fbf7f3, #fdeeda, #fffefd);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 530px;
+  z-index: -1;
+}
+/* line 270, ../sass/screen.scss */
+.page-romax .section-3 h2 {
+  margin-bottom: 8px;
+}
+/* line 273, ../sass/screen.scss */
+.page-romax .section-3 > p {
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 278, ../sass/screen.scss */
+.page-romax .section-3 .box,
+.page-romax .section-3 .box-2 {
+  max-width: 1150px;
+  margin: auto;
+  margin-top: 70px;
+}
+/* line 283, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini,
+.page-romax .section-3 .box-2 .box-mini {
+  max-width: 245px;
+  margin: auto;
+}
+/* line 286, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini .box-img,
+.page-romax .section-3 .box-2 .box-mini .box-img {
+  border: 2px solid #525252;
+  border-radius: 50%;
+  max-width: 150px;
+  height: 137px;
+  margin: auto;
+  background-color: rgba(82, 82, 82, 0.271);
+  transition: all .2s linear;
+  position: relative;
+}
+/* line 295, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini .box-img:before,
+.page-romax .section-3 .box-2 .box-mini .box-img:before {
+  content: "";
+  position: absolute;
+  left: 101%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 139px;
+  height: 3px;
+  background: #f4a137;
+  background: linear-gradient(to right, #f4a137 56px, #f3a137 57px, #8c8a87 82px, #898989 58px);
+}
+/* line 307, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini .box-h4,
+.page-romax .section-3 .box-2 .box-mini .box-h4 {
+  min-height: 66px;
+  margin-top: 18px;
+  margin-bottom: 2px;
+}
+/* line 312, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini h4,
+.page-romax .section-3 .box-2 .box-mini h4 {
+  padding: 10px 5px;
+  position: relative;
+  transition: all .2s linear;
+}
+/* line 316, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini h4:before,
+.page-romax .section-3 .box-2 .box-mini h4:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 2px;
+  width: 10px;
+  height: 10px;
+  background: #595958;
+  transform: rotate(45deg);
+  border-right: 1px solid #f4a137;
+  border-bottom: 1px solid #f4a137;
+  opacity: 0;
+  transition: all .15s linear;
+}
+/* line 331, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini p,
+.page-romax .section-3 .box-2 .box-mini p {
+  font-size: 14px;
+  line-height: 1.25;
+}
+/* line 337, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini:hover .box-img,
+.page-romax .section-3 .box-2 .box-mini:hover .box-img {
+  border-color: #f4a137;
+  background: #fff;
+  position: relative;
+}
+/* line 342, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini:hover h4,
+.page-romax .section-3 .box-2 .box-mini:hover h4 {
+  box-shadow: 0 0 0 1px #f4a137;
+  color: #fff;
+  background: #595958;
+}
+/* line 346, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini:hover h4:before,
+.page-romax .section-3 .box-2 .box-mini:hover h4:before {
+  opacity: 1;
+}
+/* line 352, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini-1 img,
+.page-romax .section-3 .box-2 .box-mini-1 img {
+  margin-top: -15px;
+}
+/* line 357, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini-2 img,
+.page-romax .section-3 .box-2 .box-mini-2 img {
+  margin-left: 27px;
+}
+/* line 362, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini-3 img,
+.page-romax .section-3 .box-2 .box-mini-3 img {
+  margin-top: 15px;
+  margin-left: 5px;
+}
+/* line 367, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini-4,
+.page-romax .section-3 .box-2 .box-mini-4 {
+  margin-bottom: 0;
+}
+/* line 370, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini-4 .box-img:before,
+.page-romax .section-3 .box-2 .box-mini-4 .box-img:before {
+  content: none;
+}
+/* line 374, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini-4 .box-h4,
+.page-romax .section-3 .box-2 .box-mini-4 .box-h4 {
+  margin-top: 12px;
+}
+/* line 377, ../sass/screen.scss */
+.page-romax .section-3 .box .box-mini-4 h4,
+.page-romax .section-3 .box-2 .box-mini-4 h4 {
+  max-width: 225px;
+  margin: auto;
+  padding-bottom: 5px;
+}
+/* line 384, ../sass/screen.scss */
+.page-romax .section-3 .box-2 {
+  max-width: 885px;
+  margin-top: 50px;
+}
+/* line 389, ../sass/screen.scss */
+.page-romax .section-3 .box-2 .box-mini .box-img:before {
+  width: 145px;
+}
+/* line 395, ../sass/screen.scss */
+.page-romax .section-3 .box-2 .box-mini-5 img {
+  margin-top: 16px;
+}
+/* line 399, ../sass/screen.scss */
+.page-romax .section-3 .box-2 .box-mini-7 {
+  margin-bottom: 0;
+}
+/* line 402, ../sass/screen.scss */
+.page-romax .section-3 .box-2 .box-mini-7 .box-img:before {
+  content: none;
+}
+/* line 409, ../sass/screen.scss */
+.page-romax .section-4 {
+  text-align: center;
+  background: url(../images/sct-4_bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
+/* line 417, ../sass/screen.scss */
+.page-romax .section-4 .box {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 10px;
+}
+/* line 422, ../sass/screen.scss */
+.page-romax .section-4 h3 {
+  font-size: 40px;
+  max-width: 725px;
+  font-weight: 700;
+  margin: auto;
+  margin-bottom: 35px;
+  line-height: 1.19;
+}
+/* line 430, ../sass/screen.scss */
+.page-romax .section-4 form {
+  max-width: 945px;
+  margin: auto;
+  padding: 33px 10px 70px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #fff;
+}
+/* line 436, ../sass/screen.scss */
+.page-romax .section-4 form h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 442, ../sass/screen.scss */
+.page-romax .section-4 form .form-group {
+  display: inline-block;
+  min-width: 283px;
+}
+/* line 445, ../sass/screen.scss */
+.page-romax .section-4 form .form-group input {
+  border: none;
+  border-radius: 0px;
+  font-size: 15.5px;
+  padding-bottom: 8px;
+}
+/* line 452, ../sass/screen.scss */
+.page-romax .section-4 form .form-group input[type="email"]::-webkit-input-placeholder {
+  color: #484848;
+}
+/* line 455, ../sass/screen.scss */
+.page-romax .section-4 form .form-group input[type="email"]::-moz-placeholder {
+  color: #484848;
+}
+/* line 458, ../sass/screen.scss */
+.page-romax .section-4 form .form-group input[type="email"]:-moz-placeholder {
+  color: #484848;
+}
+/* line 461, ../sass/screen.scss */
+.page-romax .section-4 form .form-group input[type="email"]:-ms-input-placeholder {
+  color: #484848;
+}
+/* line 466, ../sass/screen.scss */
+.page-romax .section-4 form .form-group input[type="tel"]::-webkit-input-placeholder {
+  color: #ff1616;
+}
+/* line 469, ../sass/screen.scss */
+.page-romax .section-4 form .form-group input[type="tel"]::-moz-placeholder {
+  color: #ff1616;
+}
+/* line 472, ../sass/screen.scss */
+.page-romax .section-4 form .form-group input[type="tel"]:-moz-placeholder {
+  color: #ff1616;
+}
+/* line 475, ../sass/screen.scss */
+.page-romax .section-4 form .form-group input[type="tel"]:-ms-input-placeholder {
+  color: #ff1616;
+}
+/* line 480, ../sass/screen.scss */
+.page-romax .section-4 form .form-group:first-of-type {
+  margin-right: 15px;
+  position: relative;
+}
+/* line 483, ../sass/screen.scss */
+.page-romax .section-4 form .form-group:first-of-type:before {
+  content: "";
+  position: absolute;
+  bottom: 92%;
+  right: 104%;
+  width: 75px;
+  height: 216px;
+  background: url(../images/sct-4_img-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 495, ../sass/screen.scss */
+.page-romax .section-4 form .btn {
+  min-width: 242px;
+  max-width: 242px;
+  margin: auto;
+  margin-top: 25px;
+  border: none;
+  box-shadow: 0 2px 0 #fff;
+}
+/* line 506, ../sass/screen.scss */
+.page-romax .section-5 h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 31px;
+  margin-bottom: 17px;
+  line-height: 1;
+}
+/* line 512, ../sass/screen.scss */
+.page-romax .section-5 h2 .gradient {
+  font-size: 83px;
+  color: #0B2349;
+  background: linear-gradient(to top right, #a70403, #f11414, #a70403);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  line-height: .8;
+}
+/* line 523, ../sass/screen.scss */
+.page-romax .section-5 > p {
+  font-size: 30px;
+  text-align: center;
+}
+/* line 527, ../sass/screen.scss */
+.page-romax .section-5 .box {
+  background: url(../images/sct-5_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  position: relative;
+}
+/* line 534, ../sass/screen.scss */
+.page-romax .section-5 .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-image: linear-gradient(to bottom, white 0px, rgba(255, 255, 255, 0.1) 50px);
+}
+/* line 544, ../sass/screen.scss */
+.page-romax .section-5 .container {
+  padding-bottom: 27px;
+  padding-top: 40px;
+}
+/* line 547, ../sass/screen.scss */
+.page-romax .section-5 .container .box-mini {
+  text-align: center;
+  margin-bottom: 72px;
+}
+/* line 550, ../sass/screen.scss */
+.page-romax .section-5 .container .box-mini .box-text {
+  margin-top: -44px;
+  margin-right: -23px;
+}
+/* line 553, ../sass/screen.scss */
+.page-romax .section-5 .container .box-mini .box-text .p-1 {
+  color: #f4a137;
+  font-size: 141px;
+  line-height: .8;
+  text-align: right;
+  font-family: 'helveticaneuecyrmedium';
+  margin-bottom: 0;
+  margin-right: 13px;
+}
+/* line 562, ../sass/screen.scss */
+.page-romax .section-5 .container .box-mini .box-text .p-2 {
+  font-size: 24px;
+  color: #232324;
+  text-align: right;
+  text-transform: uppercase;
+  line-height: 1.24;
+}
+/* line 573, ../sass/screen.scss */
+.page-romax .section-5 .container .box-mini-2 .box-text .p-2 {
+  margin-right: -30px;
+}
+/* line 580, ../sass/screen.scss */
+.page-romax .section-5 .container .box-mini-6 .box-text .p-2 {
+  max-width: 150px;
+  margin-left: auto;
+  text-align: left;
+}
+/* line 590, ../sass/screen.scss */
+.page-romax .section-6 .box-1 {
+  padding: 46px 15px 57px;
+  background: #898989;
+}
+/* line 593, ../sass/screen.scss */
+.page-romax .section-6 .box-1 h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  max-width: 695px;
+  margin: auto;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+/* line 603, ../sass/screen.scss */
+.page-romax .section-6 .box-1 p {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+}
+/* line 610, ../sass/screen.scss */
+.page-romax .section-6 .box-2 {
+  max-width: 1120px;
+  margin: auto;
+  font-size: 0;
+  padding: 58px 0 49px;
+  text-align: center;
+}
+/* line 616, ../sass/screen.scss */
+.page-romax .section-6 .box-2 .box-mini {
+  text-align: center;
+  display: inline-block;
+  width: 224px;
+  vertical-align: top;
+  height: 110px;
+  margin-bottom: 34px;
+}
+/* line 623, ../sass/screen.scss */
+.page-romax .section-6 .box-2 .box-mini:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+/* line 629, ../sass/screen.scss */
+.page-romax .section-6 .box-2 .box-mini a {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 634, ../sass/screen.scss */
+.page-romax .section-6 .box-2 .box-mini:hover {
+  box-shadow: inset 0 -2px 0 #f4a137;
+}
+/* line 639, ../sass/screen.scss */
+.page-romax .section-7 {
+  background: url(../images/sct-7_img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 115px 10px 125px;
+}
+/* line 645, ../sass/screen.scss */
+.page-romax .section-7 .box {
+  position: relative;
+  max-width: 577px;
+  margin: auto;
+  padding: 10px;
+  border-top: 1px solid #ee6802;
+  border-bottom: 1px solid #ee6802;
+}
+/* line 652, ../sass/screen.scss */
+.page-romax .section-7 .box:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to top, #ee6802, #eeed01, #ee6802);
+}
+/* line 661, ../sass/screen.scss */
+.page-romax .section-7 .box:after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to top, #ee6802, #eeed01, #ee6802);
+}
+/* line 671, ../sass/screen.scss */
+.page-romax .section-7 .box-inner {
+  padding: 33px 10px 77px;
+  background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 3px, rgba(255, 255, 255, 0.6) 9px, rgba(255, 255, 255, 0.6) 8px);
+}
+/* line 674, ../sass/screen.scss */
+.page-romax .section-7 .box-inner h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 682, ../sass/screen.scss */
+.page-romax .section-7 .box-inner .btn {
+  max-width: 320px;
+  margin: auto;
+  font-weight: 700;
+  padding: 17px;
+}
+/* line 690, ../sass/screen.scss */
+.page-romax .section-8 {
+  padding: 79px 0 20px;
+}
+/* line 692, ../sass/screen.scss */
+.page-romax .section-8 .container {
+  max-width: 1176px;
+  margin: auto;
+}
+/* line 695, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner {
+  margin-top: 26px;
+  padding: 0 50px 0 57px;
+  border: 1px solid #e3e1e1;
+}
+/* line 699, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner h4 {
+  margin-top: 15px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 705, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini {
+  margin-top: 25px;
+  padding-bottom: 35px;
+  font-size: 0;
+}
+/* line 709, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini .box-left {
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+  padding-top: 8px;
+  padding-left: 23px;
+}
+/* line 716, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini .box-right {
+  display: inline-block;
+  width: 67%;
+  vertical-align: top;
+  padding-left: 8px;
+  padding-right: 15px;
+}
+/* line 722, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini .box-right h5 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #434343;
+  margin-bottom: 5px;
+}
+/* line 729, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini .box-right p {
+  font-size: 12px;
+  color: #656666;
+}
+/* line 735, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini:not(:last-of-type) {
+  border-bottom: 1px solid #dddddd;
+}
+/* line 738, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-2 {
+  padding-bottom: 26px;
+}
+/* line 741, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-3 {
+  padding-bottom: 19px;
+}
+/* line 745, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-4 .box-left {
+  padding-left: 2px;
+}
+/* line 747, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-4 .box-left img {
+  margin-top: 27px;
+  margin-right: -44px;
+}
+/* line 753, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-5 {
+  padding-bottom: 16px;
+}
+/* line 756, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-6 {
+  padding-bottom: 23px;
+}
+/* line 762, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-4 .box-right,
+.page-romax .section-8 .container .box-inner .box-mini-5 .box-right,
+.page-romax .section-8 .container .box-inner .box-mini-6 .box-right {
+  padding-left: 20px;
+}
+/* line 766, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-7 {
+  margin-top: 45px;
+  padding-bottom: 55px;
+}
+/* line 769, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-7 .box-left {
+  padding-left: 8px;
+}
+/* line 772, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-7 .box-right {
+  padding-left: 16px;
+}
+/* line 776, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-8 {
+  margin-top: 28px;
+  padding-bottom: 52px;
+}
+/* line 779, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-8 .box-left {
+  padding-left: 8px;
+}
+/* line 782, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-8 .box-right {
+  padding-left: 16px;
+}
+/* line 786, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-9,
+.page-romax .section-8 .container .box-inner .box-mini-10 {
+  margin-top: 47px;
+  padding-bottom: 70px;
+}
+/* line 790, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-9 .box-left,
+.page-romax .section-8 .container .box-inner .box-mini-10 .box-left {
+  padding-left: 37px;
+}
+/* line 793, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-9 .box-right,
+.page-romax .section-8 .container .box-inner .box-mini-10 .box-right {
+  padding-left: 29px;
+}
+/* line 797, ../sass/screen.scss */
+.page-romax .section-8 .container .box-inner .box-mini-10 {
+  margin-top: 30px;
+  padding-bottom: 71px;
+}
+/* line 805, ../sass/screen.scss */
+.page-romax .section-8 .container .box-3 .box-inner h4,
+.page-romax .section-8 .container .box-4 .box-inner h4 {
+  margin-top: 19px;
+}
+/* line 812, ../sass/screen.scss */
+.page-romax .section-9 {
+  background: url(../images/sct-9_bg.jpg);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 65px 0 0px;
+}
+/* line 818, ../sass/screen.scss */
+.page-romax .section-9 p {
+  text-align: center;
+  color: #202226;
+}
+/* line 822, ../sass/screen.scss */
+.page-romax .section-9 .box-1 {
+  max-width: 1230px;
+  margin: auto;
+  margin-bottom: -36px;
+  background: url(../images/sct-9_img-2.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 100px 10px 0;
+}
+/* line 832, ../sass/screen.scss */
+.page-romax .section-9 .box-1 .p-1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: #0B2349;
+  background: linear-gradient(to top right, #a70403, #f11414, #a70403);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  line-height: .8;
+  margin-bottom: 18px;
+}
+/* line 842, ../sass/screen.scss */
+.page-romax .section-9 .box-1 .p-1 span {
+  font-size: 80px;
+}
+/* line 846, ../sass/screen.scss */
+.page-romax .section-9 .box-1 .p-2 {
+  font-size: 24px;
+}
+/* line 850, ../sass/screen.scss */
+.page-romax .section-9 .box-2 {
+  padding: 27px 10px 389px;
+  background: linear-gradient(to top, rgba(250, 216, 171, 0.7), rgba(250, 216, 171, 0.05));
+}
+/* line 853, ../sass/screen.scss */
+.page-romax .section-9 .box-2 .p-1 {
+  font-size: 18px;
+  max-width: 1000px;
+  margin: 24px auto 54px;
+}
+/* line 858, ../sass/screen.scss */
+.page-romax .section-9 .box-2 .p-2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+}
+/* line 864, ../sass/screen.scss */
+.page-romax .section-9 .box-2 .btn {
+  max-width: 320px;
+  margin: auto;
+  padding: 18px 10px;
+}
+@media (max-width: 1300px) {
+  /* line 872, ../sass/screen.scss */
+  .page-romax .section-5 .container .box-mini .box-text {
+    margin-right: -15px;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 877, ../sass/screen.scss */
+  .page-romax .section-2 {
+    padding: 50px 10px 64px;
+  }
+  /* line 881, ../sass/screen.scss */
+  .page-romax .section-2 .box .box-img .img-responsive {
+    width: 100%;
+    max-width: 251px;
+  }
+  /* line 889, ../sass/screen.scss */
+  .page-romax .section-3 .box,
+  .page-romax .section-3 .box-2 {
+    max-width: 577px;
+  }
+  /* line 892, ../sass/screen.scss */
+  .page-romax .section-3 .box .box-mini,
+  .page-romax .section-3 .box-2 .box-mini {
+    margin-bottom: 50px;
+  }
+  /* line 897, ../sass/screen.scss */
+  .page-romax .section-3 .box .box-mini-2 .box-img:before,
+  .page-romax .section-3 .box-2 .box-mini-2 .box-img:before {
+    content: none;
+  }
+  /* line 903, ../sass/screen.scss */
+  .page-romax .section-3 .box-2 {
+    margin-top: 0;
+  }
+  /* line 907, ../sass/screen.scss */
+  .page-romax .section-3 .box-2 .box-mini .box-img:before {
+    width: 139px;
+  }
+  /* line 914, ../sass/screen.scss */
+  .page-romax .section-3 .box-2 .box-mini-6 .box-img:before {
+    content: none;
+  }
+  /* line 922, ../sass/screen.scss */
+  .page-romax .section-5 > p {
+    font-size: 26px;
+  }
+  /* line 925, ../sass/screen.scss */
+  .page-romax .section-5 h2 {
+    font-size: 54px;
+  }
+  /* line 927, ../sass/screen.scss */
+  .page-romax .section-5 h2 .gradient {
+    font-size: 76px;
+  }
+  /* line 931, ../sass/screen.scss */
+  .page-romax .section-5 .container .box-mini .box-text {
+    margin-right: 15px;
+  }
+  /* line 938, ../sass/screen.scss */
+  .page-romax .section-8 .container .box-inner .box-mini .box-left {
+    padding-left: 0;
+  }
+  /* line 942, ../sass/screen.scss */
+  .page-romax .section-8 .container .box-inner .box-mini-4 .box-left img {
+    margin-left: -23px;
+  }
+  /* line 945, ../sass/screen.scss */
+  .page-romax .section-8 .container .box-inner .box-mini-6 {
+    padding-bottom: 30px;
+  }
+  /* line 950, ../sass/screen.scss */
+  .page-romax .section-9 {
+    padding-bottom: 158px;
+  }
+}
+@media (max-width: 992px) {
+  /* line 955, ../sass/screen.scss */
+  .page-romax .section-4 {
+    background-position: center center;
+  }
+  /* line 958, ../sass/screen.scss */
+  .page-romax .section-9 {
+    padding-bottom: 110px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 963, ../sass/screen.scss */
+  .page-romax h2 {
+    font-size: 42px;
+  }
+  /* line 966, ../sass/screen.scss */
+  .page-romax .d-block {
+    display: inline;
+  }
+  /* line 969, ../sass/screen.scss */
+  .page-romax .section-1 h1 {
+    font-size: 9.5vw;
+  }
+  /* line 971, ../sass/screen.scss */
+  .page-romax .section-1 h1 .text-size {
+    font-size: 14vw;
+  }
+  /* line 975, ../sass/screen.scss */
+  .page-romax .section-3 {
+    padding-bottom: 30px;
+  }
+  /* line 977, ../sass/screen.scss */
+  .page-romax .section-3 > p {
+    font-size: 18px;
+  }
+  /* line 984, ../sass/screen.scss */
+  .page-romax .section-3 .box .box-mini .box-img:before,
+  .page-romax .section-3 .box-2 .box-mini .box-img:before {
+    content: none;
+  }
+  /* line 991, ../sass/screen.scss */
+  .page-romax .section-4 {
+    padding-bottom: 30px;
+  }
+  /* line 993, ../sass/screen.scss */
+  .page-romax .section-4 h3 {
+    font-size: 30px;
+  }
+  /* line 997, ../sass/screen.scss */
+  .page-romax .section-4 form .form-group {
+    display: block;
+    min-width: 10%;
+    max-width: 280px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  /* line 1004, ../sass/screen.scss */
+  .page-romax .section-4 form .form-group:first-of-type {
+    margin-right: auto;
+  }
+  /* line 1006, ../sass/screen.scss */
+  .page-romax .section-4 form .form-group:first-of-type:before {
+    width: 50px;
+    height: 144px;
+  }
+  /* line 1014, ../sass/screen.scss */
+  .page-romax .section-5 h2 {
+    font-size: 30px;
+  }
+  /* line 1016, ../sass/screen.scss */
+  .page-romax .section-5 h2 .gradient {
+    font-size: 42px;
+  }
+  /* line 1020, ../sass/screen.scss */
+  .page-romax .section-5 > p {
+    font-size: 20px;
+  }
+  /* line 1024, ../sass/screen.scss */
+  .page-romax .section-5 .box .container {
+    max-width: 415px;
+    margin: auto;
+  }
+  /* line 1027, ../sass/screen.scss */
+  .page-romax .section-5 .box .container .box-mini {
+    text-align: left;
+  }
+  /* line 1035, ../sass/screen.scss */
+  .page-romax .section-9 .box-1 .p-1 {
+    font-size: 80px;
+  }
+  /* line 1037, ../sass/screen.scss */
+  .page-romax .section-9 .box-1 .p-1 span {
+    font-size: 60px;
+  }
+  /* line 1041, ../sass/screen.scss */
+  .page-romax .section-9 .box-1 .p-2 {
+    font-size: 20px;
+  }
+  /* line 1046, ../sass/screen.scss */
+  .page-romax .section-9 .box-2 .p-1 {
+    font-size: 16px;
+    max-width: 1000px;
+    margin: 24px auto 54px;
+  }
+  /* line 1051, ../sass/screen.scss */
+  .page-romax .section-9 .box-2 .p-2 {
+    font-size: 20px;
+  }
+  /* line 1053, ../sass/screen.scss */
+  .page-romax .section-9 .box-2 .p-2 img {
+    transform: scale(0.7);
+    margin-left: -22px;
+    margin-top: -7px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 1063, ../sass/screen.scss */
+  .page-romax h2 {
+    font-size: 26px;
+  }
+  /* line 1066, ../sass/screen.scss */
+  .page-romax .btn {
+    font-size: 3.333vw;
+  }
+  /* line 1076, ../sass/screen.scss */
+  .page-romax .section-1 form {
+    max-width: 98vw;
+    padding: 9.583vw 2.083vw 16.875vw;
+  }
+  /* line 1079, ../sass/screen.scss */
+  .page-romax .section-1 form h3 {
+    font-size: 6.667vw;
+    margin-bottom: 7.292vw;
+  }
+  /* line 1082, ../sass/screen.scss */
+  .page-romax .section-1 form h3:after {
+    content: "";
+    position: absolute;
+    left: 106%;
+    bottom: 0;
+    width: 15vw;
+    height: 26.25vw;
+  }
+  /* line 1091, ../sass/screen.scss */
+  .page-romax .section-1 form .form-group {
+    max-width: 58.958vw;
+    margin-bottom: 4.375vw;
+  }
+  /* line 1094, ../sass/screen.scss */
+  .page-romax .section-1 form .form-group input {
+    font-size: 3.24vw;
+    padding-left: 6.25vw;
+    background-position: 1.458vw 2.083vw;
+    background-size: 3.333vw;
+  }
+  /* line 1100, ../sass/screen.scss */
+  .page-romax .section-1 form .form-group input[type="email"] {
+    background-size: 3.542vw 2.917vw;
+  }
+  /* line 1104, ../sass/screen.scss */
+  .page-romax .section-1 form .btn {
+    width: 100%;
+    max-width: 58.958vw;
+    margin-top: 5.208vw;
+  }
+  /* line 1111, ../sass/screen.scss */
+  .page-romax .section-2 p {
+    font-size: 18px;
+  }
+  /* line 1115, ../sass/screen.scss */
+  .page-romax .section-3 > p {
+    font-size: 14px;
+  }
+  /* line 1120, ../sass/screen.scss */
+  .page-romax .section-4 h3 {
+    font-size: 20px;
+  }
+  /* line 1124, ../sass/screen.scss */
+  .page-romax .section-4 form h3 {
+    font-size: 20px;
+  }
+  /* line 1127, ../sass/screen.scss */
+  .page-romax .section-4 form .form-group {
+    max-width: 210px;
+  }
+  /* line 1130, ../sass/screen.scss */
+  .page-romax .section-4 form .form-group:first-of-type:before {
+    bottom: 115%;
+    right: 98%;
+    width: 33.33px;
+    height: 96px;
+  }
+  /* line 1136, ../sass/screen.scss */
+  .page-romax .section-4 form .btn {
+    min-width: 210px;
+  }
+  /* line 1145, ../sass/screen.scss */
+  .page-romax .section-5 .box .container .box-mini img {
+    width: 85vw;
+  }
+  /* line 1149, ../sass/screen.scss */
+  .page-romax .section-5 .box .container .box-mini .box-text .p-1 {
+    font-size: 105px;
+  }
+  /* line 1157, ../sass/screen.scss */
+  .page-romax .section-7 {
+    padding: 60px 10px 65px;
+  }
+  /* line 1160, ../sass/screen.scss */
+  .page-romax .section-7 .box-inner h3 {
+    font-size: 20px;
+  }
+  /* line 1165, ../sass/screen.scss */
+  .page-romax .section-8 {
+    padding: 10px 0 10px;
+  }
+  /* line 1169, ../sass/screen.scss */
+  .page-romax .section-8 .container .row .box {
+    padding: 5px;
+  }
+  /* line 1171, ../sass/screen.scss */
+  .page-romax .section-8 .container .row .box .box-inner {
+    padding: 5px;
+  }
+  /* line 1173, ../sass/screen.scss */
+  .page-romax .section-8 .container .row .box .box-inner h4 {
+    font-size: 20px;
+  }
+  /* line 1176, ../sass/screen.scss */
+  .page-romax .section-8 .container .row .box .box-inner .box-mini {
+    padding-bottom: 25px;
+  }
+  /* line 1178, ../sass/screen.scss */
+  .page-romax .section-8 .container .row .box .box-inner .box-mini .box-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  /* line 1183, ../sass/screen.scss */
+  .page-romax .section-8 .container .row .box .box-inner .box-mini .box-right {
+    width: 100%;
+  }
+  /* line 1192, ../sass/screen.scss */
+  .page-romax .section-9 {
+    padding-top: 10px;
+  }
+  /* line 1194, ../sass/screen.scss */
+  .page-romax .section-9 .box-1 {
+    padding-top: 30px;
+  }
+  /* line 1196, ../sass/screen.scss */
+  .page-romax .section-9 .box-1 .p-1 {
+    font-size: 50px;
+  }
+  /* line 1198, ../sass/screen.scss */
+  .page-romax .section-9 .box-1 .p-1 span {
+    font-size: 35px;
+  }
+  /* line 1203, ../sass/screen.scss */
+  .page-romax .section-9 .box-2 {
+    padding-bottom: 35px;
+  }
+}
+/* line 1208, ../sass/screen.scss */
+.page-romax .modal {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  height: 100vh;
+}
+/* line 1215, ../sass/screen.scss */
+.page-romax #myModal,
+.page-romax #myModal-2 {
+  padding: 0 !important;
+  text-align: center;
+}
+/* line 1219, ../sass/screen.scss */
+.page-romax #myModal:before,
+.page-romax #myModal-2:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+/* line 1226, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog,
+.page-romax #myModal-2 .modal-dialog {
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 1px solid #de6106;
+  border-bottom: 1px solid #de6106;
+  padding: 13px;
+  text-align: left;
+}
+/* line 1233, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog:before,
+.page-romax #myModal-2 .modal-dialog:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to top, #ee6802, #eeed01, #ee6802);
+}
+/* line 1242, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog:after,
+.page-romax #myModal-2 .modal-dialog:after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to top, #ee6802, #eeed01, #ee6802);
+}
+/* line 1251, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog .modal-content,
+.page-romax #myModal-2 .modal-dialog .modal-content {
+  border: 2px solid #8d5256;
+  border-radius: 0;
+}
+/* line 1254, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog .modal-content .modal-header,
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-header {
+  border-bottom: 0;
+}
+/* line 1256, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog .modal-content .modal-header h4,
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-header h4 {
+  font-size: 30px;
+  color: #444;
+  margin-top: 11px;
+}
+/* line 1261, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog .modal-content .modal-header button,
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-header button {
+  color: #fff;
+  background: #686868;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  font-size: 26px;
+  text-align: center;
+}
+/* line 1271, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog .modal-content .modal-body,
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-body {
+  padding-top: 0;
+}
+/* line 1273, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog .modal-content .modal-body label,
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-body label {
+  font-size: 12px;
+  color: #ca1226;
+  width: 100%;
+}
+/* line 1278, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog .modal-content .modal-body .form-group,
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-body .form-group {
+  max-width: 365px;
+  margin: auto;
+}
+/* line 1281, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog .modal-content .modal-body .form-group input,
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-body .form-group input {
+  font-size: 16px;
+  margin-top: 5px;
+  border: 2px solid #d8d8d8;
+  border-radius: 0;
+}
+/* line 1287, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog .modal-content .modal-body .form-group input[type="email"],
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-body .form-group input[type="email"] {
+  margin-bottom: 12px;
+}
+/* line 1291, ../sass/screen.scss */
+.page-romax #myModal .modal-dialog .modal-content .modal-body .btn,
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-body .btn {
+  max-width: 235px;
+  margin: 21px auto 16px;
+}
+/* line 1300, ../sass/screen.scss */
+.page-romax #myModal-2 .modal-dialog {
+  border: none;
+  padding: 0;
+}
+/* line 1303, ../sass/screen.scss */
+.page-romax #myModal-2 .modal-dialog:before, .page-romax #myModal-2 .modal-dialog:after {
+  content: none;
+}
+/* line 1307, ../sass/screen.scss */
+.page-romax #myModal-2 .modal-dialog .modal-content {
+  border-top: 2px solid #de6106;
+  border-bottom: 2px solid #de6106;
+  border-left: none;
+  border-right: none;
+}
+/* line 1312, ../sass/screen.scss */
+.page-romax #myModal-2 .modal-dialog .modal-content:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to top, #ee6802, #eeed01, #ee6802);
+}
+/* line 1321, ../sass/screen.scss */
+.page-romax #myModal-2 .modal-dialog .modal-content:after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to top, #ee6802, #eeed01, #ee6802);
+}
+/* line 1330, ../sass/screen.scss */
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-header {
+  padding-bottom: 6px;
+}
+/* line 1332, ../sass/screen.scss */
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-header h4 {
+  font-size: 25px;
+  text-transform: none;
+}
+/* line 1336, ../sass/screen.scss */
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-header .p-1 {
+  font-size: 19px;
+  color: #292929;
+}
+/* line 1341, ../sass/screen.scss */
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-body {
+  text-align: center;
+}
+/* line 1343, ../sass/screen.scss */
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-body .p-2 {
+  color: #ca1226;
+  font-size: 19px;
+  max-width: 435px;
+  margin: auto;
+  font-weight: 700;
+  border-top: 3px solid #e2e7ea;
+  padding-top: 17px;
+}
+/* line 1352, ../sass/screen.scss */
+.page-romax #myModal-2 .modal-dialog .modal-content .modal-body img {
+  margin-top: 49px;
+  margin-bottom: 18px;
+}
+
+/* line 1367, ../sass/screen.scss */
+.page-romax .section-1 .box-form,
+.page-romax .section-4 .box-form,
+.page-romax .section-7 .box-form,
+.page-romax .section-9 .box-form {
+  padding: 10px;
+  max-width: 709px;
+  margin: auto;
+  position: relative;
+  border: 1px solid #f26a06;
+}
+/* line 1374, ../sass/screen.scss */
+.page-romax .section-1 form,
+.page-romax .section-4 form,
+.page-romax .section-7 form,
+.page-romax .section-9 form {
+  background: rgba(255, 255, 255, 0.5);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 16px 10px 11px;
+  text-align: center;
+}
+/* line 1380, ../sass/screen.scss */
+.page-romax .section-1 form .h3-1,
+.page-romax .section-4 form .h3-1,
+.page-romax .section-7 form .h3-1,
+.page-romax .section-9 form .h3-1 {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 35px;
+  position: relative;
+  font-size: 29px;
+  color: #3d3d3d;
+  max-width: 475px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 400;
+  text-transform: none;
+}
+/* line 1393, ../sass/screen.scss */
+.page-romax .section-1 form .h3-1:after,
+.page-romax .section-4 form .h3-1:after,
+.page-romax .section-7 form .h3-1:after,
+.page-romax .section-9 form .h3-1:after {
+  content: "";
+  position: absolute;
+  left: 99%;
+  bottom: -60px;
+  width: 67px;
+  height: 134px;
+  background: url(../images/sct-1_img-7.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 1404, ../sass/screen.scss */
+.page-romax .section-1 form .h3-1 span,
+.page-romax .section-4 form .h3-1 span,
+.page-romax .section-7 form .h3-1 span,
+.page-romax .section-9 form .h3-1 span {
+  font-weight: 700;
+}
+/* line 1408, ../sass/screen.scss */
+.page-romax .section-1 form .h3-2,
+.page-romax .section-4 form .h3-2,
+.page-romax .section-7 form .h3-2,
+.page-romax .section-9 form .h3-2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  color: #000;
+}
+/* line 1416, ../sass/screen.scss */
+.page-romax .section-1 form input[type="text"],
+.page-romax .section-4 form input[type="text"],
+.page-romax .section-7 form input[type="text"],
+.page-romax .section-9 form input[type="text"] {
+  font-size: 15.55px;
+  padding: 6px 5px 6px 35px;
+  border-radius: 0;
+  border: 1px solid #fff;
+  background: rgba(240, 240, 240, 0.5);
+  background-image: url(../images/sct-1_img-4.png);
+  background-repeat: no-repeat;
+  background-position: 7px 10px;
+  width: 100%;
+  max-width: 408px;
+  margin-bottom: 14px;
+}
+/* line 1428, ../sass/screen.scss */
+.page-romax .section-1 form input[type="text"]::-webkit-input-placeholder,
+.page-romax .section-4 form input[type="text"]::-webkit-input-placeholder,
+.page-romax .section-7 form input[type="text"]::-webkit-input-placeholder,
+.page-romax .section-9 form input[type="text"]::-webkit-input-placeholder {
+  color: #000;
+}
+/* line 1431, ../sass/screen.scss */
+.page-romax .section-1 form input[type="text"]::-moz-placeholder,
+.page-romax .section-4 form input[type="text"]::-moz-placeholder,
+.page-romax .section-7 form input[type="text"]::-moz-placeholder,
+.page-romax .section-9 form input[type="text"]::-moz-placeholder {
+  color: #000;
+}
+/* line 1434, ../sass/screen.scss */
+.page-romax .section-1 form input[type="text"]:-moz-placeholder,
+.page-romax .section-4 form input[type="text"]:-moz-placeholder,
+.page-romax .section-7 form input[type="text"]:-moz-placeholder,
+.page-romax .section-9 form input[type="text"]:-moz-placeholder {
+  color: #000;
+}
+/* line 1437, ../sass/screen.scss */
+.page-romax .section-1 form input[type="text"]:-ms-input-placeholder,
+.page-romax .section-4 form input[type="text"]:-ms-input-placeholder,
+.page-romax .section-7 form input[type="text"]:-ms-input-placeholder,
+.page-romax .section-9 form input[type="text"]:-ms-input-placeholder {
+  color: #000;
+}
+/* line 1441, ../sass/screen.scss */
+.page-romax .section-1 form input[name="email"],
+.page-romax .section-4 form input[name="email"],
+.page-romax .section-7 form input[name="email"],
+.page-romax .section-9 form input[name="email"] {
+  background-image: url(../images/sct-1_img-5.png);
+}
+/* line 1444, ../sass/screen.scss */
+.page-romax .section-1 form input[name="first_name"],
+.page-romax .section-4 form input[name="first_name"],
+.page-romax .section-7 form input[name="first_name"],
+.page-romax .section-9 form input[name="first_name"] {
+  background-image: url(../images/sct-1_img-6.png);
+}
+/* line 1447, ../sass/screen.scss */
+.page-romax .section-1 form .btn,
+.page-romax .section-4 form .btn,
+.page-romax .section-7 form .btn,
+.page-romax .section-9 form .btn {
+  width: 100%;
+  max-width: 283px;
+  margin: auto;
+  margin-top: 25px;
+  border: none;
+  background-image: none;
+  background: #ce031d;
+  background: -moz-linear-gradient(to right, #b30212, #e6012a);
+  background: -webkit-gradient(linear, left, right, color-stop(0%, #b30212), color-stop(100%, #e6012a));
+  background: -webkit-linear-gradient(to right, #b30212, #e6012a);
+  background: -o-linear-gradient(to right, #b30212, #e6012a);
+  background: -ms-linear-gradient(to right, #b30212, #e6012a);
+  background: linear-gradient(to right, #b30212, #e6012a);
+  box-shadow: none;
+}
+/* line 1463, ../sass/screen.scss */
+.page-romax .section-1 form .btn:hover,
+.page-romax .section-4 form .btn:hover,
+.page-romax .section-7 form .btn:hover,
+.page-romax .section-9 form .btn:hover {
+  background: #fba713;
+}
+/* line 1466, ../sass/screen.scss */
+.page-romax .section-1 form input[type="radio"],
+.page-romax .section-4 form input[type="radio"],
+.page-romax .section-7 form input[type="radio"],
+.page-romax .section-9 form input[type="radio"] {
+  display: inline-block;
+}
+/* line 1469, ../sass/screen.scss */
+.page-romax .section-1 form label,
+.page-romax .section-4 form label,
+.page-romax .section-7 form label,
+.page-romax .section-9 form label {
+  margin-right: 7px;
+}
+/* line 1475, ../sass/screen.scss */
+.page-romax .section-4 form {
+  background: none;
+  border: none;
+}
+/* line 1478, ../sass/screen.scss */
+.page-romax .section-4 form input[type="text"] {
+  background: rgba(0, 0, 0, 0.3);
+  background-image: url(../images/sct-1_img-4.png);
+  background-repeat: no-repeat;
+  background-position: 7px 10px;
+}
+/* line 1483, ../sass/screen.scss */
+.page-romax .section-4 form input[type="text"]::-webkit-input-placeholder {
+  color: #fff;
+}
+/* line 1486, ../sass/screen.scss */
+.page-romax .section-4 form input[type="text"]::-moz-placeholder {
+  color: #fff;
+}
+/* line 1489, ../sass/screen.scss */
+.page-romax .section-4 form input[type="text"]:-moz-placeholder {
+  color: #fff;
+}
+/* line 1492, ../sass/screen.scss */
+.page-romax .section-4 form input[type="text"]:-ms-input-placeholder {
+  color: #fff;
+}
+/* line 1496, ../sass/screen.scss */
+.page-romax .section-4 form input[name="email"] {
+  background-image: url(../images/sct-1_img-5.png);
+}
+/* line 1499, ../sass/screen.scss */
+.page-romax .section-4 form input[name="first_name"] {
+  background-image: url(../images/sct-1_img-6.png);
+}
+/* line 1502, ../sass/screen.scss */
+.page-romax .section-4 form .btn {
+  box-shadow: none;
+}
+/* line 1508, ../sass/screen.scss */
+.page-romax .section-7 .box {
+  max-width: 709px;
+}
+/* line 1511, ../sass/screen.scss */
+.page-romax .section-7 .box-inner {
+  padding: 0;
+  background: none;
+}
+/* line 1514, ../sass/screen.scss */
+.page-romax .section-7 .box-inner .btn {
+  max-width: 283px;
+  margin: 25px auto 0;
+  font-weight: 700;
+  padding: 6px 12px;
+}
+/* line 1522, ../sass/screen.scss */
+.page-romax .section-9 .box-2 .btn {
+  max-width: 283px;
+  margin: 25px auto 0;
+  padding: 6px 12px;
+}
+
+@media (max-width: 480px) {
+  /* line 1535, ../sass/screen.scss */
+  .page-romax .section-1 form .h3-1,
+  .page-romax .section-4 form .h3-1,
+  .page-romax .section-7 form .h3-1,
+  .page-romax .section-9 form .h3-1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 1549, ../sass/screen.scss */
+  .page-romax .section-1 form .h3-1:after,
+  .page-romax .section-4 form .h3-1:after,
+  .page-romax .section-7 form .h3-1:after,
+  .page-romax .section-9 form .h3-1:after {
+    content: none;
+  }
+}
+@media (max-width: 555px) {
+  /* line 1564, ../sass/screen.scss */
+  .page-romax .section-1 form h3,
+  .page-romax .section-4 form h3,
+  .page-romax .section-7 form h3,
+  .page-romax .section-9 form h3 {
+    text-align: center;
+  }
+  /* line 1567, ../sass/screen.scss */
+  .page-romax .section-1 form .h3-1,
+  .page-romax .section-4 form .h3-1,
+  .page-romax .section-7 form .h3-1,
+  .page-romax .section-9 form .h3-1 {
+    font-size: 24px;
+  }
+  /* line 1570, ../sass/screen.scss */
+  .page-romax .section-1 form .block,
+  .page-romax .section-4 form .block,
+  .page-romax .section-7 form .block,
+  .page-romax .section-9 form .block {
+    display: block;
+  }
+  /* line 1573, ../sass/screen.scss */
+  .page-romax .section-1 form label,
+  .page-romax .section-4 form label,
+  .page-romax .section-7 form label,
+  .page-romax .section-9 form label {
+    min-width: 200px;
+    text-align: left;
+  }
+}
