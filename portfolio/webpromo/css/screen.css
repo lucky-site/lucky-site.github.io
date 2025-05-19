@@ -8,6 +8,7 @@
  */
 html {
   margin-top: 0px !important;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -908,7 +909,7 @@ body {
   opacity: 0.5;
   transition: all .25s linear;
   z-index: 999;
-  border: 1px solid var(--gray-300);
+  border: 1px solid var(--blue);
 }
 .main_page #toTop span {
   display: block;
@@ -924,7 +925,7 @@ body {
   width: 0;
   height: 0;
   border: 11px solid transparent;
-  border-bottom-color: var(--gray-300);
+  border-bottom-color: var(--blue);
 }
 .main_page #toTop:hover {
   opacity: 1;
