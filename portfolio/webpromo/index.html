@@ -67,8 +67,8 @@
                     <li>Поверніть команді <span class="text_blue">до 15.5 год щотижня</span> на прийняття стратегічних рішень</li>
                   </ul>
                 </div>
-                <div class="box_btn">
-                  <a href="#" class="my_btn">Отримати консультацію</a>
+                <div class="box_btn top_menu">
+                  <a href="#bottomForm" class="my_btn">Отримати консультацію</a>
                 </div>
                 <div class="box_bottom">
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -187,7 +187,7 @@
             </div>
           </div>
           <div class="box_btn">
-            <a href="#" class="my_btn">Отримати консультацію</a>
+            <a href="#bottomForm" class="my_btn">Отримати консультацію</a>
           </div>
         </div>
       </section>
@@ -246,7 +246,7 @@
             </div>
           </div>
           <div class="box_btn">
-            <a href="#" class="my_btn">Отримати консультацію</a>
+            <a href="#bottomForm" class="my_btn">Отримати консультацію</a>
           </div>
         </div>
       </section>
@@ -356,7 +356,7 @@
             </div>
           </div>
           <div class="box_btn">
-            <a href="#" class="my_btn">Отримати консультацію</a>
+            <a href="#bottomForm" class="my_btn">Отримати консультацію</a>
           </div>
         </div>
       </section>
@@ -418,7 +418,7 @@
           </div>
         </div>
         <div class="box_btn">
-          <a href="#" class="my_btn">Отримати консультацію</a>
+          <a href="#bottomForm" class="my_btn">Отримати консультацію</a>
         </div>
       </section>
 
@@ -811,9 +811,9 @@
 
       <!-- section 11 end -->
 
-      <span id="toTop">
+      <!-- <span id="toTop">
         <span></span>
-      </span>
+      </span> -->
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -871,42 +871,6 @@
       // });
     </script>
 
-    <script>
-
-    </script>
-
-
-    <script>
-
-      $(document).ready(function(){
-        $('.box_questions').click(function() {
-          $(this).next().slideToggle();
-          $(this).toggleClass('active');
-        });
-      });
-
-      function equalizeBoxHeights(selector = '.box_title_h4') {
-        if (window.innerWidth > 768) {
-          const els = Array.from(document.querySelectorAll(selector));
-          if (els.length === 0) return;
-
-          // Знаходимо максимальну висоту
-          const maxH = els.reduce((max, el) => {
-            const h = el.getBoundingClientRect().height;
-            return h > max ? h : max;
-          }, 0);
-
-          // Встановлюємо всім однакову висоту
-          els.forEach(el => el.style.height = `${maxH}px`);
-        }
-      }
-
-      // Викликаємо на завантаження сторінки
-      window.addEventListener('load', () => equalizeBoxHeights('.box_title_h4'));
-      // І за потреби — при зміні розміру вікна
-      window.addEventListener('resize', () => equalizeBoxHeights('.box_title_h4'));
-
-    </script>
   </body>
 </html>
 
